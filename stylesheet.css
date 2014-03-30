@@ -1,0 +1,15 @@
+body {
+    font-family: open-sans, sans-serif;
+}
+
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+}
