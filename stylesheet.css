@@ -2,11 +2,11 @@ body {
     font-family: open-sans, sans-serif;
 }
 
-h2, p {
+h1, p {
     text-align: center;
 }
 
-h2 {
+h1 {
     font-weight: 700;
 }
 
