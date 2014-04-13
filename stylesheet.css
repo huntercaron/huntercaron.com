@@ -1,16 +1,138 @@
-body {
-    font-family: open-sans, sans-serif;
+/*legreya:400italic,400,700*/
+
+html {
+    font-size: 16px;
 }
 
-h1, p {
-    text-align: center;
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 62.5%; /* 1em = 10px */
+    background-color: #333739;
+}
+
+main {
+    max-width: 90%;
+    margin: auto;
 }
 
 h1 {
-    font-weight: 700;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: left;
+    color: #fff;
+    margin:0;
+    padding: 0px;
+    display:inline;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -1px;
 }
 
-p {
-    font-family: Alegreya;
-    font-weight: 400;
+.logo {
+    display: inline;
+    right: 0;
+    width:100px;
+    padding:none;
+    margin:none;
+}
+
+header {
+    background-color: #171c1b;
+    width:100%;
+    padding:13px;
+    padding-left:19px;
+    height: 40px;
+}
+
+.status {
+    background-color: hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+}
+
+.user {
+    display: block;
+    background-color: hsl(168, 10%, 7%);
+    width:48%;
+    box-sizing:padding-box;
+    padding: 10px 0 10px 0;
+    float:left;
+    height:200px;
+    border-radius:3px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.30);
+}
+
+.user.odd {
+    float: right;
+}
+
+.top {
+    background-color: #171c1b;
+    padding: 0;
+    top: 0;
+    width:100%;
+    height: 45px;
+    margin-top:-10px;
+    text-align: right;
+}
+
+.top h3, .top p {
+ display:inline-block;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    margin-top:5px;
+}
+
+.top h3 {
+    color: #fff;
+    font-size:2.5em;
+    padding-right: 15px;
+}
+
+.top p {
+    color: hsl(0, 0%, 41%);
+    font-size:1.5em;
+    padding-right:5px;
+}
+
+.profileSide {
+    width: auto;
+    height: 100%;
+}
+
+.sCircle {
+    height:180px;
+    width: 180px;
+    border-radius: 50%;
+    padding:4px;
+    margin: -29.5px 0 0 20px;
+}
+
+.profileCircle {
+    background-image: url("//lh3.googleusercontent.com/-qpThOl-oXpQ/UaYT0zv2HrI/AAAAAAAAAEc/V5Hivci55lE/s256-no/13fdd5e0-81b4-47bd-8bfc-a57d77a310d4");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .user {
+        width: 70%;
+        float:none !important;
+        margin: auto; 
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .user {
+        width: 90%;
+        float:none !important;
+        margin: auto; 
+        margin-top: 30px;
+    }
 }
