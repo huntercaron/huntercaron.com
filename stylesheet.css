@@ -75,7 +75,23 @@ header {
     background-color: hsl(85, 50%, 50%);
 }
 
+/*footer stuff--------------------------------------------------------------*/
+ /*
+footer {
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    padding:0;
+    background-color: #171c1b;
+}
 
+footer p {
+    padding-left: 15px;
+    font-size:1.2em;
+    color:hsl(0, 0%, 41%);
+}
+
+*/
 /*user card--------------------------------------------------------------*/
 
 .user {
