@@ -185,7 +185,7 @@ header {
     width: 70px;
     height: 70px;
     margin: 0px 0 0 0px;
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.40);
+    /*box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.40);*/
 }
 
 .badgeArea h4 {
@@ -201,13 +201,16 @@ header {
     font-weight: 300;
     color:hsl(0, 0%, 41%);
     display: inline-block;
-    position: absolute;
     font-size:1.6em;
     margin:36px 0 0 -125px;
 }
     
 .badge.nintyfan {
     background-image: url(http://cdn.steamcommunity.com/public/images/badges/02_years/steamyears402_54.png);
+}
+
+.badge.ludicrousa {
+    background-image: url(http://media.steampowered.com/steamcommunity/public/images/items/730/400f2cdf69db174f5616038edbb7a3f8e917ae00.png);
 }
 
 /*Break Points--------------------------------------------------------------*/
@@ -230,7 +233,8 @@ header {
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 620px) and only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) and {
     .statusSide {
         margin:auto;
         margin-top:20px;
