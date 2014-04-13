@@ -257,6 +257,26 @@ footer p {
     position: absolute;
 }
 
+/*Status Stuff-----------------------------------*/
+
+.Bonline {
+    background-color: #689dd4;
+}
+
+.Tonline {
+    color: #689dd4;
+    border-bottom-color: #689dd4;
+}
+
+.BinGame {
+    background-color: #9bc85c;
+}
+
+.TinGame {
+    color: #9bc85c;
+    border-bottom-color: #9bc85c;
+}
+
 
 /*User Specific Stuff! -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     
@@ -271,7 +291,15 @@ footer p {
 .badge.mithon {
     background-image: url(http://cdn.steamcommunity.com/public/images/badges/13_gamecollector/100.png);
 }
-    
+
+.badge.mikeshz {
+    background-image: url(http://media.steampowered.com/steamcommunity/public/images/items/570/05b1b9d504df01096b406777be0d7331d995cf9e.png);
+}
+  
+.badge.garargar {
+    background-image: url(http://media.steampowered.com/steamcommunity/public/images/items/267420/a1fe645ea5bd6a90c1509d2d3653e2895204c7f1.png);
+}
+
 .profileCircle.nintyfan {
     background-image: url("//lh3.googleusercontent.com/-qpThOl-oXpQ/UaYT0zv2HrI/AAAAAAAAAEc/V5Hivci55lE/s256-no/13fdd5e0-81b4-47bd-8bfc-a57d77a310d4");
 }
@@ -283,6 +311,14 @@ footer p {
 .profileCircle.mithon {
  background-image: url(https://lh3.googleusercontent.com/-AIBvXuVfa2E/UvLbfFQoq5I/AAAAAAAAB-Q/MuQ7gkIpb-A/w899-h896-no/New-Profile-Pic-.jpg);   
     background-size: 110%;
+}
+
+.profileCircle.mikeshz {
+ background-image: url(http://media.steampowered.com/steamcommunity/public/images/avatars/b1/b114fe00347c3b01b5b954986cda6904b22c6eec_full.jpg);   
+}
+
+.profileCircle.garargar {
+ background-image: url(http://media.steampowered.com/steamcommunity/public/images/avatars/89/8972743c842e5ad60d4c6c0b88b0e71513479d67_full.jpg);   
 }
 
 /*Break Points--------------------------------------------------------------*/

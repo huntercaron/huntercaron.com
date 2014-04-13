@@ -16,7 +16,7 @@ $(document).ready(function() {
     var julian = getStatus(76561198057072625);
     console.log(julian);
 });
-*/
+
 
 
 
@@ -27,3 +27,4 @@ $(document).ready(function(){
          $("#ludicrousaStatus").text(status);
      });
 });
+*/
