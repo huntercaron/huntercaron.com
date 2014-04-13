@@ -16,10 +16,14 @@ main {
     margin: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*header stuff--------------------------------------------------------------*/
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 300;
     text-align: left;
     color: #fff;
@@ -28,22 +32,20 @@ h1 {
     display:inline;
     position: absolute;
     margin-left: -15px;
-    margin-top: -1px;
+    margin-top: 2px;
 }
 
 .logo {
     display: inline;
     right: 0;
     width:100px;
-    padding:none;
-    margin:none;
+    margin-left:20px;
 }
 
 header {
     background-color: #171c1b;
     width:100%;
-    padding:13px;
-    padding-left:19px;
+    padding:13px 0 13px 0px;
     height: 40px;
 }
 
@@ -51,6 +53,28 @@ header {
     background-color: hsl(0, 0%, 41%);
     color: hsl(0, 0%, 41%);
 }
+
+.refresh {
+    height: 28px;
+    width: 80px;
+    margin-right: 20px;
+    display:inline-block;
+    position: absolute;
+    right:0;
+    top:15px;
+    background-color: #9bc85c;
+    text-align:center;
+    padding-top:8px;
+    color:#fff;
+    font-size:1.5em;
+    border-radius: 2px;
+}
+
+.refresh:hover{
+    margin-top: 1px;
+    background-color: hsl(85, 50%, 50%);
+}
+
 
 /*user card--------------------------------------------------------------*/
 
@@ -119,7 +143,7 @@ header {
 }
 
 .profileCircle {
-    background-image: url("//lh3.googleusercontent.com/-qpThOl-oXpQ/UaYT0zv2HrI/AAAAAAAAAEc/V5Hivci55lE/s256-no/13fdd5e0-81b4-47bd-8bfc-a57d77a310d4");
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -128,24 +152,34 @@ header {
     border-radius: 50%;
 }
 
+
+
 .lvlCircle {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
-    background-color: #c02942;
+    
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.40);
 }
 
 .lvlCircle h3 {
     font-size: 2.5em;
-    margin:0;
-    padding: 8px 0 0 7px;
+    margin:auto;
+    padding: 7px 0 0 0px;
     color: #fff;
     font-family: "Open Sans";
     font-weight: 300;
-    font-style: italic;
+    text-align:center;
+}
+
+.lvlCircle.big {
+    background-color: #d95b43;
+}
+
+.lvlCircle.med {
+    background-color: #c02942;
 }
 
 /*User(status side)--------------------------------------------------------------*/
@@ -194,6 +228,7 @@ header {
     padding-left: 15px;
     font-size: 1.7em;
     display: inline-block;
+    position:absolute;
     margin-top: 15px;
 }
 
@@ -202,8 +237,12 @@ header {
     color:hsl(0, 0%, 41%);
     display: inline-block;
     font-size:1.6em;
-    margin:36px 0 0 -125px;
+    margin:36px 0 0 15px;
+    position: absolute;
 }
+
+
+/*User Specific Stuff! -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     
 .badge.nintyfan {
     background-image: url(http://cdn.steamcommunity.com/public/images/badges/02_years/steamyears402_54.png);
@@ -211,6 +250,23 @@ header {
 
 .badge.ludicrousa {
     background-image: url(http://media.steampowered.com/steamcommunity/public/images/items/730/400f2cdf69db174f5616038edbb7a3f8e917ae00.png);
+}
+
+.badge.mithon {
+    background-image: url(http://cdn.steamcommunity.com/public/images/badges/13_gamecollector/100.png);
+}
+    
+.profileCircle.nintyfan {
+    background-image: url("//lh3.googleusercontent.com/-qpThOl-oXpQ/UaYT0zv2HrI/AAAAAAAAAEc/V5Hivci55lE/s256-no/13fdd5e0-81b4-47bd-8bfc-a57d77a310d4");
+}
+
+.profileCircle.ludicrousa {
+    background-image: url(http://media.steampowered.com/steamcommunity/public/images/avatars/8d/8d8327ff5a7339e7d65392a6e71e88762082384a_full.jpg);
+}
+
+.profileCircle.mithon {
+ background-image: url(https://lh3.googleusercontent.com/-AIBvXuVfa2E/UvLbfFQoq5I/AAAAAAAAB-Q/MuQ7gkIpb-A/w899-h896-no/New-Profile-Pic-.jpg);   
+    background-size: 110%;
 }
 
 /*Break Points--------------------------------------------------------------*/
@@ -233,8 +289,7 @@ header {
     }
 }
 
-@media screen and (max-width: 620px) and only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) and {
+@media screen and (max-width: 620px){
     .statusSide {
         margin:auto;
         margin-top:20px;
