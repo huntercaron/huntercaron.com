@@ -6,4 +6,47 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     font-size: 62.5%; /* 1em = 10px */
+    background-color: #e6e6e6;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.project {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: #9a9a9a;
+}
+
+.pImage {
+    background-image: url();
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width:100%;
+    border-radius: 4px;
+}
+
+#steam {
+    background-image: url(images/steamshot.png);
+    background-color: #333739;
+    background-size: 80%;
+}
+
+a {
+    width: 200px;
 }
