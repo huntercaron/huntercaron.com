@@ -1,0 +1,9 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 62.5%; /* 1em = 10px */
+}
