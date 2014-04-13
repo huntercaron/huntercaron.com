@@ -16,6 +16,8 @@ main {
     margin: auto;
 }
 
+/*header stuff--------------------------------------------------------------*/
+
 h1 {
     font-size: 3em;
     font-weight: 300;
@@ -50,6 +52,8 @@ header {
     color: hsl(0, 0%, 41%);
 }
 
+/*user card--------------------------------------------------------------*/
+
 .user {
     display: block;
     background-color: hsl(168, 10%, 7%);
@@ -66,6 +70,8 @@ header {
 .user.odd {
     float: right;
 }
+
+/*user (top section)--------------------------------------------------------------*/
 
 .top {
     background-color: #171c1b;
@@ -96,9 +102,12 @@ header {
     padding-right:5px;
 }
 
+/*user (profile side)--------------------------------------------------------------*/
+
 .profileSide {
     width: auto;
     height: 100%;
+    float:left:
 }
 
 .sCircle {
@@ -138,6 +147,70 @@ header {
     font-weight: 300;
     font-style: italic;
 }
+
+/*User(status side)--------------------------------------------------------------*/
+
+.statusSide {
+    margin-top:-155px;
+    display:inline-block;
+    float: right;
+    padding-right:15px;
+    width:50%;
+}
+
+.steamStatus {
+    font-size:2em;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0);
+    color: none;
+    text-align: right;
+    padding-bottom: 3px;
+    border-bottom: solid 2px hsl(0, 0%, 41%);
+    width:100%;
+}
+
+.badgeArea {
+    background-color: #171c1b;
+    height: 70px;
+    border-radius: 2px;
+    padding:10px;
+}
+
+.badge {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float:left;
+    width: 70px;
+    height: 70px;
+    margin: 0px 0 0 0px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.40);
+}
+
+.badgeArea h4 {
+    font-weight: 400;
+    Color: #fff;
+    padding-left: 15px;
+    font-size: 1.7em;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.badgeArea p {
+    font-weight: 300;
+    color:hsl(0, 0%, 41%);
+    display: inline-block;
+    position: absolute;
+    font-size:1.6em;
+    margin:36px 0 0 -125px;
+}
+    
+.badge.nintyfan {
+    background-image: url(http://cdn.steamcommunity.com/public/images/badges/02_years/steamyears402_54.png);
+}
+
+/*Break Points--------------------------------------------------------------*/
 
 @media screen and (max-width: 1200px) {
     .user {
