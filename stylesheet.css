@@ -119,6 +119,26 @@ header {
     border-radius: 50%;
 }
 
+.lvlCircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    background-color: #c02942;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.40);
+}
+
+.lvlCircle h3 {
+    font-size: 2.5em;
+    margin:0;
+    padding: 8px 0 0 7px;
+    color: #fff;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: italic;
+}
+
 @media screen and (max-width: 1200px) {
     .user {
         width: 70%;
