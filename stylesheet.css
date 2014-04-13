@@ -229,3 +229,42 @@ header {
         margin-top: 30px;
     }
 }
+
+@media screen and (max-width: 620px) {
+    .statusSide {
+        margin:auto;
+        margin-top:20px;
+        float:none;
+        text-align: center;
+    }
+    
+    .profileSide { 
+        float:none;
+        margin: auto;
+        margin-top:60px;
+        margin-left: 45px;
+        position: absolute;
+    }
+    
+    .steamStatus {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        margin-left:5px;
+    }
+    
+    .steamStatus span {
+        display:none;
+    }
+    
+    .badgeArea {
+        display:none;
+    }
+
+    .user {
+        height: 320px;
+        padding-bottom: 20px;
+    }
+    
+    
+}
