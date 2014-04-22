@@ -1,66 +1,25 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 /* line 8, ../sass/screen.scss */
-html {
-  font-size: 16px;
-}
+html { font-size: 16px; }
 
 /* line 12, ../sass/screen.scss */
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  font-size: 62.5%;
-  /* 1em = 10px */
-  background-color: #e6e6e6;
-}
+body { font-family: 'Open Sans', sans-serif; margin: 0; font-size: 62.5%; /* 1em = 10px */ background-color: #e6e6e6; }
 
 /* line 19, ../sass/screen.scss */
-h1 {
-  font-size: 5em;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
+h1 { font-size: 5em; text-align: center; margin-top: 20px; margin-bottom: 0; }
 
 /* line 26, ../sass/screen.scss */
-h2 {
-  margin-top: 5px;
-  text-align: center;
-}
+h2 { margin-top: 5px; text-align: center; }
 
 /* line 31, ../sass/screen.scss */
-.project {
-  height: 200px;
-  width: 200px;
-  margin: auto;
-  margin-top: 50px;
-  border-radius: 4px;
-  padding: 3px;
-  background-color: #9a9a9a;
-}
+.project { height: 200px; width: 200px; margin: auto; margin-top: 50px; border-radius: 4px; padding: 3px; background-color: #9a9a9a; }
 
 /* line 41, ../sass/screen.scss */
-.pImage {
-  background-image: url();
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  border-radius: 4px;
-}
+.pImage { background-image: url(); background-position: center; background-size: 100%; background-repeat: no-repeat; height: 100%; width: 100%; border-radius: 4px; }
 
 /* line 51, ../sass/screen.scss */
-#steam {
-  background-image: url(../../images/steamshot.png);
-  background-color: #333739;
-  background-size: 80%;
-}
+#steam { background-image: url(images/steamshot.png); background-color: #333739; background-size: 80%; }
 
 /* line 57, ../sass/screen.scss */
-a {
-  width: 200px;
-}
+a { width: 200px; }
