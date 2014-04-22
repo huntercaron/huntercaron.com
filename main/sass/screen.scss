@@ -28,14 +28,19 @@ h2 {
     text-align: center;
 }
 
+.projects {
+    margin:auto;
+}
+
 .project {
     height: 200px;
     width: 200px;
-    margin: auto;
     margin-top: 50px;
     border-radius: 4px;
     padding: 3px;
+    margin: 50px 40px 3px 40px;
     background-color: #9a9a9a;
+    display:inline-block;
 }
 
 .pImage {
@@ -48,8 +53,14 @@ h2 {
     border-radius: 4px;
 }
 
+#portfolio {
+    background-image: url(../../images/portfolioshot.png);
+    background-color: #333739;
+    background-size: 100%;
+}
+
 #steam {
-    background-image: url(images/steamshot.png);
+    background-image: url(../../images/steamshot.png);
     background-color: #333739;
     background-size: 80%;
 }
