@@ -25,32 +25,35 @@ a img { border: none; }
 /* line 116, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-/* line 8, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 html { font-size: 16px; }
 
-/* line 12, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 body { font-family: 'Open Sans', sans-serif; margin: 0; font-size: 62.5%; /* 1em = 10px */ background-color: #e6e6e6; }
 
-/* line 19, ../sass/screen.scss */
-h1 { font-size: 5em; text-align: center; margin-top: 20px; margin-bottom: 0; }
+/* line 20, ../sass/screen.scss */
+h1 { font-size: 5em; text-align: center; margin-top: 20px; margin-bottom: 0; font-weight: 700; }
 
-/* line 26, ../sass/screen.scss */
-h2 { margin-top: 5px; text-align: center; }
-
-/* line 31, ../sass/screen.scss */
-.projects { margin: auto; }
+/* line 28, ../sass/screen.scss */
+h2 { font-weight: 600; margin-top: 5px; font-size: 1.5em; text-align: center; }
 
 /* line 35, ../sass/screen.scss */
-.project { height: 200px; width: 200px; margin-top: 50px; border-radius: 4px; padding: 3px; margin: 50px 40px 3px 40px; background-color: #9a9a9a; display: inline-block; }
+.projects { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; width: 80%; margin: auto; }
 
-/* line 46, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
+.project { height: 200px; width: 200px; margin-top: 50px; border-radius: 4px; padding: 3px; margin: 50px 40px 3px 40px; background-color: #9a9a9a; display: inline-block; float: center; }
+
+/* line 53, ../sass/screen.scss */
 .pImage { background-image: url(); background-position: center; background-size: 100%; background-repeat: no-repeat; height: 100%; width: 100%; border-radius: 4px; }
 
-/* line 56, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #portfolio { background-image: url(../../images/portfolioshot.png); background-color: #333739; background-size: 100%; }
 
-/* line 62, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 #steam { background-image: url(../../images/steamshot.png); background-color: #333739; background-size: 80%; }
 
-/* line 68, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
+#behance { background-image: url(../../images/behanceshot.png); background-color: #247ba8; background-size: 80%; }
+
+/* line 81, ../sass/screen.scss */
 a { width: 200px; }
