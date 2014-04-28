@@ -368,3 +368,18 @@
 2014-04-27 21:22:22    remove stylesheets/screen.css 
 2014-04-27 21:22:22    create stylesheets/ie.css 
 2014-04-27 21:22:24    create stylesheets/screen.css 
+2014-04-27 21:25:13    remove .sass-cache/ 
+2014-04-27 21:25:13    remove stylesheets/ie.css 
+2014-04-27 21:25:13    remove stylesheets/screen.css 
+2014-04-27 21:25:13    create stylesheets/ie.css 
+2014-04-27 21:25:14    create stylesheets/screen.css 
+2014-04-27 21:25:33     error sass/ie.scss (Line 1: Invalid CSS after "...ome to Compass.": expected class name, was " Use this file ...")
+2014-04-27 21:25:33    create stylesheets/ie.css 
+2014-04-27 21:25:46    remove .sass-cache/ 
+2014-04-27 21:25:46    remove stylesheets/ie.css 
+2014-04-27 21:25:46    remove stylesheets/screen.css 
+2014-04-27 21:25:47     error sass/ie.scss (Line 1: Invalid CSS after "...ome to Compass.": expected class name, was " Use this file ...")
+2014-04-27 21:25:47    create stylesheets/ie.css 
+2014-04-27 21:25:48    create stylesheets/screen.css 
+2014-04-27 21:25:48     error sass/ie.scss (Line 1: Invalid CSS after "...ome to Compass.": expected class name, was " Use this file ...")
+2014-04-27 21:25:48 overwrite stylesheets/ie.css 

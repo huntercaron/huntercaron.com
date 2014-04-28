@@ -1,5 +1,47 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+/*
+Syntax error: Invalid CSS after "...ome to Compass.": expected class name, was " Use this file ..."
+        on line 1 of /Users/huntercaron/Documents/Mithon.github.io/redesign/Stylesheets/sass/ie.scss
+
+1: /Users/huntercaron/Documents/Mithon.github.io/redesign/Stylesheets/sass/ie.scss
+
+Backtrace:
+/Users/huntercaron/Documents/Mithon.github.io/redesign/Stylesheets/sass/ie.scss:1
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:1146:in `expected'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:1083:in `expected'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:1065:in `expr!'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:709:in `class_selector'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:679:in `simple_selector_sequence'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:647:in `_selector'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:618:in `selector'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:602:in `selector_sequence'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:527:in `ruleset'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:552:in `block_child'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:542:in `block_contents'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/scss/parser.rb:27:in `parse'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:342:in `_to_tree'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/compass_patch.rb:60:in `compile'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/compass_patch.rb:59:in `compile'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/compass_patch.rb:58:in `compile'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+org/jruby/RubyArray.java:1620:in `each'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/backport_from_0.13/lib/compass/watcher/compiler.rb:25:in `compile'
+org/jruby/RubyKernel.java:2105:in `send'
+(__FORWARDABLE__):3:in `compile'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/app_watcher.rb:40:in `watch!'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/ui/tray.rb:447:in `watch'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:224:in `call'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...ome to Compass.\": expected class name, was \" Use this file ...\"\A         on line 1 of /Users/huntercaron/Documents/Mithon.github.io/redesign/Stylesheets/sass/ie.scss\A \A 1: /Users/huntercaron/Documents/Mithon.github.io/redesign/Stylesheets/sass/ie.scss"; }
