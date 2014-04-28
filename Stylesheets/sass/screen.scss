@@ -118,7 +118,7 @@ nav ul {
 	border-right: 20px solid transparent;
 	border-top: 25px solid $midblue;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /*PORTFOLIO STUFF*/
@@ -172,6 +172,30 @@ nav ul {
     background-color: #333739;
     background-size: 100%;
     background-position: center;
+}
+
+#behance {
+    background-image: url(../../images/behanceshot.png);
+    background-color: #61bbe8;
+    background-size: 80%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#hunterandfriends {
+    background-image: url(../../images/hunterandfriendsshot-01.jpg);
+    background-color: #61bbe8;
+    background-size: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#tacsplustoes {
+    background-image: url(../../images/tacsplustoesshot-01.jpg);
+    background-color: #61bbe8;
+    background-size: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1050px) {
