@@ -1,34 +1,51 @@
 <!DOCTYPE html>
-<!-- Hopefully this doesn't break everything-->
+<!-- This code should be a lot better-->
 <html>
 <head>
     <title>HC Design</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="/main/stylesheets/screen.css">
+    <link rel="stylesheet" href="/Stylesheets/stylesheets/screen.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>  
 </head>
 <body>
-            
-    <h1>Welcome,</h1>
-    <h2>Take a look at my projects</h2>
+    <header>  
+        <nav>
+            <div>
+                <h3>HC</h3>
+            </div>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    
-    <section class="projects">
-    
-    <a href="portfolio/main.html"><div class="project">
-        <div class="pImage" id="portfolio"></div>
-        </div></a>
-    
-    <a href="steam/steam.html"><div class="project">
-        <div class="pImage" id="steam"></div>
-        </div></a>
-        
-     <a href="https://www.behance.net/huntercaron5e7f"><div class="project">
-    <div class="pImage" id="behance"></div>
-    </div></a>
-        
+    <section class="card" id="intro">
+            <h1 id="introtext">I MAKE COOL STUFF, DIGITALLY</h1>
     </section>
+    
+    <section class="card" id="projects">
+        <div class="triangle"></div>
         
+        <section id="pcontainer">
+            
+        <a href="steam/steam.html">
+            <div class="project" id="youonline"></div>
+        </a>
+            
+        <a href="portfolio/main.html">
+            <div class="project" id="portfoliosite"></div>
+        </a>
+            
+        <div class="project" id="take48"></div>
+            
+        <div class="project" id="behance"></div>
+
+            
+        </section>
+    </section>
+    
 </body>
 </html>

@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /*MAIN STUFF*/
 html {
   font-size: 16px;
@@ -21,6 +17,12 @@ body {
 }
 .card:first-child {
   margin-top: 50px;
+}
+
+a {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 /*HEADER STUFF*/
@@ -58,10 +60,10 @@ nav ul, nav li, nav div, nav h3 {
 }
 
 nav ul li {
-  -webkit-transition-property: a, padding;
-  -moz-transition-property: a, padding;
-  -o-transition-property: a, padding;
-  transition-property: a padding;
+  -webkit-transition-property: border;
+  -moz-transition-property: border;
+  -o-transition-property: border;
+  transition-property: border;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
@@ -82,9 +84,6 @@ nav ul li:hover {
   border-bottom: 4px solid #0aa194;
   color: #0aa194;
 }
-nav ul li:hover a {
-  padding-bottom: 7px;
-}
 
 nav ul {
   padding-left: 0;
@@ -93,11 +92,11 @@ nav ul {
 /*INTRO STUFF*/
 #intro {
   height: 300px;
-  background-image: -webkit-gradient(radial, 300px 300px, 0, 300px 300px, 200, color-stop(80%, #029688), color-stop(200%, #02b875));
-  background-image: -webkit-radial-gradient(300px 300px, #029688 80%, #02b875 200%);
-  background-image: -moz-radial-gradient(300px 300px, #029688 80%, #02b875 200%);
-  background-image: -o-radial-gradient(300px 300px, #029688 80%, #02b875 200%);
-  background-image: radial-gradient(300px 300px, #029688 80%, #02b875 200%);
+  background-image: -webkit-gradient(radial, 300px 300px, 0, 300px 300px, 500, color-stop(40%, #029688), color-stop(100%, #02b875));
+  background-image: -webkit-radial-gradient(300px 300px, #029688 200px, #02b875 500px);
+  background-image: -moz-radial-gradient(300px 300px, #029688 200px, #02b875 500px);
+  background-image: -o-radial-gradient(300px 300px, #029688 200px, #02b875 500px);
+  background-image: radial-gradient(300px 300px, #029688 200px, #02b875 500px);
 }
 
 #introtext {
@@ -147,6 +146,23 @@ nav ul {
   display: inline-block;
   border-radius: 2px;
   margin: 40px;
+}
+
+/*Individual projects*/
+#portfoliosite {
+  background-image: url(../../images/portfolioshot.png);
+  background-color: #333739;
+  background-size: 100%;
+  background-position: center;
+}
+
+#youonline {
+  padding: 0;
+  background-image: url(../../images/steamshot.png);
+  background-color: #333739;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media screen and (max-width: 1050px) {
