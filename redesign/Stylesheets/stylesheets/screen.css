@@ -1,0 +1,162 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*MAIN STUFF*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  font-size: 62.5%;
+  /* 1em = 10px */
+  background-color: #f0f0f0;
+}
+
+.card {
+  width: 100%;
+}
+.card:first-child {
+  margin-top: 50px;
+}
+
+/*HEADER STUFF*/
+header {
+  position: fixed;
+  height: 50px;
+  background-color: white;
+  width: 100%;
+}
+
+nav {
+  margin: auto;
+  max-width: 1280px;
+}
+
+nav ul {
+  float: right;
+}
+
+header h3 {
+  font-size: 1.71429em;
+  padding: 5px;
+  color: white;
+  background-color: #0aa194;
+  border-radius: 2px;
+}
+
+nav div {
+  padding: 8px 0 0 15px;
+}
+
+nav ul, nav li, nav div, nav h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+nav ul li {
+  -webkit-transition-property: a, padding;
+  -moz-transition-property: a, padding;
+  -o-transition-property: a, padding;
+  transition-property: a padding;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.42857em;
+  font-weight: 700;
+  color: gray;
+  padding-bottom: 12px;
+  margin: 15px 40px 0px 40px;
+}
+nav ul li:hover {
+  border-bottom: 4px solid #0aa194;
+  color: #0aa194;
+}
+nav ul li:hover a {
+  padding-bottom: 7px;
+}
+
+nav ul {
+  padding-left: 0;
+}
+
+/*INTRO STUFF*/
+#intro {
+  height: 300px;
+  background-image: -webkit-gradient(radial, 300px 300px, 0, 300px 300px, 200, color-stop(80%, #029688), color-stop(200%, #02b875));
+  background-image: -webkit-radial-gradient(300px 300px, #029688 80%, #02b875 200%);
+  background-image: -moz-radial-gradient(300px 300px, #029688 80%, #02b875 200%);
+  background-image: -o-radial-gradient(300px 300px, #029688 80%, #02b875 200%);
+  background-image: radial-gradient(300px 300px, #029688 80%, #02b875 200%);
+}
+
+#introtext {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 6em;
+  margin-top: 125px;
+  width: 100%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid #029688;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/*PORTFOLIO STUFF*/
+#projects {
+  height: 800px;
+  border-bottom: 1px solid gray;
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+  display: table;
+}
+
+#pcontainer {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: table;
+}
+
+.project {
+  height: 220px;
+  width: 220px;
+  background-color: gray;
+  -webkit-box-shadow: gray 0px 2px 20px;
+  -moz-box-shadow: gray 0px 2px 20px;
+  box-shadow: gray 0px 2px 20px;
+  display: inline-block;
+  border-radius: 2px;
+  margin: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+  #introtext {
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 900px) {
+  #introtext {
+    font-size: 4em;
+    margin-top: 140px;
+  }
+}

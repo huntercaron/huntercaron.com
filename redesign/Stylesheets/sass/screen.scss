@@ -1,0 +1,169 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+$fonts: "Open Sans", sans-serif;
+
+$basecolor: #0AA194;
+$midblue: #029688;
+$darkblue: #0260AD;
+$midgreen: #02B875;
+$darkgreen: #02AD3E;
+$gray: gray;
+$background: #f0f0f0;
+
+/*MAIN STUFF*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: $fonts;
+    font-weight: 300;
+    margin: 0;
+    font-size: 62.5%; /* 1em = 10px */
+    background-color: $background;
+}
+
+.card {
+    width:100%;
+    &:first-child {
+        margin-top: 50px;
+    }
+}
+
+/*HEADER STUFF*/
+
+header {
+    position: fixed;
+    height: 50px;
+    background-color: white;
+    width: 100%;
+}
+
+nav {
+    margin: auto;
+    max-width: 1280px;
+}
+
+nav ul {
+    float: right;
+}
+
+header h3 {
+    font-size: (24 / 14) * 1em;
+    padding: 5px;
+    color: white;
+    background-color: $basecolor;
+    border-radius: 2px;
+}
+
+nav div {
+    padding: 8px 0 0 15px;
+}
+
+nav ul, nav li, nav div, nav h3{
+    display: inline-block;
+    margin: 0;
+}
+
+nav ul li {
+    @include transition-property(a padding);
+    @include transition-duration(0.1s);
+    @include transition-timing-function(ease-in);
+    list-style: none;
+    text-decoration: none;
+    font-size: (20 / 14) * 1em;
+    font-weight: 700;
+    color: $gray;
+    padding-bottom: 12px;
+    margin: 15px 40px 0px 40px;
+    &:hover {
+        border-bottom: 4px solid $basecolor;
+        color: $basecolor;
+        a {
+            padding-bottom: 7px;
+        }
+    }
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+/*INTRO STUFF*/
+
+#intro {
+    height: 300px;
+    @include background-image(radial-gradient(300px 300px, $midblue 80%, $midgreen 200%));
+}
+
+#introtext  {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 6em;
+    margin-top: 125px;
+    width: 100%;
+}
+
+.triangle {
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 25px solid $midblue;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/*PORTFOLIO STUFF*/
+
+#projects {
+    height: 800px;
+    border-bottom: 1px solid $gray;
+    margin:auto;
+    width: 100%;
+    max-width: 1280px;
+    display: table;
+}
+
+#pcontainer {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: table;
+}
+
+.project {
+    height: 220px;
+    width: 220px;
+    background-color: $gray;
+    @include box-shadow($gray 0px 2px 20px);
+    display: inline-block;
+    //float:center;
+    border-radius: 2px;
+    margin: 40px;
+    
+}
+@media screen and (max-width: 1050px) {
+
+    #introtext {
+        font-size: 5em;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    
+    #introtext {
+        font-size: 4em;
+        margin-top: 140px;
+    }
+    
+}
