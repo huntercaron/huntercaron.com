@@ -19,11 +19,21 @@ body {
   margin-top: 50px;
 }
 
+.box {
+  max-width: 1250px;
+  margin: auto;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
   padding: 0;
   margin: 0;
+}
+
+.outer {
+  text-align: center;
 }
 
 /*HEADER STUFF*/
@@ -257,9 +267,6 @@ nav ul {
 }
 
 #aboutbox {
-  max-width: 1250px;
-  margin: auto;
-  width: 100%;
   padding-top: 50px;
 }
 
@@ -313,8 +320,73 @@ nav ul {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 20px;
   margin-right: 40px;
+  vertical-align: center;
 }
 
+/*SKILLS SECTION*/
+#skills {
+  height: 600px;
+}
+#skills h3 {
+  margin-left: 40px;
+  font-size: 3em;
+  text-align: left;
+  color: #000;
+  padding: 2px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+#skills #skilltitle {
+  padding: 0px;
+  padding-left: 10px;
+  width: 150px;
+  background-color: #029688;
+  color: white;
+}
+
+.skillcol {
+  width: 25%;
+  margin: 0px 20px 50px 20px;
+  display: inline-block;
+  float: center;
+  vertical-align: top;
+}
+.skillcol p {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 20px 20px 0 2px;
+  text-decoration: none;
+}
+
+section ul {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 20px 20px 0 2px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+section li {
+  padding-top: 5px;
+  font-size: 1em !important;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+#skills .skillcol h3 {
+  padding-left: 0;
+  margin-left: 0;
+  padding-bottom: 0;
+  margin-right: 10px;
+}
+
+/*MEDIA QUERIES ********************************************************************/
 @media screen and (max-width: 1050px) {
   #introtext {
     font-size: 5em;
