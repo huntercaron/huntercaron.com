@@ -440,6 +440,16 @@ section li {
   #abouttext {
     width: 80%;
   }
+
+  .skillcol {
+    clear: both !important;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #skills #skilltitle {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   #introtext {
