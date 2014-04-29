@@ -20,6 +20,7 @@ body {
 }
 
 a {
+  text-decoration: none;
   display: inline-block;
   padding: 0;
   margin: 0;
@@ -31,6 +32,7 @@ header {
   height: 50px;
   background-color: white;
   width: 100%;
+  z-index: 2;
 }
 
 nav {
@@ -124,25 +126,59 @@ nav ul {
 
 /*PORTFOLIO STUFF*/
 #projects {
-  border-bottom: 1px solid gray;
   margin: auto;
   width: 100%;
   max-width: 1280px;
   padding-top: 40px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .project {
-  height: 220px;
-  width: 220px;
-  background-color: gray;
-  -webkit-box-shadow: gray 0px 2px 20px;
-  -moz-box-shadow: gray 0px 2px 20px;
-  box-shadow: gray 0px 2px 20px;
-  border-radius: 2px;
-  margin: 40px;
+  height: 230px;
+  width: 230px;
+  background-color: rgba(128, 128, 128, 0.81);
+  -webkit-box-shadow: rgba(128, 128, 128, 0.81) 0px 2px 20px;
+  -moz-box-shadow: rgba(128, 128, 128, 0.81) 0px 2px 20px;
+  box-shadow: rgba(128, 128, 128, 0.81) 0px 2px 20px;
+  border-radius: 3px;
+  margin: 35px;
   display: inline-block;
   float: center;
+}
+
+.project h3 {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block;
+  padding: 8px 7px 8px 7px;
+  margin-top: 100px;
+  color: transparent;
+  font-size: 1.5em;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  border-color: transparent;
+  font-weight: 500;
+}
+
+.project a {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.project a:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.project a:hover h3 {
+  color: #fff;
+  border-color: #fff;
+  background-color: #383a3b;
 }
 
 /*Individual projects*/
@@ -169,6 +205,13 @@ nav ul {
   background-position: center;
 }
 
+#youtube {
+  background-image: url(../../images/youtubeshot.png);
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #behance {
   background-image: url(../../images/behanceshot.png);
   background-color: #61bbe8;
@@ -179,7 +222,6 @@ nav ul {
 
 #hunterandfriends {
   background-image: url(../../images/hunterandfriendsshot-01.jpg);
-  background-color: #61bbe8;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,10 +229,88 @@ nav ul {
 
 #tacsplustoes {
   background-image: url(../../images/tacsplustoesshot-01.jpg);
-  background-color: #61bbe8;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#aphslogo {
+  background-image: url(../../images/aphslogoshot.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#seemore {
+  background-image: url(../../images/moreshot-01.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*ABOUT ME STUFF*/
+#aboutme {
+  height: 450px;
+  background-color: #029688;
+  padding: 0;
+  color: #fff;
+}
+
+#aboutbox {
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+  padding-top: 50px;
+}
+
+#abouttext {
+  width: 40%;
+  float: left;
+  margin-top: 10px;
+  display: inline-block;
+}
+#abouttext a {
+  color: #03ea95;
+}
+#abouttext em {
+  font-weight: 500;
+}
+
+#abouttext h3 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 30px;
+}
+
+#abouttext p {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+#myface {
+  background-image: url(../../images/myface.jpg);
+  background-size: 140%;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+}
+
+#facecontainer {
+  background-color: #03c8b6;
+  height: 300px;
+  width: 300px;
+  float: right;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 20px;
 }
 
 @media screen and (max-width: 1050px) {
