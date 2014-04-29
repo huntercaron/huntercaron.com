@@ -363,6 +363,10 @@ nav ul {
   margin: 20px 20px 0 2px;
   text-decoration: none;
 }
+.skillcol a {
+  text-decoration: none;
+  color: #029688;
+}
 
 section ul {
   font-size: 1.5em;
@@ -430,10 +434,23 @@ footer p {
   font-weight: 500em;
   padding: 0;
   color: #fff;
-  margin-top: 13px;
+  margin-top: 12px;
   float: right;
-  padding-right: 20px;
+  padding-right: 10px;
   margin-bottom: 0;
+}
+footer p:first-child {
+  color: #02b875;
+  background-color: #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
+  margin-top: 9px;
+  margin-right: 15px;
+  font-weight: 600;
+}
+footer p a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*MEDIA QUERIES ********************************************************************/
