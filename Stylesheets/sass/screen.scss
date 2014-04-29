@@ -261,7 +261,7 @@ nav ul {
 }
 
 #aboutbox {
-    max-width: 1100px;
+    max-width: 1250px;
     margin:auto;
     width: 100%;
     padding-top: 50px;
@@ -272,6 +272,7 @@ nav ul {
     float: left;
     margin-top:10px;
     display: inline-block;
+    margin-left: 40px;
     a {
         color: lighten($midgreen, 10%);
     }
@@ -313,6 +314,7 @@ nav ul {
     padding: 5px;
     border-radius: 3px;
     @include box-shadow(rgba(0, 0, 0, 0.3) 0px 2px 20px);
+    margin-right: 40px;
 }
 
 @media screen and (max-width: 1050px) {
@@ -340,6 +342,15 @@ nav ul {
     
 }
 
+@media screen and (max-width: 750px) {
+    
+    #facecontainer {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     
     #introtext {
@@ -353,6 +364,44 @@ nav ul {
     
     #intro {
         height: 200px;
+    }
+    
+    #facecontainer {
+        clear: both;
+        float: none;
+        margin: 30px 25%;
+    }
+    
+    #aboutme {
+        height: 800px;
+    }
+    
+    #abouttext {
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    #introtext {
+        font-size: 3.5em;
+        margin-top: 80px;
+    }
+    
+    .triangle {
+        margin-top: 25px;
+    }
+    
+    #facecontainer {
+         width: 200px;
+        height: 200px;
+        margin: 30px 15%;
+    }
+    
+    nav ul li {
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
 }
