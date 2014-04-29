@@ -100,6 +100,10 @@ nav ul li {
         border-bottom: 4px solid $basecolor;
         color: $basecolor;
     }
+    a   {
+        color:inherit;
+    }
+
 }
 
 nav ul {
@@ -328,7 +332,8 @@ nav ul {
 /*SKILLS SECTION*/
 
 #skills {
-    height: 600px;
+    height: 100%;
+    padding-bottom: 40px;
     h3 {
         margin-left: 40px;
         font-size: 3em;
@@ -395,6 +400,55 @@ section li {
     margin-right: 10px;
 }
 
+/*CONTACT SECTION*/
+
+#contact {
+    height: 200px;
+    background-color: $midgreen;
+}
+
+#contactbox {
+    padding-top: 20px;
+}
+
+#contact h3 {
+    color: #fff;
+    width: 200px;
+    font-size: 3em;
+    padding:0;
+    margin: 0;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+#contact p {
+    margin-left: 40px;
+    color: #fff;
+    font-size: 1.5em;
+    text-align:left;
+}
+
+/*FOOTER SECTION*/
+
+footer  {
+    height: 40px;
+    background-color: lighten($midgreen, 5%);
+}
+
+footer p {
+    font-size: 1.2em;
+    font-weight: 500em;
+    padding: 0;
+    color: #fff;
+    margin-top: 13px;
+    float: right;
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+
 /*MEDIA QUERIES ********************************************************************/
 
 @media screen and (max-width: 1050px) {
@@ -440,6 +494,11 @@ section li {
     
     .triangle {
         margin-top: 55px;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     #intro {
