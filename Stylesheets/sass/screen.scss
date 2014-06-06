@@ -468,6 +468,10 @@ footer p {
 /*MEDIA QUERIES ********************************************************************/
 
 @media screen and (max-width: 1050px) {
+    
+    #aboutme {
+        height: 500px;
+    }
 
     #introtext {
         font-size: 5em;
@@ -493,6 +497,10 @@ footer p {
 }
 
 @media screen and (max-width: 750px) {
+    
+    #aboutme {
+        height: 550px;
+    }
     
     #facecontainer {
         width: 250px;
