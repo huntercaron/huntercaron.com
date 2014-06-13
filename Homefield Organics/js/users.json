@@ -1,0 +1,70 @@
+[
+    {
+        "name" : "Paula Red",
+        "price" : 5.50,
+        "category" : "fruits",
+        "subCategory" : "Apples",
+        "isOrganic" : true,
+        "isLocal" : true,
+        "isOnSale" : false,
+        "isSoldOut" : false,
+        "beforeSalePrice" : null,
+        "sizes" : [
+            "3 lb Bag",
+            "4"
+        ],
+        "origin" : "Bousfields (Milton, Ontario)"
+    },
+    {
+        "name" : "Avocado",
+        "price" : 2.25,
+        "category" : "Fruits",
+        "subCategory" : "Avocados",
+        "isOrganic" : false,
+        "isLocal" : false,
+        "isOnSale" : false,
+        "isSoldOut" : false,
+        "beforeSalePrice" : null,
+        "weight" : "1",
+        "origin" : "Mexico"
+    },
+    {
+        "name" : "Blueberries",
+        "price" : 4.50,
+        "category" : "Fruits",
+        "subCategory" : "Berries",
+        "isOrganic" : true,
+        "isLocal" : false,
+        "isOnSale" : false,
+        "isSoldOut" : false,
+        "beforeSalePrice" : null,
+        "weight" : "6 oz",
+        "origin" : "U.S."
+    },
+    {
+        "name" : "Strawberries",
+        "price" : 5.50,
+        "category" : "Fruits",
+        "subCategory" : "Berries",
+        "isOrganic" : true,
+        "isLocal" : false,
+        "isOnSale" : false,
+        "isSoldOut" : false,
+        "beforeSalePrice" : null,
+        "weight" : "1 lb",
+        "origin" : "U.S."
+    },
+    {
+        "name" : "Cherries",
+        "price" : 6.75,
+        "category" : "Fruits",
+        "subCategory" : "Berries",
+        "isOrganic" : true,
+        "isLocal" : false,
+        "isOnSale" : false,
+        "isSoldOut" : false,
+        "beforeSalePrice" : null,
+        "weight" : "1 lb",
+        "origin" : "U.S."
+    }
+]
