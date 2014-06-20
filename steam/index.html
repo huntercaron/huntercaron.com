@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- This site is dedicated to shz and his obsession-->
+<html ng-app="youOnline">
+<head>
+    <title>You on Steam?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    <header><svg class="logo" version="1.1" id="Layer_1" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 440.9 126"
+ >
+<path id="Gears" fill="#FFFFFF" d="M218.7,42.2c0,9-7.3,16.2-16.2,16.2c-9,0-16.2-7.3-16.2-16.2S193.5,26,202.4,26
+	C211.4,26,218.7,33.3,218.7,42.2z M202.3,12c-16.7,0-30.2,13.4-30.3,30.1l-18.9,27.1c-0.8-0.1-1.6-0.1-2.3-0.1
+	c-4.2,0-8.2,1.2-11.6,3.2L53.6,37.8C51.3,27.6,42.2,20,31.4,20C19,20,8.8,30.2,8.8,42.7c0,12.5,10.2,22.7,22.7,22.7
+	c4.2,0,8.2-1.2,11.6-3.2l85.6,34.4c2.2,10.2,11.3,17.8,22.1,17.8c11.7,0,21.4-9,22.5-20.4l29.1-21.2c16.8,0,30.3-13.6,30.3-30.3
+	C232.7,25.6,219.1,12,202.3,12z M202.3,22c11.2,0,20.3,9.1,20.3,20.3c0,11.2-9.1,20.3-20.3,20.3S182,53.6,182,42.3
+	C182,31.1,191.1,22,202.3,22z M31.4,26c6.4,0,11.9,3.6,14.7,8.8l-8.3-3.3v0c-6.7-2.4-14.1,0.9-16.8,7.5s0.4,14.1,6.9,17v0l7,2.8
+	c-1.2,0.3-2.4,0.4-3.6,0.4c-9.2,0-16.7-7.4-16.7-16.7S22.2,26,31.4,26z M150.8,75c9.2,0,16.7,7.4,16.7,16.7
+	c0,9.2-7.4,16.7-16.7,16.7c-6.4,0-12-3.6-14.8-8.9c2.7,1.1,5.5,2.2,8.2,3.3c6.8,2.7,14.5-0.6,17.2-7.3c2.7-6.8-0.6-14.5-7.4-17.2
+	l-6.9-2.8C148.3,75.2,149.5,75,150.8,75z"/>
+</svg>
+<h1>You on Steam?</h1><div class="refresh">Refresh</div></header>
+    <main ng-controller="SteamController as stm">
+        
+
+    <div class="user" id="nintyfan">
+        <section class="top">
+        <p class="name">{{stm.users[0].realname}}</p>
+            <h3 class="username">{{stm.users[0].personaname}}</h3></section>
+        <div class="profileSide">
+            <div class="status sCircle" ng-class="{ Bonline: stm.users[0].status == 'Currently Online', BinGame: stm.users[0].inGame}">
+                <div class="lvlCircle med"><h3 class="lvl">17</h3></div>
+                <div class="profileCircle nintyfan"></div>
+                </div>
+            <div class="statusSide">
+                <h2 class="steamStatus nintyfan status" ng-class="{ Tonline: stm.users[0].status == 'Currently Online', TinGame: stm.users[0].inGame}" id="nintyfanStatus">{{stm.getStatus(stm.users[0])}}</h2>
+                <div class="badgeArea">
+                    <div class="badge nintyfan"></div>
+                    <h4 class="bName">Years of Service</h4>
+                    <p class="bXP">200 XP</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+        <div class="user odd" id="ludicrousA">
+        <section class="top">
+        <p class="name">{{stm.users[1].realname}}</p>
+            <h3 class="username">{{stm.users[1].personaname}}</h3></section>
+        <div class="profileSide">
+            <div class="status sCircle" ng-class="{ Bonline: stm.users[1].status == 'Currently Online', BinGame: stm.users[1].inGame}">
+                <div class="lvlCircle big"><h3 class="lvl">22</h3></div>
+                <div class="profileCircle ludicrousa"></div>
+                </div>
+            <div class="statusSide">
+                <h2 class="steamStatus ludicrousa status" ng-class="{ Tonline: stm.users[1].status == 'Currently Online', TinGame: stm.users[1].inGame}" id="ludicrousaStatus">{{stm.getStatus(stm.users[1])}}</h2>
+                <div class="badgeArea">
+                    <div class="badge ludicrousa"></div>
+                    <h4 class="bName">Global Sentinel</h4>
+                    <p class="bXP">500 XP</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+        <div class="user" id="mithon">
+        <section class="top">
+        <p class="name">{{stm.users[2].realname}}</p>
+            <h3 class="username">{{stm.users[2].personaname}}</h3></section>
+        <div class="profileSide">
+            <div class="status sCircle" ng-class="{ Bonline: stm.users[2].status == 'Currently Online', BinGame: stm.users[2].inGame}">
+                <div class="lvlCircle med"><h3 class="lvl">13</h3></div>
+                <div class="profileCircle mithon"></div>
+                </div>
+            <div class="statusSide">
+                <h2 class="steamStatus mithon status" ng-class="{ Tonline: stm.users[2].status == 'Currently Online', TinGame: stm.users[2].inGame}" id="mithonStatus">{{stm.getStatus(stm.users[2])}}</h2>
+                <div class="badgeArea">
+                    <div class="badge mithon"></div>
+                    <h4 class="bName">Power Player</h4>
+                    <p class="bXP">410 XP</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+        <div class="user odd" id="mikeshz">
+        <section class="top">
+        <p class="name">{{stm.users[3].realname}}</p>
+            <h3 class="username">{{stm.users[3].personaname}}</h3></section>
+        <div class="profileSide">
+            <div class="status sCircle" ng-class="{ Bonline: stm.users[3].status == 'Currently Online', BinGame: stm.users[3].inGame}">
+                <div class="lvlCircle med"><h3 class="lvl">11</h3></div>
+                <div class="profileCircle mikeshz"></div>
+                </div>
+            <div class="statusSide">
+                <h2 class="steamStatus mikeshz status" id="mikeshzStatus" ng-class="{ Tonline: stm.users[3].status == 'Currently Online', TinGame: stm.users[3].inGame}">{{stm.getStatus(stm.users[3])}}</h2>
+                <div class="badgeArea">
+                    <div class="badge mikeshz"></div>
+                    <h4 class="bName">Ganker</h4>
+                    <p class="bXP">500 XP</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+        <div class="user" id="garargar">
+        <section class="top">
+        <p class="name">{{stm.users[4].realname}}</p>
+            <h3 class="username">{{stm.users[4].personaname}}</h3></section>
+        <div class="profileSide">
+            <div class="status sCircle" ng-class="{ Bonline: stm.users[4].status == 'Currently Online', BinGame: stm.users[4].inGame}">
+                <div class="lvlCircle med"><h3 class="lvl">10</h3></div>
+                <div class="profileCircle garargar"></div>
+                </div>
+            <div class="statusSide">
+                <h2 class="steamStatus garargar status" ng-class="{ Tonline: stm.users[4].status == 'Currently Online', TinGame: stm.users[4].inGame}" id="garargarStatus">{{stm.getStatus(stm.users[4])}}</h2>
+                <div class="badgeArea">
+                    <div class="badge garargar"></div>
+                    <h4 class="bName">Snow Globe 2013</h4>
+                    <p class="bXP">100 XP</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+    </main>
+    <!--
+    <footer><p>Designed and coded by Hunter Caron</p></footer>-->
+    
+    
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="scripts/script.js"></script>
+    
+</body>
+</html>
