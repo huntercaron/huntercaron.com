@@ -9,7 +9,7 @@ name: Hunter Caron
 description: Web designer from somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://mithon.github.io/images/New-Profile-Pic- square.jpg
+avatar: http://mithon.github.io/images/face-pic-square.jpg
 
 #
 # Flags below are optional
@@ -19,14 +19,14 @@ avatar: http://mithon.github.io/images/New-Profile-Pic- square.jpg
 footer-links:
   dribbble: 
   email: 
-  facebook: 
+  facebook: Hunter Caron
   flickr: 
   github: HunterCaron
   instagram: 
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: hunterhcaron
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: 
