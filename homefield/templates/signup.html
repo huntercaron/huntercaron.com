@@ -1,0 +1,138 @@
+<form class="panel" ng-controller="SignupController as signup" ng-submit="signup.addUser()" data-abide>
+
+        <div class="row">
+			<div class="medium-6 large-6 columns">
+				<label>Email
+					<input ng-model="signup.user.email" ng-class="{error: signup.user.email.$error.required || signup.user.email.$error.email}" type="email" placeholder="johnsmith@example.ca" required/>
+				</label>
+                <small ng-show="signup.user.email.$error.email && signup.attempts > 0" ng-class="{error: true}">Invalid Email</small>
+			</div>
+			<div class="medium-6 large-6 columns">
+				<br>
+				<label >Would you like to sign up for weekly newsletter?</label>
+				<input name="newsletter" type="radio" value="yes" ng-model="signup.user.newsletter" required><label for="newsletterYes">Yes</label>
+				<input name="newsletter" type="radio" value="no" ng-model="signup.user.newsletter" required><label for="newsletterNo">No</label>
+                <small ng-show="signup.user.town == 'Waterloo'" ng-class="{error: signup.user.town == 'Waterloo'}">Please Answer</small>
+			</div>
+		</div>
+    
+        <div class="row">
+                <div class="large-6 medium-6 columns">
+                    <label>Password
+                        <input ng-model="signup.user.password" type="password" placeholder="Password" ng-class="{error: signup.user.town == 'Waterloo'}" required/>
+                        <small ng-show="signup.user.town == 'Waterloo'" ng-class="{error: signup.user.town == 'Waterloo'}">Passwords do not match</small>
+                    </label>
+                </div>
+                
+                <div class="large-6 medium-6 columns">
+                    <label>Confirm Password
+                        <input ng-model="signup.user.passwordConfirm" type="password" placeholder="Password"  ng-class="{error: signup.user.town == 'Waterloo'}" required/>
+                        <small ng-show="signup.user.town == 'Waterloo'" ng-class="{error: signup.user.town == 'Waterloo'}">Passwords do not match</small>
+                    </label>
+                </div>
+            </div>
+    
+        <br>
+    
+		<div class="row">
+			<div class="small-6 large-6 columns">
+				<label>First Name
+					<input ng-model="signup.user.fname" type="text" placeholder="John" ng-class="{error: signup.user.town == 'Waterloo'}" required/>
+                    <small ng-show="signup.user.town == 'Waterloo'" ng-class="{error: signup.user.town == 'Waterloo'}">Please fill in your first name</small>
+				</label>
+			</div>
+			<div class="small-6 large-6 columns">
+				<label>Last Name
+					<input ng-model="signup.user.lname" type="text" placeholder="Smith" ng-class="{error: signup.user.town == 'Waterloo'}" required/>
+                    <small ng-show="signup.user.town == 'Waterloo'" ng-class="{error: signup.user.town == 'Waterloo'}">Please fill in your last name</small>
+				</label>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="large-9 columns">
+				<label>Address
+					<input ng-model="signup.user.address"type="text" placeholder="1234 Organic Lane" ng-class="{error: signup.user.town == 'Waterloo'}" required/>
+                    <small ng-show="signup.user.town == 'Waterloo'" ng-class="{error: signup.user.town == 'Waterloo'}">Invalid address</small>
+				</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="small-6 medium-6 large-3 columns">
+				<label>Postal Code
+					<input ng-model="signup.user.postcode" type="text" placeholder="A0A 1B1" ng-class="{error: signup.user.town == 'Waterloo'}" required/>
+                    <small ng-show="signup.user.town == 'Waterloo'" ng-class="{error: signup.user.town == 'Waterloo'}">Invalid Postal Code</small>
+				</label>
+			</div>
+			<div class="small-6 medium-6 large-pull-3 columns">
+				<label ng-class="{error: signup.user.town == 'Waterloo'}">Town of residence
+					<select ng-model="signup.user.town" class="form-control" ng-options="towns for towns in ['Guelph', 'Kitchener', 'Waterlooo', 'Cambridge', 'Fergus', 'Elora', 'Rockwood', 'Eden Mills']" required>
+						<option value>Please Select</option>
+					</select>
+                    <small ng-show="signup.user.town == 'Waterloo'" ng-class="{error: signup.user.town == 'Waterloo'}">Please select town</small>
+				</label>
+			</div> 
+		</div>
+		
+		
+		<div class="row">
+			<div class="small-12 medium-6 large-3 columns">
+				<label>How did you hear about us?
+					<select   ng-model="signup.user.referral" ng-options="referrals for referrals in ['Friends', 'Saw delivery van', 'Flyer', 'Yellow Pages', 'Paper', 'Other...']" required>
+						<option value>Please Select</option>
+					</select>
+				</label>
+			</div> 
+			
+			<div class="medium-6 large-pull-3 columns">
+				<label ng-show="signup.user.referral == 'Other...'">Other
+					<input ng-model="signup.user.otherRefferal" type="text" placeholder="details"/>
+				</label>
+			</div>
+			
+		</div>
+		
+		
+    
+    <section>
+        <div class="row">
+            <fieldset ng-show="signup.user.town != null">
+                
+            <div class="medium-6 large-3 columns">
+				<label>Delivery Day
+					<h4 class="subheader">{{signup.updateWeekday()}}</h4>
+				</label>
+			</div>
+                
+            <div class="medium-6 large-3 columns end">
+				<label>Delivery Location
+					<select ng-model="signup.user.location" ng-options="referrals for referrals in ['Front Door', 'Side Door', 'Back Door', 'Other...']" required>
+						<option value>Please Select</option>
+					</select>
+				</label>
+			</div>
+                
+        
+            
+            <div class="columns">
+                <label>Special Instructions
+					<input ng-model="signup.user.special" type="text" placeholder="ex. Don't step in the compost"/>
+				</label>
+            </div>
+                
+                </div>
+            
+            
+        </fieldset>
+    </section>
+    
+    <div class="row">
+			<div class="medium-6 large-3 columns">
+				<input class="button small expand form-button radius" type="submit" ng-click="signup.increment()">
+			</div>
+		</div> 
+        
+		
+	</form>

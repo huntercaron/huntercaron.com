@@ -1,0 +1,135 @@
+<!-- Preview Store -->
+        <div class="store-background">
+            <div class="row">
+                <div ng-controller="StoreController as store">
+                    <div class="row">
+                        <div class="large-12 medium-10 small-centered large-uncentered columns no-pad">
+                            <div class="row collapse">
+                                <div class="small-10 medium-10 columns">
+                                    <input class="search-box" type="text" placeholder="Search" ng-model="search">
+                                </div>
+                                <div class="small-2 medium-2 columns">
+                                    <a href="#" class="button search-button postfix">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div></div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="large-11 medium-11 medium-centered large-uncentered columns">
+                            <div class="row store-item" ng-repeat="product in store.products | filter:search">
+                                <div class="large-1 medium-1 columns">
+                                    
+                                    <div class="checkboxFour">
+  		                                <input type="checkbox" class="checkbox" value="1" id="{{product.name}}" name="" />
+	  	                                <label for="{{product.name}}"></label>
+  	                                 </div>
+                                </div>
+                                <div class="large-6 medium-6 columns">
+                                    <div class="row name-area">
+                                        <div class="large-12 medium-12 column name-box no-pad">
+                                            <h5 class="item-subcategory">{{product.subCategory}}: </h5>
+                                            <h3 class="item-name">{{product.name}}</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p class="item-origin">From {{product.origin}}</p>
+                                    </div>
+                                </div>
+                                <div class="large-1 medium-1 columns">
+                                    <h5 class="item-price">{{product.price | currency}}</h5>
+                                </div>
+                                <div class="large-2 medium-2 columns">
+                                    <select class="form-control item-sizes" ng-options="size for size in product.sizes">
+                                        <option value>1lb</option>
+                                    </select>
+                                </div>
+                                <div class="large-2 medium-2 columns">
+                                    <div class="row">
+                                        <div class="icon organic has-tip [radius round]" data-tooltip title="Organic Item" data-options="disable_for_touch:true" ng-show="{{product.isOrganic === true}}"></div>
+                                        <div class="icon local has-tip [radius round]" data-tooltip title="Local Item" data-options="disable_for_touch:true" ng-show="{{product.isLocal === true}}"></div>
+                                        <div class="icon sale has-tip [radius round]" data-tooltip title="Sale Item" data-options="disable_for_touch:true" ng-show="{{product.isOnSale === true}}"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        <div class="large-1 medium-11 medium-centered large-uncentered column order-area-outer">
+                            
+                            <a href="#" class="button open-cart" data-options="align:left" data-dropdown="drop2">
+                                <img id="cart-logo" src="images/cart.svg" type="image/svg+xml"></img>
+                            </a>
+                                <div id="drop2" data-dropdown-content class="f-dropdown content large">
+                                 
+                                <div class="column order-area-inner">
+                                    <div class="row order-top">
+                                    <h3>Order Summary</h3>
+                                    </div>
+                                
+                                <div class="row order-item" ng-repeat="product in products | filter: isSelected === true">
+                                    <div class="large-1 medium-1 column">
+                                        <div class="remove-icon"></div>
+                                    </div>
+                                    <div class="large-8 medium-8 column">
+                                        <h6 class="order-item-name">1lb - Apples: Red Gala</h6>
+                                    </div>
+                                    <div class="large-1 medium-1 column">
+                                        <select class="form-control item-quantity" ng-options="">
+                                            <option value>2</option>
+                                    </select>
+                                    </div>
+                                    <div class="large-1 medium-1 column no-pad">
+                                        <h6 class="order-item-price">$122.00</h6>
+                                    </div>
+                                </div>
+                                    
+                                <div class="row order-bottom">
+                                    <div class="row light-text">
+                                        <div class="large-6 medium-6 column">
+                                            <h6>Subtotal</h6>
+                                        </div>
+                                        <div class="large-5 medium-5 small-offset-1 column">
+                                            <h6>$220.00</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row light-text">
+                                        <div class="large-6 medium-6 column">
+                                            <h6>Shipping</h6>
+                                        </div>
+                                        <div class="large-5 medium-5 small-offset-1 column">
+                                            <h6>$5.00</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="large-6 medium-6 column">
+                                            <h6>Grand Total</h6>
+                                        </div>
+                                        <div class="large-5 medium-5 small-offset-1 column">
+                                            <h6>$225.00</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="large-5 medium-5 column small-centered large-centered">
+                                            <a class="button  small">Submit Order</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                        
+                                    
+                                </div>
+                                
+                                
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
