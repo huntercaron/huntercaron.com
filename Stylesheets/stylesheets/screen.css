@@ -158,6 +158,10 @@ nav ul {
   margin: 35px;
   display: inline-block;
   float: center;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .project h3 {
