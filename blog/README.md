@@ -1,4 +1,0 @@
-HCDesignBlog
-============
-
-Blog companion page
