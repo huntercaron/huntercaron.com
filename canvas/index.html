@@ -34,21 +34,22 @@
         var canvas = document.getElementById("mainCanvas");
         var ctx = canvas.getContext("2d");
 
+
         ctx.beginPath();
         ctx.fillStyle = "black"
         ctx.fillRect(100, 50, 50, 50);
+        ctx.fillRect(50, 50, 50, 50);
 
         ctx.moveTo(0, 0);
         ctx.lineTo(100, 100);
 
-
         for (var x = 0.5; x < 800; x += 10) {
             ctx.moveTo(x, 0);
             ctx.lineTo(x, 575);
-            ctx.quadraticCurveTo(388+x, 500+x, 88+x, 150-x);
+            ctx.quadraticCurveTo(388 + x, 500 + x, 88 + x, 150 - x);
             ctx.strokeStyle = "blue";
-            ctx.quadraticCurveTo(388-x, 200, 88+x, 150*x);
-            ctx.fillRect(50+x, 50+x, 50, 50);
+            ctx.quadraticCurveTo(388 - x, 200, 88 + x, 150 * x);
+            ctx.fillRect(50 + x, 50 + x, 50, 50);
         }
 
         ctx.stroke();
