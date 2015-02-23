@@ -8,7 +8,6 @@
         <style>
             body {
                 margin: 0;
-
             }
             #button {
                 color: #fff;
@@ -41,10 +40,10 @@
         ctx.moveTo(0, 0);
         ctx.lineTo(100, 100);
 
-        for (var x = 0.5; x < 800; x += 10) {
+        for (var x = 0.5; x < 1000; x += 10) {
             ctx.moveTo(x, 0);
             ctx.beginPath();
-            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.arc(((Math.pow(x, 3))/2000000)+70, (x*0.5)+20, (10+x)/4, 0, 2 * Math.PI);
             ctx.stroke();
         }
 
