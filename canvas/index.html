@@ -32,20 +32,17 @@
         var ctx = canvas.getContext("2d");
 
 
-        ctx.beginPath();
-        ctx.fillStyle = "black"
-        ctx.fillRect(100, 50, 50, 50);
-        ctx.fillRect(50, 50, 50, 50);
-
         ctx.moveTo(0, 0);
         ctx.lineTo(100, 100);
 
-        for (var x = 0.5; x < 1000; x += 10) {
-            ctx.moveTo(x, 0);
-            ctx.beginPath();
-            ctx.arc(((Math.pow(x, 3))/2000000)+70, (x*0.5)+20, (10+x)/4, 0, 2 * Math.PI);
-            ctx.stroke();
-        }
+            for (var x = 1; x < 990; x += 10) {
+                ctx.moveTo(x, 0);
+                ctx.beginPath();
+                ctx.strokeStyle = 'rgb(0,' + Math.floor(255 - 42.5 * (x / 200)) + ',' +
+                    Math.floor(255 - 32.5 * (x / 200)) + ')';
+                ctx.arc(((Math.pow(x, 3)) / 2000000) + 70, (x * 0.5) + 20, (10 + x) / 4, 0, 2 * Math.PI);
+                ctx.stroke();
+            }
 
         ctx.stroke();
     </script>
