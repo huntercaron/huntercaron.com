@@ -23,28 +23,41 @@
         </style>
     </head>
 
-    <canvas id="mainCanvas" width="800" height="800">
+    <canvas id="mainCanvas" width="1000" height="800">
 
     </canvas>
 
     <script>
-        var canvas = document.getElementById("mainCanvas");
-        var ctx = canvas.getContext("2d");
 
+        function draw() {
 
-        ctx.moveTo(0, 0);
-        ctx.lineTo(100, 100);
+            var canvas = document.getElementById("mainCanvas");
+            var ctx = canvas.getContext("2d");
+
+            ctx.globalCompositeOperation = 'destination-over';
+            ctx.clearRect(0, 0, 1100, 1100); // clear canvas
+
+            ctx.moveTo(0, 0);
+            ctx.lineTo(100, 100);
+
+            var time = new Date();
 
             for (var x = 1; x < 990; x += 10) {
                 ctx.moveTo(x, 0);
                 ctx.beginPath();
-                ctx.strokeStyle = 'rgb(0,' + Math.floor(255 - 42.5 * (x / 200)) + ',' +
-                    Math.floor(255 - 32.5 * (x / 200)) + ')';
-                ctx.arc(((Math.pow(x, 3)) / 2000000) + 70, (x * 0.5) + 20, (10 + x) / 4, 0, 2 * Math.PI);
+                ctx.strokeStyle = 'rgb(0,' + Math.floor(255 - (50-(time.getMilliseconds()/15)) * ((x - 500) / 200)) + ',' +
+                    Math.floor(255 - (50-(time.getMilliseconds()/10)) * ((x - 1100) / 200)) + ')';
+                ctx.arc(((Math.pow(x, 3)) / 2000000 * (x / 2000)) + 500, (x * 0.5) + 40, (10 + x * time.getMilliseconds() / 1050) / 4, (time.getMilliseconds())/100*(x/10), 2 * Math.PI);
                 ctx.stroke();
             }
 
-        ctx.stroke();
+            ctx.save();
+
+
+            window.requestAnimationFrame(draw);
+        }
+
+        draw();
     </script>
 
 </body>
