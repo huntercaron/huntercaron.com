@@ -1,16 +1,10 @@
 Mithon.github.io
 ================
 
-Free website hosted by github? TIME TO USE THIS FOR MAKING COOL THINGS
+This is my personal website.
 
--Hunter
+It hasn't been changed much since last April.
 
-Log April 13th, 2014:
+Due to this I am doing some experiments on the side that I hope to implement into it.
 
-Its time to turn this into something cool.
-
-Log November 5th, 2014:
-
-It's been through a mess and now I got it hooked up to an actual domain. Redesign with jekyll coming soon hopefully. Or maybe the new foundation if that happens soon.
-
-Also brackets 1.0 is out am I'm a happy camper.
+I hope you enjoy!
