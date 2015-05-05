@@ -28,6 +28,10 @@
 
     <script>
 
+    var sound = new Audio("audio/facebook.wav");
+    var lSound = new Audio("audio/facebook-left.wav");
+    var rSound = new Audio("audio/facebook-right.wav");
+
         function draw() {
 
             var canvas = document.getElementById("c");
@@ -39,12 +43,25 @@
             ctx.globalCompositeOperation = 'destination-over';
             ctx.clearRect(0, 0, 1100, 1100); // clear canvas
 
-            var sound = new Audio("audio/facebook.wav");
+
 
             var time = new Date();
 
-            if (time.getMilliseconds() % 32 == 0)
-                sound.play();
+            if (time.getMilliseconds() % 31 == 0)   {
+                var loc = Math.round(Math.random()*3) + 1;
+
+
+                if (loc == 1) {
+                    rSound.play();
+                }
+                else if (loc == 2) {
+                    lSound.play();
+                }
+                else {
+                    sound.play();
+                }
+
+            }
 
             ctx.moveTo(0, 0);
             ctx.lineTo(100, 100);
