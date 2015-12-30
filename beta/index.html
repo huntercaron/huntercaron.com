@@ -3,6 +3,7 @@
 <head>
     <title>Hunter Caron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Dosis:400,600,300);
 
@@ -55,11 +56,7 @@
 
         body {
             font-family: 'Dosis', sans-serif;
-            color: #555;
-        }
-
-        a {
-            text-decoration: none;
+            color: #666;
         }
 
         .about-side {
@@ -76,7 +73,7 @@
         }
 
         .name, .about-text {
-            width: 80%;
+            width: 75%;
             max-width: 400px;
             margin: auto;
         }
@@ -85,6 +82,16 @@
             padding-top: 40px;
             font-size: 18px;
             line-height: 1.3;
+        }
+
+        a {
+            font-weight: 600;
+            text-decoration: none;
+            color: #666;
+        }
+
+        a:hover {
+            color: #bbb;
         }
 
         h1 {
@@ -99,12 +106,36 @@
         }
 
         .lead {
-            font-size: 24px;
-            font-weight: 600;
+            font-size: 20px;
         }
 
         li {
-            padding-top: 14px;
+            padding-right: 12px;
+            display: inline-block;
+        }
+
+        .contact-links {
+            margin-top: 50px;
+        }
+
+        .contact-links i {
+            color: #aaa;
+        }
+
+        .contact-links i:hover {
+            color: #666;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        ul {
+
+        }
+
+        .intro {
+            font-weight: 600;
         }
 
 
@@ -130,9 +161,9 @@
         }
 
         .project:hover {
-            -webkit-transition: all 0.25s ease;
-        	-moz-transition: all 0.25s ease;
-        	transition: all 0.25s ease;
+            -webkit-transition: all 0.2 ease-in-out;
+        	-moz-transition: all 0.2s ease;
+        	transition: all 0.20s ease-in-out;
 
         	transform: scale(1.03);
 
@@ -146,6 +177,11 @@
         .take-48 {
             background-color: #fff;
         }
+
+        .fa-arrow-right {
+            font-size: 14px;
+        }
+
 
 
 
@@ -165,22 +201,28 @@
         </header>
 
         <div class="about-text">
-            <p class="lead">I make cool things on my computer.</a>
-            <p>Sed sed enim mollis, rutrum risus eget, vehicula turpis. Fusce sit amet sollicitudin nisl. Pellentesque maximus bibendum erat facilisis commodo. Maecenas nec diam sit amet neque fermentum malesuada. Pellentesque varius augue at ornare facilisis. Pellentesque facilisis.</p>
-            <p>Mauris vel pellentesque convallis, ante enim egestas purus, ac facilisis orci sapien ut libero. Praesent laoreet eros at metus pellentesque, non interdum ipsum cu consequat, sit amet pulvinar metus aliquam. Curabitur consectetur leo lectus, at tempus mauris bibendum.</p>
-            <p>I encourage you to take a look at the curated list to your right, or feel free to follow these links.</p>
+            <p class="lead intro">I like to make cool things on my computer.</a>
+            <p class="lead">I am currently a Toronto based designer in <a href="http://design.yorku.ca/">YSDN</a> focusing on creating <em>enjoyable and efficient experiences with technology</em>. If my grandparents, parents, and yongest sibling can enjoy using my designs I know I'm doing something right.</p>
+            <p>
+                <a class="about-more" href="#">more about me <i class="fa fa-arrow-right"></i></a>
+            </p>
 
-            <ul>
-                <li>
-                    <a>Dribbble</a>
-                </li>
-                <li>
-                    <a>Behance</a>
-                </li>
-                <li>
-                    <a>LinkedIn</a>
-                <li>
-            </ul>
+
+            <div class="contact-links">
+                <p>Shoot me an <a href="mailto:huntercaron.design@icloud.com">email!</a></p>
+
+                <ul>
+                    <li>
+                        <a href="https://dribbble.com/HunterCaron"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/huntercaron5e7f"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://ca.linkedin.com/in/hunter-caron-472684b3"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </section>
