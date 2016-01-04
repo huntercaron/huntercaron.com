@@ -228,9 +228,35 @@ ul {
     bottom: 0px;
 }
 
+.explore {
+    background-image: url("../images/svg-exploration.png");
+    background-size: cover;
+
+}
+
+
+
+
+
 .pr-info-box {
     margin-top: 15px;
     margin-left: 15px;
+}
+
+.pr-info-box.toggling {
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+
+    transform: translateX(-300px);
+}
+
+ .project:hover > .pr-info-box.toggling  {
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+
+    transform: translateX(0);
 }
 
 .pr-info {
@@ -257,7 +283,7 @@ ul {
 }
 
 .pr-view {
-    display: none;
+
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.20);
 
     -webkit-transition: all 0.35s ease;
