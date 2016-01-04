@@ -218,6 +218,8 @@ ul {
 }
 
 .take-48 {
+    background-image: url("../images/take-48.svg");
+    background-size: cover;
     background-color: #fff;
 }
 
@@ -234,8 +236,27 @@ ul {
 }
 
 .milkrate {
-    background-image: url("../images/milkrate.");
+    background-image: url("../images/milkrate.svg");
+    background-color: #eee;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tetley {
+    background-image: url("../images/tetley-timer.jpg");
+    background-color: #eee;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sprouted {
+    background-color: #3CE6AD;
+    background-image: url("../images/sprouted.svg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -264,6 +285,8 @@ ul {
 }
 
 .pr-info {
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.15);
+
     background-color: #fff;
     display: inline-block;
     color: #666;
