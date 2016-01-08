@@ -26,31 +26,31 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#" class="current-section">intro</a>
+                    <a data-scroll href="#" class="current-section">intro</a>
                 </li>
                 <li>
-                    <a href="#">about</a>
+                    <a data-scroll href="#about">about</a>
                 </li>
                 <li>
-                    <a href="#">pact</a>
+                    <a data-scroll href="#pact">pact</a>
                 </li>
                 <li>
-                    <a href="#">flowchart</a>
+                    <a data-scroll href="#flowchart">flowchart</a>
                 </li>
                 <li>
-                    <a href="#">layouts</a>
+                    <a data-scroll href="#">layouts</a>
                 </li>
                 <li>
-                    <a href="#">scenarios</a>
+                    <a data-scroll href="#">scenarios</a>
                 </li>
                 <li>
-                    <a href="#">prototype</a>
+                    <a data-scroll href="#">prototype</a>
                 </li>
                 <li>
-                    <a href="#">framer</a>
+                    <a data-scroll href="#">framer</a>
                 </li>
                 <li>
-                    <a href="#">outro</a>
+                    <a data-scroll href="#">outro</a>
                 </li>
             </ul>
         </nav>
@@ -64,7 +64,7 @@
             <div class="splash splash-turnip">
             </div>
 
-            <div class="slide definitions">
+            <div class="slide definitions" id="intro">
                 <div class="slide-contents">
                     <h2>tur&middot;nip</h2>
                     <p><em>informal</em><br>a large, thick, old-fashioned pocket watch</p>
@@ -81,10 +81,17 @@
                 </div>
             </div>
 
-            <div class="slide what">
+            <div class="slide what" id="about">
                 <div class="slide-contents">
                     <h2>what</h2>
                     <p>An app for <strong>creatives</strong> who seek a more efficient &amp; productive day via a structured <strong>pulse/pause workflow</strong>.</p>
+                    <div class="diagram">
+                        <div class="work-time">
+                        </div>
+                        <div class="diagram-arrow"></div>
+                        <div class="break-time">
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -105,17 +112,17 @@
 
             <div class="divider"></div>
 
-            <div class="slide pact">
+            <div class="slide pact" id="pact">
                 <div class="slide-contents">
                     <h2>Utilizing PACT Analysis</h2>
                     <h3>People</h3>
-                    <p><em>Increase focus and reduce burn-out</em></p>
+                    <p><em>busy minded, stressed creative people</em></p>
                     <h3>Activities</h3>
-                    <p><em>Reduce stress and assist creativity</em></p>
+                    <p><em>follow the timer. It alerts you when needed</em></p>
                     <h3>Contexts</h3>
-                    <p><em>Counteract the negatives of sitting</em></p>
+                    <p><em>for use at home or in a busy office</em></p>
                     <h3>Technologies</h3>
-                    <p><em>Counteract the negatives of sitting</em></p>
+                    <p><em>Interaction via touchscreen. Screen based cues to limit annoyance for others</em></p>
                 </div>
             </div>
 
@@ -128,7 +135,7 @@
                 </div>
             </div>
 
-            <div class="slide flowchart">
+            <div class="slide flowchart" id="flowchart">
                 <div class="slide-contents">
                     <h2>Flowchart</h2>
                     <img src="images/turnip/turnip-flow.svg"/>
@@ -139,6 +146,10 @@
     </section>
 
     <script src="js/classie.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        smoothScroll.init();
+    </script>
 	<script src="js/main.js"></script>
 
 </body>
