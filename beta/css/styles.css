@@ -146,6 +146,16 @@ ul {
     font-weight: 600;
 }
 
+.intro::after {
+    content: "cool things."
+
+}
+
+.intro:hover::after {
+    content: "awesome products."
+
+}
+
 .fa-arrow-right {
     font-size: 14px;
 }
@@ -465,6 +475,15 @@ ul {
 .more-about ul {
     list-style: inside circle;
 
+}
+
+.more-about a {
+    color: white;
+    font-weight: 600;
+}
+
+.more-about a:hover {
+    opacity: 0.6;
 }
 
 .more-about-title {
