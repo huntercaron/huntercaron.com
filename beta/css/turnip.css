@@ -167,8 +167,10 @@ h2 {
 
 p {
     font-size: 20px;
-    line-height: 1.2;
+    font-weight: 300;
+    line-height: 1.25;
 }
+
 
 .diagram {
     margin-top: 20px;
@@ -212,6 +214,10 @@ blockquote p {
     hanging-punctuation: first;
 }
 
+.slide p a {
+    color: #E496B4;
+}
+
 blockquote strong {
     opacity: 1;
 }
@@ -229,6 +235,26 @@ blockquote p::after {
 .flowchart img {
     width: 140%;
     margin-left: -20%;
+}
+
+.prototype-button {
+    font-size: 18px;
+
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    padding: 10px 15px;
+    color: white;
+    background-color: #E496B4;
+    border: none;
+    border-radius: 3px;
+}
+
+.proto-desc {
+    margin-bottom: 25px;
+}
+
+.prototype h2 {
+    margin-bottom: 30px;
 }
 
 .divider {
@@ -284,6 +310,20 @@ iframe {
 
     nav {
         display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .splash {
+        padding-top: 5px;
+        background-color: white;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 400px;
+        width: 100%;
     }
 
 }
