@@ -523,9 +523,7 @@ ul {
     bottom: 4px;
     height:45px;
     width:90px;
-    border-radius: 90px 90px 0 0 ;
-    -moz-border-radius: 90px 90px 0 0;
-    -webkit-border-radius: 0 0 60px 60px;
+    border-radius: 90px 90px 0 0;
     border: 2px solid white;
     background-color: white;
 }
