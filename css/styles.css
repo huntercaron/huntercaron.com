@@ -236,6 +236,7 @@ ul {
     background-image: url("../images/take-48.svg");
     background-size: cover;
     background-color: #fff;
+    background-position: auto;
 }
 
 .turnip-img {
@@ -613,7 +614,7 @@ ul {
     }
 
     .turnip-img {
-        width: 42%;
+        width: 38%;
         right: 10px;
         z-index: 10;
     }
@@ -621,6 +622,10 @@ ul {
     .pr-info-box {
         z-index: 20;
         position: relative;
+    }
+
+    .take-48 {
+        background-position: bottom;
     }
 
 
