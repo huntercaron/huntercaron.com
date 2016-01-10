@@ -1,13 +1,8 @@
 (function() {
 
-    aboutButton = document.querySelector('.about-more'),
-    aboutMore = document.querySelector('.more-about'),
-    projects = document.querySelector('.projects');
+    var isTouchDevice = 'ontouchstart' in document.documentElement;
 
-    aboutButton.addEventListener('click', function() {
-	    classie.toggle( aboutMore, 'hide-about' );
-        classie.toggle( projects, 'about-room' );
-	});
+    
 
 
 })();
