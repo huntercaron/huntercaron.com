@@ -282,21 +282,21 @@ iframe {
 
 @media screen and (max-width: 1100px) {
 
-    .back-area {
+    .turnip-page .back-area {
         border: none;
     }
 
-    .back-area a{
+    .turnip-page .back-area a{
         border: none;
         width: 80%;
     }
 
-    .flowchart img {
+    .turnip-page .flowchart img {
         width: 120%;
         margin-left: -10%;
     }
 
-    .about-side {
+    .turnip-page .about-side {
         border: none;
         position: relative;
         width: 100%;
@@ -304,7 +304,7 @@ iframe {
         padding-bottom: 60px;
     }
 
-    .work-side {
+    .turnip-page .work-side {
         width: 100%;
     }
 
