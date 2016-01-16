@@ -1,0 +1,230 @@
+/* overall styles */
+
+body {
+    background-color: #fafafa;
+}
+
+.back-button {
+    position: absolute;
+    background-color: white;
+    color: #666;
+    font-size: 20px;
+    padding: 18px 40px;
+    border-radius: 2px;
+    top: 15px;
+    left: 15px;
+
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.back-button:hover {
+    -webkit-transition: all 0.2 ease-in-out;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.20s ease-in-out;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
+}
+
+header {
+    color: white;
+    width: 100%;
+    padding-bottom: 0;
+    position: relative;
+
+}
+
+.project-title {
+    padding-top: 30px;
+    text-align: center;
+    margin:auto;
+    display: block;
+    max-width: 300px;
+}
+
+.project-title h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.project-title h4 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative;
+}
+
+.project-title h4::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 10px;;
+    left: 47%;
+    bottom: -10px;
+}
+
+.intro-text {
+    max-width: 520px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 60px;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    line-height: 1.2;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.view-external {
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: white;
+    color: #666;
+    font-weight: 600;
+}
+
+.button-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.splash-image {
+    margin-top: 40px;
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+}
+
+/* text slide styling */
+
+main {
+    padding-bottom: 80px;
+}
+
+.slide-contents {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+}
+
+.line-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #666;
+    margin: 0 auto 0 auto;
+}
+
+.slide-contents h2 {
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 60px 0 50px 0;
+}
+
+.slide-contents h2::after {
+    content: "";
+    background-color: #666;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;;
+    left: 47%;
+    bottom: 35px;
+}
+
+.slide-contents p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.slide-contents h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+em {
+    opacity: 0.6;
+}
+
+.quote {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* individual project styles */
+
+.turnip-page header {
+    background-color: #E496B4;
+}
+
+.turnip-page .view-external {
+    color: #E496B4;
+}
+
+.turnip-page .slide-contents a {
+    color: #E496B4;
+}
+
+
+/* misc. styles */
+
+.diagram {
+    margin: auto;
+    margin-top: 20px;
+
+    display: inline-block;
+    float: center;
+}
+
+.diagram div {
+    float: left;
+    display: inline-block;
+}
+
+.diagram h4 {
+    font-size: 40px;
+}
+
+.diagram-arrow {
+    height: 100%;
+    line-height: 50px;
+    padding: 0 30px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 400px) {
+    .back-button {
+        width: 100%;
+        box-shadow: none;
+        top: 0;
+        left: 0;
+        padding: 30px 0 30px 30px;
+    }
+}
