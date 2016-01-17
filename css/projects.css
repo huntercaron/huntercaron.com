@@ -95,6 +95,10 @@ strong {
     font-weight: 600;
 }
 
+.view-external:hover {
+    background-color: #eee;
+}
+
 .button-container {
     margin-top: 30px;
     text-align: center;
