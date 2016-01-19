@@ -6,222 +6,346 @@ Feel free to email me and yell at me about my code.
 
 Hunter Caron 2016
 -->
-<head>
-    <title>Hunter Caron - Designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="css/styles.css">-->
-    <style>
-        .about-text a,a{text-decoration:none}.explore,.take-48{background-size:cover}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}.about-text a,.intro,.more-about a,.pr-title,h1{font-weight:600}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;font-family:Dosis,sans-serif;color:#666;background-color:#f2f2f2}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}.about-side{height:100%;position:fixed;width:35%;float:left;background-color:#fff;z-index:50}header{width:100%;padding-top:150px;padding-bottom:40px}header h2{color:#aaa}.about-text,.name{width:75%;max-width:400px;margin:auto}a:active{color:inherit}.about-text{padding-top:40px;font-size:18px;line-height:1.3}.about-text a{color:#666}.about-text a:hover{color:#bbb}h1{margin-bottom:4px;font-size:35px;color:#666}p{padding-bottom:10px}.lead{font-size:20px}.about-text li{padding-right:12px;display:inline-block}.contact-links{margin-top:50px}.contact-links i{color:#aaa}.contact-links i:hover,.pr-info{color:#666}em{font-style:italic}.intro::after{content:"cool things."}.intro:hover::after{content:"awesome products."}.fa-arrow-right{font-size:14px}.work-side{float:right;width:65%;background-color:#f2f2f2;height:auto}.projects{margin:0 auto;width:90%;max-width:950px;padding:40px 0;overflow:auto;clear:both;-webkit-transition:all .35s ease;-moz-transition:all .35s ease;transition:all .35s ease}.pr-info-box.toggling,.project{-webkit-transition:all .35s ease;-moz-transition:all .35s ease}.project-box{float:left;box-sizing:border-box;height:250px;padding:12px}.project{float:left;height:100%;width:100%;margin:auto;position:relative;background-color:#bbb;border-radius:2px;box-shadow:0 2px 4px 0 rgba(0,0,0,.15);overflow:hidden;transition:all .35s ease}.large,.medium{width:66%}.project:hover{-webkit-transition:all .2 ease-in-out;-moz-transition:all .2s ease;transition:all .2s ease-in-out;transform:scale(1.05);box-shadow:0 4px 8px 0 rgba(0,0,0,.1)}.large{height:500px}.pr-link,.small .pr-info-box{height:100%}.small{width:33%}.turnip{background-color:#e496b4}.take-48{background-image:url(../images/take-48.svg);background-color:#fff;background-position:auto}.milkrate,.tetley{background-color:#eee}.beacon,.hunterandfriends,.milkrate,.sprouted,.tetley{background-repeat:no-repeat;background-position:center}.turnip-img{width:45%;position:absolute;right:20px;bottom:0;transform:translateX(-80%);-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}.turnip:hover>.turnip-img{transform:translateX(0)}.explore{background-image:url(../images/svg-exploration.png)}.milkrate{background-image:url(../images/milkrate.svg);background-size:contain}.tetley{background-image:url(../images/tetley-timer.jpg);background-size:cover}.sprouted{background-color:#3CE6AD;background-image:url(../images/sprouted.svg)}.beacon{background-color:#414042;background-image:url(../images/beacon.svg);background-size:60%}.hunterandfriends{background-image:url(../images/hunterandfriends.jpg);background-color:#B0B0B0;background-size:contain}.pr-info,.pr-info-box{background-color:#fff;display:inline-block}.pr-link{width:100%}.pr-info-box{padding:20px;width:100%}.pr-info-box.toggling{transition:all .35s ease;transform:translateY(-300px)}.project:hover>.pr-info-box.toggling{-webkit-transition:all .35s ease;-moz-transition:all .35s ease;transition:all .35s ease;transform:translateY(0);transform:translateX(0)}.larg .pr-info-box.toggling,.medium .pr-info-box.toggling{width:auto;height:100%;transform:translateX(-310px)}.pr-info{transform:translateZ(5px);max-width:84%;font-size:18px;padding:5px 10px;margin-bottom:-1px;clear:both;float:left}.pr-title{font-size:14px;padding-bottom:10px}.pr-title::after{position:absolute;content:"";bottom:6px;left:10px;width:10px;height:1px;background-color:#666}.category{color:#aaa;font-size:14px}.pr-view{color:#fff;background-color:#3CE6AD;margin-top:15px;margin-left:8px;box-shadow:0 2px 4px 0 rgba(0,0,0,.2);-webkit-transition:all .25s ease;-moz-transition:all .25s ease;transition:all .25s ease}.turnip .pr-view{background-color:#e496b4}.beacon .pr-view{background-color:#BE1E2D}.explore .pr-view{background-color:#26C2FE}.milkrate .pr-view{background-color:#78CBC9}.tetley .pr-view{background-color:#AED79D}.take-48 .pr-view{background-color:#E7C778}.hunterandfriends .pr-view{background-color:#009B77}.pr-view:hover{-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;transition:all .15s ease-out;transform:scale(1.1);box-shadow:0 4px 8px 0 rgba(0,0,0,.1)}.more-about{position:relative;margin:50px auto 0;font-size:20px;padding:80px 0 120px;width:100%;line-height:1.3;clear:both;color:#eee;letter-spacing:.1px;background-color:#444;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;transition:all .25s ease}.about-contents{margin:auto;width:80%;max-width:550px}.more-about ul{list-style:circle inside}.more-about a{color:#fff}.more-about a:hover{opacity:.6}.more-about-title{font-weight:600;font-size:16px;margin-bottom:20px;margin-top:30px;position:relative}.more-about-title::after{position:absolute;content:"";bottom:-4px;left:0;width:15px;height:2px;border-radius:2px;background-color:#666}.head{width:100px;height:100px;background-color:#777;border-radius:50%;position:relative;margin:20px auto 80px;transform:translateX(-10px)}.mole,.mouth{position:absolute;background-color:#fff}.mouth{transform:scale(.6);left:4px;bottom:4px;height:45px;width:90px;border-radius:0 0 60px 60px;border:2px solid #fff}.mole{width:3px;height:3px;border-radius:50%;right:24px;top:46px}@media screen and (max-width:1100px){header{padding-top:100px}.about-side{position:relative;width:100%;clear:both;padding-bottom:60px;height:auto}.work-side{width:100%}}@media screen and (max-width:700px){.head{transform:translateX(0)}.turnip-img{width:38%;right:10px;z-index:10}.large,.medium,.small{width:100%}.pr-info-box{z-index:20;position:relative}.take-48{background-position:bottom}.projects{max-width:400px}.large{height:250px}.large .pr-info-box.toggling,.medium .pr-info-box.toggling{height:100%;transform:translateY(-310px)}}
-    </style>
-    <meta name="description" content="I am a Toronto based designer &amp; developer who is passionate about creating efficent and dynamic digital experiences for everyone to enjoy.">
-    <meta name="author" content="Hunter Caron">
-    <meta name="keywords" content="designer design developer hunter caron huntercaron hunterhcaron">
-    <link href='https://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
-    <script async src="https://use.fonticons.com/6218af69.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<html lang="en">
+    <head>
+        <title>Hunter Caron - Designer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .about-text a,a{text-decoration:none}.explore,.take-48{background-size:cover}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}.about-text a,.intro,.more-about a,.pr-title,h1{font-weight:600}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;font-family:Dosis,sans-serif;color:#666;background-color:#f2f2f2}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}.about-side{height:100%;position:fixed;width:35%;float:left;background-color:#fff;z-index:50}header{width:100%;padding-top:150px;padding-bottom:40px}header h2{color:#aaa}.about-text,.name{width:75%;max-width:400px;margin:auto}a:active{color:inherit}.about-text{padding-top:40px;font-size:18px;line-height:1.3}.about-text a{color:#666}.about-text a:hover{color:#bbb}h1{margin-bottom:4px;font-size:35px;color:#666}p{padding-bottom:10px}.lead{font-size:20px}.about-text li{padding-right:12px;display:inline-block}.contact-links{margin-top:50px}.contact-links i{color:#aaa}.contact-links i:hover,.pr-info{color:#666}em{font-style:italic}.intro::after{content:"cool things."}.intro:hover::after{content:"awesome products."}.fa-arrow-right{font-size:14px}.work-side{float:right;width:65%;background-color:#f2f2f2;height:auto}.projects{margin:0 auto;width:90%;max-width:950px;padding:40px 0;overflow:auto;clear:both;-webkit-transition:all .35s ease;-moz-transition:all .35s ease;transition:all .35s ease}.pr-info-box.toggling,.project{-webkit-transition:all .35s ease;-moz-transition:all .35s ease}.project-box{float:left;box-sizing:border-box;height:250px;padding:12px}.project{float:left;height:100%;width:100%;margin:auto;position:relative;background-color:#bbb;border-radius:2px;box-shadow:0 2px 4px 0 rgba(0,0,0,.15);overflow:hidden;transition:all .35s ease}.large,.medium{width:66%}.project:hover{-webkit-transition:all .2 ease-in-out;-moz-transition:all .2s ease;transition:all .2s ease-in-out;transform:scale(1.05);box-shadow:0 4px 8px 0 rgba(0,0,0,.1)}.large{height:500px}.pr-link,.small .pr-info-box{height:100%}.small{width:33%}.turnip{background-color:#e496b4}.take-48{background-image:url(../images/take-48.svg);background-color:#fff;background-position:auto}.milkrate,.tetley{background-color:#eee}.beacon,.hunterandfriends,.milkrate,.sprouted,.tetley{background-repeat:no-repeat;background-position:center}.turnip-img{width:45%;position:absolute;right:20px;bottom:0;transform:translateX(-80%);-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}.turnip:hover>.turnip-img{transform:translateX(0)}.explore{background-image:url(../images/svg-exploration.png)}.milkrate{background-image:url(../images/milkrate.svg);background-size:contain}.tetley{background-image:url(../images/tetley-timer.jpg);background-size:cover}.sprouted{background-color:#3CE6AD;background-image:url(../images/sprouted.svg)}.beacon{background-color:#414042;background-image:url(../images/beacon.svg);background-size:60%}.hunterandfriends{background-image:url(../images/hunterandfriends.jpg);background-color:#B0B0B0;background-size:contain}.pr-info,.pr-info-box{background-color:#fff;display:inline-block}.pr-link{width:100%}.pr-info-box{padding:20px;width:100%}.pr-info-box.toggling{transition:all .35s ease;transform:translateY(-300px)}.project:hover>.pr-info-box.toggling{-webkit-transition:all .35s ease;-moz-transition:all .35s ease;transition:all .35s ease;transform:translateY(0);transform:translateX(0)}.larg .pr-info-box.toggling,.medium .pr-info-box.toggling{width:auto;height:100%;transform:translateX(-310px)}.pr-info{transform:translateZ(5px);max-width:84%;font-size:18px;padding:5px 10px;margin-bottom:-1px;clear:both;float:left}.pr-title{font-size:14px;padding-bottom:10px}.pr-title::after{position:absolute;content:"";bottom:6px;left:10px;width:10px;height:1px;background-color:#666}.category{color:#aaa;font-size:14px}.pr-view{color:#fff;background-color:#3CE6AD;margin-top:15px;margin-left:8px;box-shadow:0 2px 4px 0 rgba(0,0,0,.2);-webkit-transition:all .25s ease;-moz-transition:all .25s ease;transition:all .25s ease}.turnip .pr-view{background-color:#e496b4}.beacon .pr-view{background-color:#BE1E2D}.explore .pr-view{background-color:#26C2FE}.milkrate .pr-view{background-color:#78CBC9}.tetley .pr-view{background-color:#AED79D}.take-48 .pr-view{background-color:#E7C778}.hunterandfriends .pr-view{background-color:#009B77}.pr-view:hover{-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;transition:all .15s ease-out;transform:scale(1.1);box-shadow:0 4px 8px 0 rgba(0,0,0,.1)}.more-about{position:relative;margin:50px auto 0;font-size:20px;padding:80px 0 120px;width:100%;line-height:1.3;clear:both;color:#eee;letter-spacing:.1px;background-color:#444;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;transition:all .25s ease}.about-contents{margin:auto;width:80%;max-width:550px}.more-about ul{list-style:circle inside}.more-about a{color:#fff}.more-about a:hover{opacity:.6}.more-about-title{font-weight:600;font-size:16px;margin-bottom:20px;margin-top:30px;position:relative}.more-about-title::after{position:absolute;content:"";bottom:-4px;left:0;width:15px;height:2px;border-radius:2px;background-color:#666}.head{width:100px;height:100px;background-color:#777;border-radius:50%;position:relative;margin:20px auto 80px;transform:translateX(-10px)}.mole,.mouth{position:absolute;background-color:#fff}.mouth{transform:scale(.6);left:4px;bottom:4px;height:45px;width:90px;border-radius:0 0 60px 60px;border:2px solid #fff}.mole{width:3px;height:3px;border-radius:50%;right:24px;top:46px}@media screen and (max-width:1100px){header{padding-top:100px}.about-side{position:relative;width:100%;clear:both;padding-bottom:60px;height:auto}.work-side{width:100%}}@media screen and (max-width:700px){.head{transform:translateX(0)}.turnip-img{width:38%;right:10px;z-index:10}.large,.medium,.small{width:100%}.pr-info-box{z-index:20;position:relative}.take-48{background-position:bottom}.projects{max-width:400px}.large{height:250px}.large .pr-info-box.toggling,.medium .pr-info-box.toggling{height:100%;transform:translateY(-310px)}}
+        </style>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/projects.css">
+        <meta name="description" content="I am a Toronto based designer &amp; developer who is passionate about creating efficent and dynamic digital experiences for everyone to enjoy.">
+        <meta name="author" content="Hunter Caron">
+        <meta name="keywords" content="designer design developer hunter caron huntercaron hunterhcaron">
+        <link href='https://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
 
-      ga('create', 'UA-60215266-1', 'auto');
-      ga('send', 'pageview');
 
-    </script>
-</head>
 
-<body>
+        <script async src="https://use.fonticons.com/6218af69.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <section class="about-side">
-        <header>
-            <a href="index.html">
-                <div class="name">
-                    <h1>Hunter Caron</h1>
-                    <h2>designer</h2>
+          ga('create', 'UA-60215266-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </head>
+
+    <body>
+
+        <section class="about-side">
+            <header>
+                <a href="index.html">
+                    <div class="name">
+                        <h1>Hunter Caron</h1>
+                        <h2>designer</h2>
+                    </div>
+                </a>
+            </header>
+
+            <div class="about-text">
+                <p class="lead intro">I like to make </p>
+                <p class="lead">I am a Toronto based designer &amp; developer who is passionate about creating efficent and delightful digital experiences for everyone to enjoy. </p>
+                <p>
+                    <a class="about-more" href="#about" onclick="return false;">more about me <i class="fa fa-arrow-right"></i></a>
+                </p>
+
+
+                <div class="contact-links">
+                    <p>Shoot me an <a href="mailto:huntercaron.design@icloud.com">email!</a></p>
+
+                    <ul>
+                        <li>
+                            <a href="https://dribbble.com/HunterCaron" target="_blank"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/huntercaron5e7f" target="_blank"><i class="fa fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://ca.linkedin.com/in/hunter-caron-472684b3" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.last.fm/user/HunterCaron" target="_blank"><i class="fa fa-lastfm"></i></a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-        </header>
-
-        <div class="about-text">
-            <p class="lead intro">I like to make </p>
-            <p class="lead">I am a Toronto based designer &amp; developer who is passionate about creating efficent and delightful digital experiences for everyone to enjoy. </p>
-            <p>
-                <a data-scroll class="about-more" href="#about">more about me <i class="fa fa-arrow-right"></i></a>
-            </p>
-
-
-            <div class="contact-links">
-                <p>Shoot me an <a href="mailto:huntercaron.design@icloud.com">email!</a></p>
-
-                <ul>
-                    <li>
-                        <a href="https://dribbble.com/HunterCaron" target="_blank"><i class="fa fa-dribbble"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.behance.net/huntercaron5e7f" target="_blank"><i class="fa fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://ca.linkedin.com/in/hunter-caron-472684b3" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="http://www.last.fm/user/HunterCaron" target="_blank"><i class="fa fa-lastfm"></i></a>
-                    </li>
-                </ul>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-    <section class="work-side">
+        <section class="work-side">
 
-        <div class="projects">
-            <div class="project-box large">
-                <a class="pr-link" href="turnip.html">
-                    <div class="project turnip ">
-                        <div class="pr-info-box toggling">
-                            <h3 class="pr-info pr-title">Turnip</h3>
-                            <p class="pr-info tagline">optimizing the creative mind</p>
-                            <p class="pr-info category">app design <span class="divider">//</span> prototyping</p>
-                            <p class="pr-info pr-view">view page</p>
-                        </div>
+            <div class="turnip-page project-page hide-project" id="turnip-project">
 
-                        <img class="pr-img turnip-img" src="images/turnip.svg" alt="turnip photo">
+                <header class="intro-area">
+                    <div class="project-title">
+                        <h4>Turnip</h4>
+                        <h1>optimizing the creative mind</h1>
                     </div>
-                </a>
-            </div>
 
-            <div class="project-box small">
-                <a class="pr-link" target="_blank" href="http://codepen.io/Mithon/">
-                    <div class="project explore">
-                        <div class="pr-info-box toggling">
-                            <h3 class="pr-info pr-title">Explorations</h3>
-                            <p class="pr-info tagline">explorations on codepen</p>
-                            <p class="pr-info category">web design <span class="divider">//</span> coding</p>
-                            <p class="pr-info pr-view">view on <i class="fa fa-codepen"></i></p>
+                    <div href="index.html" class="back-button" id="turnip-back">
+                        <i class="fa fa-arrow-left"></i>
+                    </div>
+
+                    <div class="intro-text">
+                        <p>Turnip is an app with the goal of optimizing the creative mind via your personal assistant, Timmy the turnip. It utilizes an <strong>efficient and personable design language</strong> to encourage you to be the best you can be.</p>
+                        <p class="proto-desc">This project was my first foray into <strong>high fidelity rapid prototyping</strong> with Framer JS and I instantly fell in love. The ability to user-test with a nearly fully functional prototype was incredibly useful in creating this project.</p>
+                        <div class="button-container">
+                            <a class="view-external" href="http://share.framerjs.com/jftsjlr882f6/" target="_blank">view prototype <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
-                </a>
-            </div>
 
-            <div class="project-box small">
-                <a href="https://www.behance.net/gallery/25679209/Milkrate-Records-Redesign"  target="_blank">
-                    <div class="project milkrate">
-                        <div class="pr-info-box toggling">
-                            <h3 class="pr-info pr-title">Milkrate</h3>
-                            <p class="pr-info tagline">website redesign project</p>
-                            <p class="pr-info category">web design <span class="divider">//</span> UX</p>
-                            <p class="pr-info pr-view">view on <i class="fa fa-behance"></i></p>
+                    <img class="splash-image" src="images/turnip/turnip-splash.png" alt="turnip screenshot"/>
+                </header>
+
+                <main>
+                    <div class="turnip-content">
+
+                        <div class="slide quote pink">
+                            <div class="slide-contents">
+                                <blockquote>
+                                    <p>My strategy is to do things that give me <strong>time to think</strong>, walking being my favourite activity for that. I go on a <strong>walk almost daily</strong> and try my best to get at least an hour to devote to that activity. I can then spend a bit of time <strong>focusing</strong> on my thoughts <strong>without interruption</strong>.</p>
+                                    <h4><em>- James March</em></h3>
+                                </blockquote>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
 
 
-            <div class="project-box small">
-                <a href="http://huntercaron.com/sprouted/" target="_blank">
-                    <div class="project sprouted">
-                        <div class="pr-info-box toggling">
-                            <h3 class="pr-info pr-title">Sprouted</h3>
-                            <p class="pr-info tagline">vegan restaurant prototype</p>
-                            <p class="pr-info category">web design <span class="divider">//</span> UX <span class="divider">//</span> prototyping</p>
-                            <p class="pr-info pr-view">view</p>
+                        <div class="slide what" id="about">
+                            <div class="slide-contents">
+                                <h2>what</h2>
+                                <p>An app for <strong>creatives</strong> who seek a more efficient &amp; productive day via a structured <strong>pulse/pause workflow</strong>.</p>
+
+                                <div class="diagram">
+                                    <div class="work-time">
+                                        <h4>20-90</h4>
+                                        <p>Work <em>(min)</em></p>
+                                    </div>
+                                    <div class="diagram-arrow">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                    <div class="break-time">
+                                        <h4>5-20</h4>
+                                        <p>Break <em>(min)</em></p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="project-box medium">
-                <a href="#">
-                    <div class="project beacon">
-                        <div class="pr-info-box toggling">
-                            <h3 class="pr-info pr-title">Beacon</h3>
-                            <p class="pr-info tagline">cyber bullying awareness campaign</p>
-                            <p class="pr-info category">problem solving <span class="divider">//</span> brand design</p>
-                            <p class="pr-info pr-view">coming soon!</p>
+
+
+                        <div class="slide why">
+                            <div class="slide-contents">
+                                <h2>why</h2>
+                                <h3>Productivity Benefits</h3>
+                                <p><em>Increase focus and reduce burn-out</em></p>
+                                <h3>Mental Benefits</h3>
+                                <p><em>Reduce stress and assist creativity</em></p>
+                                <h3>Health Benefits</h3>
+                                <p><em>Counteract the negatives of sitting</em></p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="project-box small">
-                <a href="https://www.behance.net/gallery/25711979/Take-48-Pamphlet-2015" target="_blank">
-                    <div class="project take-48">
-                        <div class="pr-info-box toggling">
-                            <h3 class="pr-info pr-title">Take 48</h3>
-                            <p class="pr-info tagline">pamphlet design</p>
-                            <p class="pr-info category">print design</p>
-                            <p class="pr-info pr-view">view on <i class="fa fa-behance"></i></p>
+
+
+                        <div class="slide pact" id="pact">
+                            <div class="slide-contents">
+                                <h2>Utilizing PACT Analysis</h2>
+                                <h3>People</h3>
+                                <p><em>busy minded, stressed creative people</em></p>
+                                <h3>Activities</h3>
+                                <p><em>follow the timer. It alerts you when needed</em></p>
+                                <h3>Contexts</h3>
+                                <p><em>for use at home or in a busy office</em></p>
+                                <h3>Technologies</h3>
+                                <p><em>Interaction via touchscreen. Screen based cues to limit annoyance for others</em></p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="project-box small">
-                <a href="http://huntercaron.com/tetleyRedesign/pages/aboutTea.html" target="_blank">
-                    <div class="project tetley">
-                        <div class="pr-info-box toggling">
-                            <h3 class="pr-info pr-title">Tetley Redesign</h3>
-                            <p class="pr-info tagline">website redesign project</p>
-                            <p class="pr-info category">web design <span class="divider">//</span> coding</p>
-                            <p class="pr-info pr-view">view</p>
+                        <div class="slide quote pink">
+                            <div class="slide-contents">
+                                <blockquote>
+                                    <p><strong>Pulse and Pause</strong>. Move rhythmically between spending and renewing your energy by <strong>working in bursts</strong> and then <strong>taking a break</strong>.</p>
+                                    <h4><em>- Tony Schwartz</em></h3>
+                                </blockquote>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="project-box small">
-                <a href="https://www.behance.net/gallery/14917239/Hunter-Friends-Broadcast" target="_blank">
-                    <div class="project hunterandfriends">
-                        <div class="pr-info-box toggling">
-                            <h3 class="pr-info pr-title">Hunter and Friends</h3>
-                            <p class="pr-info tagline">branding and directing</p>
-                            <p class="pr-info category">leadership <span class="divider">//</span> branding</p>
-                            <p class="pr-info pr-view">view on <i class="fa fa-behance"></i></p>
+                        <div class="slide flowchart" id="flowchart">
+                            <div class="slide-contents">
+                                <h2>Flowchart</h2>
+                                <img src="images/turnip/turnip-flow.svg"/>
+                            </div>
                         </div>
+
+
+
+                        <div class="slide">
+                            <div class="slide-contents">
+                                <h2>Thank you.</h2>
+                                <p>I could be convinced to make Turnip into a real app. Feel free to <a href="mailto:huntercaron.design@icloud.com">email me</a> if you'd like that!</p>
+                            </div>
+                        </div>
+
                     </div>
-                </a>
+                </main>
+
             </div>
 
+            <div class="projects" id="grid">
+                <div class="project-box large">
+                    <a class="pr-link" href="turnip.html" id="turnip-button" onclick="return false;">
+                        <div class="project turnip ">
+                            <div class="pr-info-box toggling">
+                                <h3 class="pr-info pr-title">Turnip</h3>
+                                <p class="pr-info tagline">optimizing the creative mind</p>
+                                <p class="pr-info category">app design <span class="divider">//</span> prototyping</p>
+                                <p class="pr-info pr-view">view page</p>
+                            </div>
 
-        </div>
-
-        <div id="about" class="more-about">
-
-            <div class="about-contents">
-
-                <div class="head-box">
-                    <div class="head">
-                        <div class="mouth"></div>
-                        <div class="mole"></div>
-                    </div>
+                            <img class="pr-img turnip-img" src="images/turnip.svg" alt="turnip photo">
+                        </div>
+                    </a>
                 </div>
 
-                <h3 class="more-about-title">About Me</h3>
-                <p>My name is Hunter Caron, and I am a student working towards my Bachelor of Design Honours degree in <a href="http://design.yorku.ca/">YSDN</a>. I&#8217;ve been designing things since I was ten years old and I haven&#8217;t slowed down since. Over the years I&#8217;ve taught myself how to utilize different mediums from web design, to motion graphics and video. Rapid prototyping and iteration has become a large part of my workflow to ensure my solution is an effective one.</p>
-                <p>I use design as a medium to not only solve problems and communicate a message but also as a way to enhance our daily lives. Critiquing and learning from the world around me drives my passion to help make the world a more efficient and connected place.</p>
+                <div class="project-box small">
+                    <a class="pr-link" target="_blank" href="http://codepen.io/Mithon/">
+                        <div class="project explore">
+                            <div class="pr-info-box toggling">
+                                <h3 class="pr-info pr-title">Explorations</h3>
+                                <p class="pr-info tagline">explorations on codepen</p>
+                                <p class="pr-info category">web design <span class="divider">//</span> coding</p>
+                                <p class="pr-info pr-view">view on <i class="fa fa-codepen"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-                <h3 class="more-about-title">Strengths</h3>
-                <ul>
-                    <li>design &amp; development</li>
-                    <li>problem solving</li>
-                    <li>utilizing design process</li>
-                    <li>critical eye &amp; mind</li>
-                    <li>prototyping &amp; testing</li>
+                <div class="project-box small">
+                    <a href="https://www.behance.net/gallery/25679209/Milkrate-Records-Redesign"  target="_blank">
+                        <div class="project milkrate">
+                            <div class="pr-info-box toggling">
+                                <h3 class="pr-info pr-title">Milkrate</h3>
+                                <p class="pr-info tagline">website redesign project</p>
+                                <p class="pr-info category">web design <span class="divider">//</span> UX</p>
+                                <p class="pr-info pr-view">view on <i class="fa fa-behance"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-                </ul>
+
+                <div class="project-box small">
+                    <a href="http://huntercaron.com/sprouted/" target="_blank">
+                        <div class="project sprouted">
+                            <div class="pr-info-box toggling">
+                                <h3 class="pr-info pr-title">Sprouted</h3>
+                                <p class="pr-info tagline">vegan restaurant prototype</p>
+                                <p class="pr-info category">web design <span class="divider">//</span> UX <span class="divider">//</span> prototyping</p>
+                                <p class="pr-info pr-view">view</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-box medium">
+                    <a href="#">
+                        <div class="project beacon">
+                            <div class="pr-info-box toggling">
+                                <h3 class="pr-info pr-title">Beacon</h3>
+                                <p class="pr-info tagline">cyber bullying awareness campaign</p>
+                                <p class="pr-info category">problem solving <span class="divider">//</span> brand design</p>
+                                <p class="pr-info pr-view">coming soon!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-box small">
+                    <a href="https://www.behance.net/gallery/25711979/Take-48-Pamphlet-2015" target="_blank">
+                        <div class="project take-48">
+                            <div class="pr-info-box toggling">
+                                <h3 class="pr-info pr-title">Take 48</h3>
+                                <p class="pr-info tagline">pamphlet design</p>
+                                <p class="pr-info category">print design</p>
+                                <p class="pr-info pr-view">view on <i class="fa fa-behance"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-box small">
+                    <a href="http://huntercaron.com/tetleyRedesign/pages/aboutTea.html" target="_blank">
+                        <div class="project tetley">
+                            <div class="pr-info-box toggling">
+                                <h3 class="pr-info pr-title">Tetley Redesign</h3>
+                                <p class="pr-info tagline">website redesign project</p>
+                                <p class="pr-info category">web design <span class="divider">//</span> coding</p>
+                                <p class="pr-info pr-view">view</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-box small">
+                    <a href="https://www.behance.net/gallery/14917239/Hunter-Friends-Broadcast" target="_blank">
+                        <div class="project hunterandfriends">
+                            <div class="pr-info-box toggling">
+                                <h3 class="pr-info pr-title">Hunter and Friends</h3>
+                                <p class="pr-info tagline">branding and directing</p>
+                                <p class="pr-info category">leadership <span class="divider">//</span> branding</p>
+                                <p class="pr-info pr-view">view on <i class="fa fa-behance"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
 
             </div>
-        </div>
-    </section>
+
+            <div id="about" class="more-about">
+
+                <div class="about-contents">
+
+                    <div class="head-box">
+                        <div class="head">
+                            <div class="mouth"></div>
+                            <div class="mole"></div>
+                        </div>
+                    </div>
+
+                    <h3 class="more-about-title">About Me</h3>
+                    <p>My name is Hunter Caron, and I am a student working towards my Bachelor of Design Honours degree in <a href="http://design.yorku.ca/">YSDN</a>. I&#8217;ve been designing things since I was ten years old and I haven&#8217;t slowed down since. Over the years I&#8217;ve taught myself how to utilize different mediums from web design, to motion graphics and video. Rapid prototyping and iteration has become a large part of my workflow to ensure my solution is an effective one.</p>
+                    <p>I use design as a medium to not only solve problems and communicate a message but also as a way to enhance our daily lives. Critiquing and learning from the world around me drives my passion to help make the world a more efficient and connected place.</p>
+
+                    <h3 class="more-about-title">Strengths</h3>
+                    <ul>
+                        <li>design &amp; development</li>
+                        <li>problem solving</li>
+                        <li>utilizing design process</li>
+                        <li>critical eye &amp; mind</li>
+                        <li>prototyping &amp; testing</li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </section>
 
 
-    <script src="js/smooth-scroll.min.js"></script>
-    <script>
-        smoothScroll.init();
-    </script>
-    <!--<script src="js/classie.js"></script>
-	<script src="js/main.js"></script>-->
+        <script src="js/smooth-scroll.min.js"></script>
+        <script>
+            smoothScroll.init();
+        </script>
+        <script src="js/classie.js"></script>
+    	<script src="js/main.js"></script>
+        <script src="js/layzr.js"></script>
 
-</body>
+    </body>
 
 </html>

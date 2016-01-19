@@ -1,6 +1,6 @@
 /* overall styles */
 
-body {
+.turnip-page {
     background-color: #fafafa;
 }
 
@@ -179,7 +179,7 @@ em {
 
 /* individual project styles */
 
-.turnip-page header {
+.turnip-page .intro-area {
     background-color: #E496B4;
 }
 
