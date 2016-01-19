@@ -1,6 +1,7 @@
 (function() {
 
     //var isTouchDevice = 'ontouchstart' in document.documentElement;
+    var layzr = new Layzr();
     smoothScroll.init();
 
     var projectOpen = false,
