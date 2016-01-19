@@ -1,6 +1,7 @@
 (function() {
 
     //var isTouchDevice = 'ontouchstart' in document.documentElement;
+    smoothScroll.init();
 
     var projectOpen = false,
     turnipButton = document.getElementById("turnip-button"),
@@ -40,6 +41,7 @@
     });
 
     aboutMore.addEventListener('click', function() {
+        smoothScroll.init();
         if (projectOpen) {
             smoothScroll.animateScroll( null, '#about', { offset: -3000});
         }
