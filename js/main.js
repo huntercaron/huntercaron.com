@@ -41,7 +41,6 @@
     });
 
     aboutMore.addEventListener('click', function() {
-        smoothScroll.init();
         if (projectOpen) {
             smoothScroll.animateScroll( null, '#about', { offset: -3000});
         }
