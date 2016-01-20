@@ -138,21 +138,21 @@ main {
 
 .slide-contents h2 {
     position: relative;
-    text-align: center;
+    text-align: left;
     font-size: 36px;
     font-weight: 700;
-    padding: 60px 0 50px 0;
+    padding: 80px 0 30px 0;
 }
 
 .slide-contents h2::after {
     content: "";
     background-color: #666;
     position: absolute;
-    width: 40px;
+    width: 18px;
     height: 2px;
     border-radius: 10px;;
-    left: 47%;
-    bottom: 35px;
+    left: 2px;
+    bottom: 25px;
 }
 
 .slide-contents p {
@@ -171,10 +171,23 @@ em {
 }
 
 .quote {
-    display: none;
+    background-color: #bbb;
+    margin: 80px 0 30px 0;
+    padding: 120px 0;
+    color: white;
 }
 
+.inline-p-image {
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+    border-radius: 2px;
+    margin: 20px 0 10px 0;
+    max-width: 100%;
+}
 
+.inline-p-img-box {
+    margin-bottom: 30px;
+}
 
 
 
@@ -185,6 +198,10 @@ em {
 
 .turnip-page .intro-area {
     background-color: #E496B4;
+}
+
+.turnip-page .quote {
+    background-color: rgba(#e497b4, 0.69);
 }
 
 .turnip-page .view-external {
