@@ -8,39 +8,53 @@
     var projectOpen = false,
     turnipButton = document.getElementById("turnip-button"),
     turnipProject = document.getElementById("turnip-project"),
-    turnipBack = document.getElementById("turnip-back"),
+    sproutedButton = document.getElementById("sprouted-button"),
+    sproutedProject = document.getElementById("sprouted-project"),
     grid = document.getElementById("grid"),
-    aboutMore = document.querySelector(".about-more");
+    aboutMore = document.querySelector(".about-more"),
+    closeProject = document.querySelector(".back-button"),
+    projects = document.querySelector(".projects"),
+    currentProject = null;
 
 
-    turnipButton.addEventListener('click', function() {
-        smoothScroll.animateScroll( null, '#turnip-project' );
+    function OpenProject(project, projectID) {
+        smoothScroll.animateScroll( null, projectID );
 
         if (!projectOpen) {
             classie.add(grid, "hide-grid");
+            currentProject = project;
 
-            console.log('poop');
             setTimeout(function(){
-                classie.remove(turnipProject, "hide-project");
+                classie.remove(project, "hide-project");
                 projectOpen = true;
                 classie.remove(grid, "hide-grid");
             }, 200);
         }
-    });
+    }
 
-
-    turnipBack.addEventListener('click', function() {
+    closeProject.addEventListener('click', function() {
         classie.add(grid, "hide-grid");
 
         setTimeout(function(){
-            console.log('poop');
+            console.log(currentProject);
             classie.remove(grid, "hide-grid");
-            classie.add(turnipProject, "hide-project");
+            classie.add(currentProject, "hide-project");
             projectOpen = false;
 
         }, 500);
 
     });
+
+
+    turnipButton.addEventListener('click', function() {
+        OpenProject(turnipProject, "#turnip-project");
+    });
+
+    turnipButton.addEventListener('click', function() {
+        OpenProject(turnipProject, "#turnip-project");
+    });
+
+
 
     aboutMore.addEventListener('click', function() {
         if (projectOpen) {

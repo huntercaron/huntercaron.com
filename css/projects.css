@@ -139,7 +139,7 @@ main {
 .slide-contents h2 {
     position: relative;
     text-align: left;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     padding: 80px 0 30px 0;
 }
@@ -211,6 +211,42 @@ em {
 .turnip-page .slide-contents a {
     color: #E496B4;
 }
+
+
+
+.sprouted-page .intro-area {
+    background-color: #3CE6AD;
+}
+
+.sprouted-page .quote {
+    background-color: rgba(#3CE6AD, 0.69);
+}
+
+.sprouted-page .view-external {
+    color: #3CE6AD;
+}
+
+.sprouted-page .slide-contents a {
+    color: #3CE6AD;
+}
+
+
+.beacon-page .intro-area {
+    background-color: #BE1E2D;
+}
+
+.beacon-page .quote {
+    background-color: rgba(#BE1E2D, 0.69);
+}
+
+.beacon-page .view-external {
+    color: #BE1E2D;
+}
+
+.beacon-page .slide-contents a {
+    color: #BE1E2D;
+}
+
 
 
 /* misc. styles */
