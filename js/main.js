@@ -63,7 +63,7 @@
 
     sproutedButton.addEventListener('click', function() {
         OpenProject(sproutedProject, "#sprouted-project");
-        sproutedVideo.src = "images/sprouted/Sprouted-Recording.webm";
+        sproutedVideo.src = "images/sprouted/Sprouted-Recording.mp4";
     });
 
 
