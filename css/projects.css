@@ -269,6 +269,21 @@ blockquote p::after {
     color: #BE1E2D;
 }
 
+.explore-page .intro-area {
+    background-color:  #26C2FE;
+}
+
+.explore-page .quote {
+    background-color: rgba( #26C2FE, 0.69);
+}
+
+.explore-page .view-external {
+    color: #26C2FE;
+}
+
+.explore-page .slide-contents a {
+    color:  #26C2FE;
+}
 
 
 /* misc. styles */

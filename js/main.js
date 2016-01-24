@@ -11,6 +11,8 @@
     sproutedButton = document.getElementById("sprouted-button"),
     sproutedProject = document.getElementById("sprouted-project"),
     sproutedVideo = document.getElementById("sprouted-video"),
+    exploreProject = document.getElementById("explore-project"),
+    exploreButton = document.getElementById("explore-button"),
     grid = document.getElementById("grid"),
     aboutMore = document.querySelector(".about-more"),
     closeProject = document.querySelector(".back-button"),
@@ -47,7 +49,6 @@
         classie.add(grid, "hide-grid");
 
         setTimeout(function(){
-            console.log(currentProject);
             classie.remove(grid, "hide-grid");
             classie.add(currentProject, "hide-project");
             classie.add(closeProject, "hide-button");
@@ -66,6 +67,11 @@
         OpenProject(sproutedProject, "#sprouted-project");
         sproutedVideo.src = "images/sprouted/Sprouted-Recording.mp4";
     });
+
+    exploreButton.addEventListener('click', function() {
+        OpenProject(exploreProject, "#explore-project");
+    });
+
 
 
     aboutMore.addEventListener('click', function() {
