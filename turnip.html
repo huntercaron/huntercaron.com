@@ -21,16 +21,18 @@
 
 <body>
 
+    <a href="index.html" class="back-button" id="turnip-back">
+        <i class="fa fa-times"></i>
+    </a>
+
+
+
         <div class="turnip-page project-page" id="turnip-project">
 
             <header class="intro-area">
                 <div class="project-title">
                     <h4>Turnip</h4>
-                    <h1>optimizing the creative mind</h1>
-                </div>
-
-                <div href="index.html" class="back-button" id="turnip-back">
-                    <i class="fa fa-times"></i>
+                    <h2>optimizing the creative mind</h2>
                 </div>
 
                 <div class="intro-text">
@@ -190,7 +192,11 @@
         </div>
 
         <script src="js/plugins.js"></script>
-    	<script src="js/main.js"></script>
+        <script>
+            var layzr = new Layzr();
+            smoothScroll.init();
+        </script>
+
 
 </body>
 

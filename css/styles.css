@@ -160,6 +160,7 @@ ul {
 
 
 .work-side {
+    position: relative;
     float: right;
     width: 65%;
     background-color: #f2f2f2;
@@ -569,6 +570,15 @@ iframe {
     opacity: 0;
     height: 0;
     overflow: hidden;
+
+    -webkit-transition: all 1.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.hide-button {
+    transform: translateZ(30px) translateY(30px);
+    opacity: 0;
 
     -webkit-transition: all 1.35s ease;
     -moz-transition: all 0.35s ease;

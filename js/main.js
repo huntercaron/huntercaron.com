@@ -10,6 +10,7 @@
     turnipProject = document.getElementById("turnip-project"),
     sproutedButton = document.getElementById("sprouted-button"),
     sproutedProject = document.getElementById("sprouted-project"),
+    sproutedVideo = document.getElementById("sprouted-video"),
     grid = document.getElementById("grid"),
     aboutMore = document.querySelector(".about-more"),
     closeProject = document.querySelector(".back-button"),
@@ -18,9 +19,8 @@
 
 
     function OpenProject(project, projectID) {
-        smoothScroll.animateScroll( null, projectID );
-
         if (!projectOpen) {
+            smoothScroll.animateScroll( null, projectID );
             classie.add(grid, "hide-grid");
             currentProject = project;
 
@@ -28,7 +28,17 @@
                 classie.remove(project, "hide-project");
                 projectOpen = true;
                 classie.remove(grid, "hide-grid");
+                classie.remove(closeProject, "hide-button");
             }, 200);
+        }
+        else {
+
+            setTimeout(function(){
+                classie.add(currentProject, "hide-project");
+                currentProject = project;
+                classie.remove(project, "hide-project");
+                smoothScroll.animateScroll( null, projectID );
+            }, 300);
         }
     }
 
@@ -39,6 +49,7 @@
             console.log(currentProject);
             classie.remove(grid, "hide-grid");
             classie.add(currentProject, "hide-project");
+            classie.add(closeProject, "hide-button");
             projectOpen = false;
 
         }, 500);
@@ -50,10 +61,10 @@
         OpenProject(turnipProject, "#turnip-project");
     });
 
-    turnipButton.addEventListener('click', function() {
-        OpenProject(turnipProject, "#turnip-project");
+    sproutedButton.addEventListener('click', function() {
+        OpenProject(sproutedProject, "#sprouted-project");
+        sproutedVideo.src = "images/sprouted/Sprouted-Recording.webm";
     });
-
 
 
     aboutMore.addEventListener('click', function() {
