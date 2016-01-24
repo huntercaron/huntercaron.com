@@ -1,11 +1,11 @@
 (function() {
 
-    //var isTouchDevice = 'ontouchstart' in document.documentElement;
 
     var layzr = new Layzr();
     smoothScroll.init();
 
     var projectOpen = false,
+    touchedProject = "",
     turnipButton = document.getElementById("turnip-button"),
     turnipProject = document.getElementById("turnip-project"),
     sproutedButton = document.getElementById("sprouted-button"),
@@ -19,6 +19,7 @@
 
 
     function OpenProject(project, projectID) {
+
         if (!projectOpen) {
             smoothScroll.animateScroll( null, projectID );
             classie.add(grid, "hide-grid");
