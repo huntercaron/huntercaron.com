@@ -13,6 +13,9 @@
     sproutedVideo = document.getElementById("sprouted-video"),
     exploreProject = document.getElementById("explore-project"),
     exploreButton = document.getElementById("explore-button"),
+    hunterButton = document.getElementById("hunterandfriends-button"),
+    hunterProject = document.getElementById("hunterandfriends-project"),
+    hunterVideo = document.getElementById("hunter-video"),
     grid = document.getElementById("grid"),
     aboutMore = document.querySelector(".about-more"),
     closeProject = document.querySelector(".back-button"),
@@ -70,6 +73,12 @@
 
     exploreButton.addEventListener('click', function() {
         OpenProject(exploreProject, "#explore-project");
+    });
+
+    hunterButton.addEventListener('click', function() {
+        OpenProject(hunterProject, "#hunterandfriends-project");
+
+        hunterVideo.src = "images/hunterandfriends/hunterandfriends-video.mp4";
     });
 
 

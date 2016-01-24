@@ -285,6 +285,21 @@ blockquote p::after {
     color:  #26C2FE;
 }
 
+.hunterandfriends-page .intro-area {
+    background-color:  #009B77;
+}
+
+.hunterandfriends-page .quote {
+    background-color: rgba( #009B77, 0.69);
+}
+
+.hunterandfriends-page .view-external {
+    color: #009B77;
+}
+
+.hunterandfriends-page .slide-contents a {
+    color:  #009B77;
+}
 
 /* misc. styles */
 
@@ -390,17 +405,21 @@ input:checked + .carosel-figure {
     display: none;
 }
 
+.hunter-splash-img {
+    display: none;
+}
+
 
 /* media queries */
 
 @media screen and (max-width: 400px) {
 
-    .sprouted-splash-img {
+    .sprouted-splash-img, .hunter-splash-img {
         display: block;
         margin: 60px auto;
     }
 
-    .sprouted-splash-video {
+    .sprouted-splash-video, .hunter-splash-video {
         display: none;
     }
     /*
