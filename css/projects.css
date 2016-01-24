@@ -172,8 +172,11 @@ em {
 }
 
 .quote {
-    background-color: #dfdfdf;
-    margin: 80px 0 30px 0;
+    background-color: #ddd;
+    margin: 80px auto 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 5px;
     padding: 80px 0;
     color: white;
 }
