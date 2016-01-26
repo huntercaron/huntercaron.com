@@ -387,6 +387,10 @@ blockquote p::after {
     background-color: #666;
 }
 
+.carosel-input:checked:nth-of-type(4) ~ div label:nth-child(4) {
+    background-color: #666;
+}
+
 .carosel-slide {
 
 }
