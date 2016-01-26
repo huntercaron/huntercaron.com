@@ -142,11 +142,11 @@ main {
     text-align: left;
     font-size: 28px;
     font-weight: 700;
-    padding: 80px 0 30px 0;
+    padding: 80px 0 14px 0;
 }
 
 .slide-contents h2::after {
-    content: "";
+    /* content: ""; */
     background-color: #666;
     position: absolute;
     width: 18px;
