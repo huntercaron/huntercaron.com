@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>York Sheridan Design</title>
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100vh;
+                z-index: 0;
+            }
+
+            .stuff {
+                position: fixed;
+                z-index: 100;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .item {
+                color: pink;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                font-size: 2rem;
+                top: -20%;
+                position: fixed;
+	            display: block;
+                animation: moveit linear infinite 150s;
+            	-webkit-animation: moveit linear infinite 150s;
+            	-moz-animation: moveit linear infinite 150s;
+            }
+
+            @-webkit-keyframes moveit{
+                0%{top:-20%}
+                100%{top:110%}
+            }
+            @keyframes moveit{
+                0%{top:-20%}
+                100%{top:110%}
+            }
+            @-moz-keyframes moveit{
+                0%{top:-20%}
+                100%{top:110%}
+            }
+            @-webkit-keyframes moveitslow{
+                0%{top:-100%}
+                100%{top:110%}
+            }
+            @keyframes moveitslow{
+                0%{top:-100%}
+                100%{top:110%}
+            }
+            @-moz-keyframes moveitslow{
+                0%{top:-100%}
+                100%{top:110%}
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="stuff">
+        </div>
+        <div id="player"></div>
+
+
+    <script>
+
+    var width = document.innerWidth;
+    var height = document.innerHeight;
+    var tag = document.createElement('script');
+    var stuffBox = document.querySelector('.stuff');
+    var stuff = [];
+
+     tag.src = "https://www.youtube.com/iframe_api";
+     var firstScriptTag = document.getElementsByTagName('script')[0];
+     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+     var player;
+     function onYouTubeIframeAPIReady() {
+       player = new YT.Player('player', {
+         height: height,
+         width: width,
+         videoId: 'dQw4w9WgXcQ',
+         playerVars: { 'autoplay': 1, 'controls': 0, 'loop': 1, 'modestbranding': 1, 'autohide': 1, 'showinfo': 0, 'disablekb': 1},
+         events: {
+           'onReady': onPlayerReady,
+           'onStateChange': onPlayerStateChange
+         }
+       });
+     }
+
+     function onPlayerReady(event) {
+         addShit();
+         event.target.setVolume(100);
+         event.target.playVideo();
+
+     }
+
+     function onPlayerStateChange(event) {
+     }
+
+     function addShit() {
+
+         for (var i = 0; i < 10; i++) {
+             var leftP = Math.floor(Math.random() * (100 - 0 + 1));
+             var speed = Math.floor(Math.random() * (80 - 10 + 1)) + 10;
+             var delay = Math.floor(Math.random() * (50 - 0 + 1));
+             stuffBox.innerHTML = stuffBox.innerHTML + `<img class="item" style="left:${leftP}%; animation-delay: ${delay/20}s; animation-duration: ${speed}s" src="ysdn.png"/>`;
+         }
+
+         for (var i = 0; i < 10; i++) {
+             var leftP = Math.floor(Math.random() * (100 - 0 + 1));
+             var speed = Math.floor(Math.random() * (80 - 10 + 1)) + 10;
+             var delay = Math.floor(Math.random() * (50 - 0 + 1));
+             stuffBox.innerHTML = stuffBox.innerHTML + `<p class="item" style="left:${leftP}%; animation-delay: ${delay/20}s; animation-duration: ${speed}s" src="ysdn.png">wow ysdn so nice</p>`;
+         }
+     }
+
+
+
+    </script>
+    </body>
+</html>
