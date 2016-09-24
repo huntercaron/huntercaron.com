@@ -829,11 +829,28 @@ iframe {
 @media screen and (max-width: 700px) {
 
     .about-text {
-        width: 82%;
+        width: 80%;
     }
+
+    .about-intro, .about-more, .contact-links p {
+        font-size: 16px;
+        max-width: 285px;
+    }
+
+
 
     .intro {
-        font-size: 28px;
+        font-size: 30px;
     }
 
+    .about-contents p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    .intro {
+        font-size: 26px;
+    }
 }
