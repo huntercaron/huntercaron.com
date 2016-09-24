@@ -357,7 +357,7 @@ moderat-regular-webfont.woff2
     -moz-transition: all 0.35s ease;
     transition: all 0.35s ease;
 
-    transform: translateY(-300px) perspective(1px);
+    transform: translateY(-300.5px) perspective(1.5px) translateZ(0);
 }
 
 
@@ -370,7 +370,7 @@ moderat-regular-webfont.woff2
     backface-visibility: hidden;
     -webkit-font-smoothing: antialiased;
 
-    transform: translateY(0) translateX(0) perspective(1px);
+    transform: translateY(0) translateX(0) perspective(1px) translateZ(0);
 }
 
 .medium .pr-info-box.toggling, .larg .pr-info-box.toggling {
@@ -444,6 +444,7 @@ moderat-regular-webfont.woff2
     font-size: 13px;
     margin-left: 8px;
     font-weight: bold;
+    border-radius: 2px;
 
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.20);
 
