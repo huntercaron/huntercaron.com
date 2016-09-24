@@ -2,6 +2,10 @@
 
 .project-page {
     background-color: #fafafa;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+    font-weight: lighter !important;
 }
 
 .back-button {
@@ -13,7 +17,7 @@
     padding: 18px 24px;
     border-radius: 2px;
     top: 15px;
-    left: 15px;
+    right: 15px;
 
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: all 0.35s ease;
@@ -44,6 +48,8 @@ header {
 }
 
 .project-title {
+    letter-spacing: 0.5px;
+    line-height: 1.1;
     padding-top: 30px;
     text-align: center;
     margin:auto;
@@ -52,15 +58,21 @@ header {
 }
 
 .project-title h2 {
+    font-family: 'Moderat';
+    font-weight: bold;
     color: white;
-    font-weight: 700;
-    font-size: 42px;
+    font-size: 36px;
     margin-bottom: 50px;
 }
 
 .project-title h4 {
+    font-family: 'Moderat';
+    font-weight: bold;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 11px;
     margin-bottom: 25px;
-    font-weight: 600;
     position: relative;
 }
 
@@ -80,13 +92,14 @@ header {
     width: 90%;
     margin: auto;
     margin-bottom: 60px;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.1px;
-    line-height: 1.2;
+    line-height: 1.35;
 }
 
 strong {
-    font-weight: 700;
+    font-family: 'Moderat';
+    font-weight: bold;
 }
 
 .view-external {
@@ -97,7 +110,6 @@ strong {
     border-radius: 4px;
     background-color: white;
     color: #666;
-    font-weight: 600;
 }
 
 .view-external:hover {
@@ -113,7 +125,7 @@ strong {
     margin-top: 40px;
     position: relative;
     width: 60%;
-    max-width: 500px;
+    max-width: 520px;
     margin: auto;
     display: block;
 }
@@ -125,7 +137,7 @@ main {
 }
 
 .slide-contents {
-    max-width: 600px;
+    max-width: 550px;
     width: 90%;
     margin: auto;
 }
@@ -138,10 +150,12 @@ main {
 }
 
 .slide-contents h2 {
+    font-family: 'Moderat';
+    text-transform: capitalize;
+    font-weight: bold;
     position: relative;
     text-align: left;
     font-size: 28px;
-    font-weight: 700;
     padding: 80px 0 14px 0;
 }
 
@@ -157,32 +171,34 @@ main {
 }
 
 .slide-contents p {
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.35;
+    padding-bottom: 15px;
 }
 
 .slide-contents h3 {
     font-size: 24px;
-    font-weight: 600;
     line-height: 1.2;
 }
 
 em {
-    opacity: 0.6;
+    font-size: 16px;
+    opacity: 0.75;
+    font-style: normal;
 }
 
 .quote {
-    background-color: #cdcdcd;
+
+    background-color: #cccccf;
     margin: 80px auto 20px auto;
-    width: 85%;
-    max-width: 800px;
-    border-radius: 5px;
+    width: 100%;
     padding: 80px 10px;
     color: white;
     box-sizing: border-box;
 }
 
-blockquote p {
+.quote blockquote p {
+    font-size: 22px;
     hanging-punctuation: first;
     margin: 0 auto;
 }
@@ -363,7 +379,6 @@ blockquote p::after {
     margin-right: 10px;
     text-align: center;
     font-size: 25px;
-    font-weight: 700;
     border-radius: 2px;
     display: inline-block;
 
