@@ -127,6 +127,9 @@ p {
 
 .contact-links i {
     color: #aaa;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
 
 .fa-angle-right {
@@ -140,6 +143,8 @@ p {
 
 .contact-links i:hover {
     color: #666;
+    transform: scale(1.25);
+    transform-origin: center;
 }
 
 .about-more:hover > .fa-angle-right {
