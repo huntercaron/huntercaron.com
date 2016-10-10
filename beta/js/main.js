@@ -7,7 +7,7 @@ var projects = [
 ];
 
 var gridEle = document.querySelector(".grid");
-var currentProject;
+var currentProj = projects[0].ele;
 
 var gridGrow = TweenLite.to(gridEle, 2, {
     ease: Expo.easeOut,
@@ -20,6 +20,8 @@ TweenLite.to(gridEle, 0, {
     width: "94%",
     height: "94%",
 });
+
+var openProject = new TimelineLite({paused: true});
 
 Array.from(projects).forEach(proj => {
 	proj.ele.addEventListener('click', function(event) {
@@ -38,27 +40,26 @@ function openProject(currentEle) {
 
 	projects[currentEle.dataset.project].open = true;
     currentEle.classList.add("active-project");
+    currentProj =
 
     gridGrow.play();
 
-	for (var i of projects) {
-		if (i.index == currentEle.dataset.project) {
-            TweenLite.to(i.ele, 0, { zIndex: 2 });
 
-			TweenLite.to(i.ele, 1.2, {
-				top: 0,
-				left: 0,
-				ease: Expo.easeOut,
-				opacity: 1,
-				scale: 1,
-				padding: 0,
-				width: "100%",
-				height: "100%"
-			});
-		} else {
-            TweenLite.to(i.ele, 0, { zIndex: 0 });
-		}
-	}
+    TweenLite.to(i.ele, 0, { zIndex: 2 });
+
+	TweenLite.to(i.ele, 1.2, {
+		top: 0,
+		left: 0,
+		ease: Expo.easeOut,
+		opacity: 1,
+		scale: 1,
+		padding: 0,
+		width: "100%",
+		height: "100%"
+	});
+
+    TweenLite.to(i.ele, 0, { zIndex: 0 });
+
 }
 
 
@@ -71,28 +72,17 @@ function closeProject(currentEle) {
         height: "94%",
     });
 
-	for (var i of projects) {
-		if (i.open) {
-			TweenLite.to(i.ele, 1, {
-				zIndex: 2,
-				width: i.width,
-				height: i.height,
-				top: i.top,
-				left: i.left,
-				ease: Expo.easeOut,
-				padding: "6px",
-				opacity: 1,
-				scale: 1,
-			});
-		} else {
-			TweenLite.to(i.ele, 0, {
-				zIndex: 0,
-				ease: Expo.easeOut,
-				opacity: 1,
-				scale: 1,
-			});
-		}
-	}
+	TweenLite.to(i.ele, 1, {
+		zIndex: 2,
+		width: i.width,
+		height: i.height,
+		top: i.top,
+		left: i.left,
+		ease: Expo.easeOut,
+		padding: "6px",
+		opacity: 1,
+		scale: 1,
+	});
 
 	projects[currentEle.dataset.project].open = false;
     currentEle.classList.remove("active-project");
