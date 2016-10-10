@@ -386,7 +386,7 @@ moderat-regular-webfont.woff2
 
 .pr-info {
     /* box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.15); */
-    transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0) translate3d( 0, 0, 0);
     -webkit-font-smoothing: antialiased;
 
     max-width: 84%;
@@ -445,6 +445,8 @@ moderat-regular-webfont.woff2
     margin-left: 8px;
     font-weight: bold;
     border-radius: 2px;
+    transform: perspective(1px) translateZ(0) translate3d( 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
 
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.20);
 

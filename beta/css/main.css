@@ -1,0 +1,216 @@
+/* CSS Reset
+-------------------------------------------------- */
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+
+/* Global Stuff
+-------------------------------------------------- */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+	
+    font-size: 1.6em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #222;
+
+    webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Grid
+-------------------------------------------------- */
+
+.flex-grid {
+    display: flex;
+}
+
+.flex-center-h {
+    justify-content: center;
+}
+
+.flex-center-v {
+    align-items: center;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    font-weight: 300; }
+h1 { font-size: 6.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 4.8rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.6rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing: 0; }
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+    color: #1EAEDB;
+}
+
+a:hover {
+    color: #0FA0CE;
+}
+
+
+/* Main Structure
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.left-spacer {
+	flex: 0 0 480px;
+}
+
+.left {
+	display: flex;
+	background-color: white;
+	position: fixed;
+	z-index: 2;
+	height: 100%;
+	width: 480px;
+}
+
+.right {
+	flex: 1 1 auto;
+}
+
+.desc {
+	background-color: #222222;
+	height: 400px;
+}
+
+@media screen and (max-width: 1100px) {
+	body {
+		display: block;
+	}
+
+	.left-spacer {
+		display: none;
+	}
+
+	.left {
+		position: relative;
+		height: 520px;
+	}
+}
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.grid-box {
+	overflow: hidden;
+	position: relative;
+	height: 80vh;
+	background-color: #F5F5F5;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid {
+	position: relative;
+	height: 94%;
+	width: 94%;
+}
+
+.grid-item {
+	margin: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 33.333333333%;
+	height: 33.333333333%;
+	padding: 6px;
+}
+
+.row-one {
+	top: 0;
+}
+
+.row-two {
+	top: 33.333333333%;
+}
+
+.row-three {
+	top: 66.666666666%;
+}
+
+.col-one {
+	left: 0
+}
+
+.col-two {
+	left: 33.333333333%;
+}
+
+.col-three {
+	left: 66.666666666%;
+}
+
+.grid-item-large {
+	height: 66.666666666%;
+	width: 66.666666666%;
+}
+
+.grid-item-medium {
+	height: 33.333333333%;
+	width: 66.666666666%;
+}
+
+.grid-item-inner {
+	position: relative;
+	border-radius: 3px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	transition: transform 0.2s ease-in-out,
+				box-shadow 0.3s ease-in-out;
+}
+
+.grid-item-inner:hover {
+	transform: scale(1.015);
+	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
+}
+
+
+/* Project Specific Projects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Turnip */
+
+.turnip {
+	position: absolute;
+	height: 90%;
+	width: 200px;
+	right: 10px;
+	bottom: 0;
+	background-color: pink;
+}
