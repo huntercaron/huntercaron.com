@@ -9,19 +9,7 @@ var projects = [
 var gridEle = document.querySelector(".grid");
 var currentProj = projects[0].ele;
 
-var gridGrow = TweenLite.to(gridEle, 2, {
-    ease: Expo.easeOut,
-    width: "100%",
-    height: "100%",
-    paused: true
-});
-
-TweenLite.to(gridEle, 0, {
-    width: "94%",
-    height: "94%",
-});
-
-var openProject = new TimelineLite({paused: true});
+primeGridAnim();
 
 Array.from(projects).forEach(proj => {
 	proj.ele.addEventListener('click', function(event) {
@@ -35,19 +23,35 @@ Array.from(projects).forEach(proj => {
 	});
 });
 
+function primeGridAnim() {
+	TweenLite.to(gridEle, 0, {
+	    ease: Expo.easeOut,
+	    width: "100%",
+	    height: "100%"
+	});
+
+	TweenLite.to(gridEle, 0, {
+	    width: "94%",
+	    height: "94%",
+	});
+}
 
 function openProject(currentEle) {
 
 	projects[currentEle.dataset.project].open = true;
     currentEle.classList.add("active-project");
-    currentProj =
+    currentProj = currentEle.dataset.project;
 
-    gridGrow.play();
+	TweenLite.to(currentEle, 0, { zIndex: 2 });
 
+	TweenLite.to(gridEle, 0.8, {
+		delay: 0.7,
+	    ease: Expo.easeOut,
+	    width: "100%",
+	    height: "100%"
+	});
 
-    TweenLite.to(i.ele, 0, { zIndex: 2 });
-
-	TweenLite.to(i.ele, 1.2, {
+	TweenLite.to(currentEle, 0.7, {
 		top: 0,
 		left: 0,
 		ease: Expo.easeOut,
@@ -58,30 +62,27 @@ function openProject(currentEle) {
 		height: "100%"
 	});
 
-    TweenLite.to(i.ele, 0, { zIndex: 0 });
-
 }
 
 
 function closeProject(currentEle) {
 
-    gridGrow.restart().pause();
-
-    TweenLite.to(gridEle, 4, {
+    TweenLite.to(gridEle, 0.7, {
         width: "94%",
         height: "94%",
     });
 
-	TweenLite.to(i.ele, 1, {
+	TweenLite.to(currentEle, 0.6, {
 		zIndex: 2,
-		width: i.width,
-		height: i.height,
-		top: i.top,
-		left: i.left,
+		width: projects[currentEle.dataset.project].width,
+		height: projects[currentEle.dataset.project].height,
+		top: projects[currentEle.dataset.project].top,
+		left: projects[currentEle.dataset.project].left,
 		ease: Expo.easeOut,
 		padding: "6px",
 		opacity: 1,
 		scale: 1,
+		onComplete: function(){TweenLite.to(currentEle, 0, { zIndex: 0 })}
 	});
 
 	projects[currentEle.dataset.project].open = false;

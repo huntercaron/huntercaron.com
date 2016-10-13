@@ -20,7 +20,7 @@ html {
 
 body {
     display: flex;
-	
+
     font-size: 1.6em;
     line-height: 1.6;
     font-weight: 400;
@@ -127,7 +127,7 @@ a:hover {
 .grid-box {
 	overflow: hidden;
 	position: relative;
-	height: 80vh;
+	height: 88vh;
 	background-color: #F5F5F5;
 	width: 100%;
 	display: flex;
@@ -187,7 +187,7 @@ a:hover {
 
 .grid-item-inner {
 	position: relative;
-	border-radius: 3px;
+	border-radius: 2px;
 	width: 100%;
 	height: 100%;
 	background-color: white;
@@ -199,6 +199,12 @@ a:hover {
 	transform: scale(1.015);
 	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
 }
+
+.active-project .grid-item-inner:hover {
+	transform: scale(1);
+	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
+}
+
 
 
 /* Project Specific Projects
