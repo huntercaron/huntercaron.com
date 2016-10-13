@@ -67,12 +67,14 @@ function openProject(currentEle) {
 
 function closeProject(currentEle) {
 
-    TweenLite.to(gridEle, 0.7, {
+    TweenLite.to(gridEle, 0.4, {
+		ease: Expo.easeIn,
         width: "94%",
         height: "94%",
     });
 
 	TweenLite.to(currentEle, 0.6, {
+		delay: 0.4,
 		zIndex: 2,
 		width: projects[currentEle.dataset.project].width,
 		height: projects[currentEle.dataset.project].height,
