@@ -39,19 +39,20 @@ function primeGridAnim() {
 function openProject(currentEle) {
 
 	projects[currentEle.dataset.project].open = true;
-    currentEle.classList.add("active-project");
     currentProj = currentEle.dataset.project;
 
 	TweenLite.to(currentEle, 0, { zIndex: 2 });
 
 	TweenLite.to(gridEle, 0.8, {
-		delay: 0.7,
+		delay: 0.72,
 	    ease: Expo.easeOut,
 	    width: "100%",
-	    height: "100%"
+	    height: "100%",
+		onComplete: function(){currentEle.classList.add("active-project")}
 	});
 
 	TweenLite.to(currentEle, 0.7, {
+		zIndex: 2,
 		top: 0,
 		left: 0,
 		ease: Expo.easeOut,
