@@ -85,7 +85,7 @@ function closeProject(currentEle) {
 		padding: "6px",
 		opacity: 1,
 		scale: 1,
-		onComplete: function(){TweenLite.to(currentEle, 0, { zIndex: 0 })}
+		onComplete: function(){TweenLite.to(currentEle, 0, { zIndex: 0 }); TweenLite.to(gridEle, 0, { width: "94%", height: "94%" })}
 	});
 
 	projects[currentEle.dataset.project].open = false;
