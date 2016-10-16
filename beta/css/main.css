@@ -172,6 +172,7 @@ a:hover {
 	position: relative;
 	height: 94%;
 	width: 94%;
+    max-width: 1280px;
 }
 
 .grid-item {
@@ -216,6 +217,12 @@ a:hover {
 .grid-item-medium {
 	height: 33.333333333%;
 	width: 66.666666666%;
+}
+
+@media screen and (max-width: 550px) {
+    .grid-item {
+        font-size: 3.6rem;
+    }
 }
 
 .grid-item-inner {
@@ -293,15 +300,18 @@ a:hover {
 .contact-links-box {
     position: absolute;
     bottom: 18px;
-    width: 50%;
-    max-width: 200px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-links {
     padding: 0;
     list-style: none;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
+    max-width: 200px;
     display: flex;
 }
 
@@ -388,19 +398,23 @@ a:hover {
 }
 
 
-/* Project Specific Projects
+/* Projects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.project-title {
+    position: absolute;
+}
 
 /* Turnip */
 
 .pro-0-inner {
     background-color: pink;
+    display: flex;
+    justify-content: center;
 }
 
 .turnip {
-	position: absolute;
-	width: 30%;
-	left: 35%;
-	bottom: -60px;
+    align-self: center;
+	height: 30vw;
 
 }
