@@ -172,6 +172,7 @@ a:hover {
 	position: relative;
 	height: 94%;
 	width: 94%;
+    max-height: 1280px;
     max-width: 1280px;
 }
 
@@ -222,6 +223,7 @@ a:hover {
 @media screen and (max-width: 550px) {
     .grid-item {
         font-size: 3.6rem;
+        width: 100%;
     }
 }
 
@@ -232,17 +234,21 @@ a:hover {
 	height: 100%;
 	background-color: white;
     overflow: hidden;
-	transition: transform 0.2s ease-in-out,
-				box-shadow 0.3s ease-in-out;
+	transition: transform 0.2s ease-out,
+				box-shadow 0.2s ease-out;
 }
 
 .grid-item-inner:hover {
+    transition: transform 0.14s ease-in-out,
+				box-shadow 0.2s ease-in-out;
 	transform: scale(1.015);
 	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
 }
 
-.active-project .grid-item-inner:hover {
-	transform: scale(1);
+.active-project .grid-item-inner {
+    transition: transform 0.3s ease-out,
+				box-shadow 0.3s ease-out;
+	transform: scale(1.0638297872);
 	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
 }
 
@@ -401,8 +407,25 @@ a:hover {
 /* Projects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.project-title {
+.project-info {
     position: absolute;
+    background-color: rgba(34, 34, 34, 0.8);
+    width: 100%;
+
+    padding: 2rem;
+    bottom: 0;
+}
+
+.project-title {
+    color: white;
+}
+
+.project-category {
+    font-size: 1.2rem;
+    color: #bbb;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Turnip */

@@ -43,6 +43,7 @@ function openProject(currentEle) {
 
 	TweenLite.to(currentEle, 0, { zIndex: 2 });
 
+	/*
 	TweenLite.to(gridEle, 0.8, {
 		delay: 0.72,
 	    ease: Expo.easeOut,
@@ -51,16 +52,25 @@ function openProject(currentEle) {
 		onComplete: function(){currentEle.classList.add("active-project")}
 	});
 
+
+	TweenLite.to(currentEle, 0.8, {
+		delay: 0.72,
+	    ease: Expo.easeOut,
+		scale: 1.0638297872,
+		onComplete: function(){currentEle.classList.add("active-project")}
+	});
+	*/
+
 	TweenLite.to(currentEle, 0.7, {
 		zIndex: 2,
 		top: 0,
 		left: 0,
 		ease: Expo.easeOut,
 		opacity: 1,
-		scale: 1,
 		padding: 0,
 		width: "100%",
-		height: "100%"
+		height: "100%",
+		onComplete: function(){currentEle.classList.add("active-project")}
 	});
 
 }
@@ -68,14 +78,16 @@ function openProject(currentEle) {
 
 function closeProject(currentEle) {
 
+	/*
     TweenLite.to(gridEle, 0.4, {
 		ease: Expo.easeIn,
         width: "94%",
         height: "94%",
     });
+	*/
 
 	TweenLite.to(currentEle, 0.6, {
-		delay: 0.4,
+		delay: 0.3,
 		zIndex: 2,
 		width: projects[currentEle.dataset.project].width,
 		height: projects[currentEle.dataset.project].height,
