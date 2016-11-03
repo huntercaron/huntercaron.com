@@ -408,9 +408,11 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .project-info {
+    display: none;
     position: absolute;
     background-color: rgba(34, 34, 34, 0.8);
-    width: 100%;
+    width: 75vw;
+    left: 0;
 
     padding: 2rem;
     bottom: 0;
