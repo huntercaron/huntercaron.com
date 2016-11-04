@@ -46,8 +46,22 @@ function openProject(currentEle) {
 
 	ele.style.zIndex = "2";
 	ele.style.transformOrigin = "top left";
-	ele.style.transform = `scaleX(${(gridBoxWidth)/width}) scaleY(${(gridBoxHeight)/height})
-							translateY(-${((gridBoxHeight-gridHeight)/2 + 6 + (gridHeight/3)*projects[currentProj].top)/((gridBoxHeight)/height)}px) translateX(-${((gridBoxWidth-gridWidth)/2 + 6 + (gridWidth/3)*projects[currentProj].left)/((gridBoxWidth)/width)}px)`;
+	ele.style.transform = 	`scaleX(${(gridBoxWidth)/width})
+							scaleY(${(gridBoxHeight)/height})
+							translateY(-${((gridBoxHeight-gridHeight)/2 + 6 + (gridHeight/3)*projects[currentProj].top)/((gridBoxHeight)/height)}px)
+							translateX(-${((gridBoxWidth-gridWidth)/2 + 6 + (gridWidth/3)*projects[currentProj].left)/((gridBoxWidth)/width)}px)`;
+
+	document.querySelector(".turnip").style.transform = `scale(${((gridBoxHeight)/height-1)})`;
+
+	if (currentProj == 4)
+		document.querySelector(".pro-" + currentProj + "-info").style.transform = `scaleY(${((gridBoxHeight-6)/height-(Math.floor(gridBoxHeight/height)))}) scaleX(${((gridBoxWidth-6)/width-(Math.floor(gridBoxWidth/width)))})`;
+	else
+		document.querySelector(".pro-" + currentProj + "-info").style.transform = `scale(${((gridBoxHeight-6)/height-(Math.floor(gridBoxHeight/height)))})`;
+
+	setTimeout( function(){ document.querySelector(".project-contents").style.transform = "scaleY(1)"; }, 240 );
+
+
+	console.log(`scale(${(gridBoxHeight/height-(gridBoxHeight/height-(Math.floor(gridBoxHeight/height))))})`)
 
 	console.log(`scaleX(${(gridBoxWidth)/width}) scaleY(${(gridBoxHeight)/height}) translateY(-${(gridBoxHeight-gridHeight-12)/2 + (gridHeight/3)*projects[currentProj].top}px) translateX(-${(gridBoxWidth-gridWidth-42)/2}px)`);
 }
@@ -56,7 +70,12 @@ function openProject(currentEle) {
 function closeProject(currentEle) {
 	let ele = document.querySelector('.pro-' + currentProj + "-inner");
 
-	ele.style.transform = `scaleX(1) scaleY(1) `;
+	ele.style.transform = "";
+	document.querySelector(".pro-" + currentProj + "-info").style.transform = "";
+
+	document.querySelector(".turnip").style.transform = `scale(${1})`;
+	document.querySelector(".project-info").style.transform = `scale(${1})`;
+	document.querySelector(".project-contents").style.transform = "scaleY(0)";
 
 	projects[currentEle.dataset.project].open = false;
     currentEle.classList.remove("active-project");

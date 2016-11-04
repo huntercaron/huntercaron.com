@@ -160,7 +160,9 @@ a:hover {
 .grid-box {
 	overflow: hidden;
 	position: relative;
+    min-height: 600px;
 	height: 100%;
+    max-height: 90vh;
 	background-color: #F5F5F5;
 	width: 100%;
     display: flex;
@@ -236,14 +238,15 @@ a:hover {
 	background-color: white;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-	transition: transform 0.3s cubic-bezier(0.175, 0.9, 0.3, 1.035),
+	transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
 				box-shadow 0.2s ease-out;
 }
 
 .grid-item-inner:hover {
-    transition: transform 0.3s cubic-bezier(0.175, 0.9, 0.3, 1.035),
+    transform-origin: top-left;
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
 				box-shadow 0.2s ease-in-out;
-	transform: scale(1.015);
+	transform: scale(1.015) translateY(-2px) translateX(-2px);
 	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
 }
 
@@ -346,6 +349,7 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .about {
+    position: relative;
     font-size: 1.8rem;
 	background-color: #222222;
     display: flex;
@@ -410,18 +414,20 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .project-info {
-    display: none;
     position: absolute;
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: white;
     width: 75vw;
     left: 0;
-
     padding: 2rem;
     bottom: 0;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.12);
+
+    transform-origin: bottom left;
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .project-title {
-    color: white;
+    color: #222;
 }
 
 .project-category {
@@ -432,17 +438,32 @@ a:hover {
     text-transform: uppercase;
 }
 
+.project-contents {
+    height: 1600px;
+    transform-origin: top;
+
+    transform: scaleY(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    background-color: white;
+}
+
 /* Turnip */
 
-.pro-0-inner {
-    background-color: pink;
+.grid-item-inner {
     display: flex;
     justify-content: center;
 }
 
+.pro-0-inner { background-color: pink; }
+
 .turnip {
     align-self: center;
 	height: 80%;
-    transition: transform 0.4s ease-out,
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
                 box-shadow 0.2s ease-out;
 }
