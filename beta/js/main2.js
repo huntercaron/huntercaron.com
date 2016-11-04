@@ -40,14 +40,8 @@ function openProject(currentEle) {
 
 	projects[currentEle.dataset.project].open = true;
     currentProj = currentEle.dataset.project;
-	console.log(currentProj);
-	let ele = document.querySelector('.pro-' + currentProj + "-inner");
-	let width = document.querySelector('.pro-' + currentProj + "-inner").offsetWidth;
-	let height = document.querySelector('.pro-' + currentProj + "-inner").offsetHeight;
 
-	let gridWidth = document.querySelector(".grid").offsetWidth;
-	let gridHeight = document.querySelector(".grid").offsetHeight;
-
+	TweenLite.to(currentEle, 0, { zIndex: 2 });
 
 	/*
 	TweenLite.to(gridEle, 0.8, {
@@ -66,19 +60,23 @@ function openProject(currentEle) {
 		onComplete: function(){currentEle.classList.add("active-project")}
 	});
 	*/
-	ele.style.zIndex = "2";
-	ele.style.transformOrigin = "top left";
-	ele.style.transform = `scaleX(${(gridWidth-12)/width}) scaleY(${(gridHeight-12)/height})`;
 
-	console.log(`scaleX(${gridWidth/width}) scaleY(${gridHeight/height}) translateY(${(gridHeight-height)/2}px)`);
-
+	TweenLite.to(currentEle, 0.7, {
+		zIndex: 2,
+		top: 0,
+		left: 0,
+		ease: Expo.easeOut,
+		opacity: 1,
+		padding: 0,
+		width: "100%",
+		height: "100%",
+		onComplete: function(){currentEle.classList.add("active-project")}
+	});
 
 }
 
 
 function closeProject(currentEle) {
-	let ele = document.querySelector('.pro-' + currentProj + "-inner");
-	ele.style.transform = `scaleX(1) scaleY(1) `;
 
 	/*
     TweenLite.to(gridEle, 0.4, {
@@ -86,7 +84,7 @@ function closeProject(currentEle) {
         width: "94%",
         height: "94%",
     });
-
+	*/
 
 	TweenLite.to(currentEle, 0.6, {
 		delay: 0.3,
@@ -101,7 +99,6 @@ function closeProject(currentEle) {
 		scale: 1,
 		onComplete: function(){TweenLite.to(currentEle, 0, { zIndex: 0 }); TweenLite.to(gridEle, 0, { width: "94%", height: "94%" })}
 	});
-	*/
 
 	projects[currentEle.dataset.project].open = false;
     currentEle.classList.remove("active-project");
