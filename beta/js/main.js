@@ -1,15 +1,13 @@
 var projects = [
-	{name: "turnip", index: 0, open: false, width: "66.666666666%", height: "66.666666666%", left: 0, top: 0, ele: document.getElementById("pro-" + 0)},
-	{name: "experiments", index: 1, open: false, width: "33.333333333%", height: "33.333333333%", left: "66.666666666%", top: 0, ele: document.getElementById("pro-" + 1)},
-	{name: "big-data", index: 2, open: false, width: "33.333333333%", height: "33.333333333%", left: "66.666666666%", top: "33.333333333%", ele: document.getElementById("pro-" + 2)},
-	{name: "sprouted", index: 3, open: false, width: "33.333333333%", height: "33.333333333%", left: 0, top: "66.666666666%", ele: document.getElementById("pro-" + 3)},
-	{name: "companion", index: 4, open: false, width: "66.666666666%", height: "33.333333333%", left: "33.333333333%", top: "66.666666666%", ele: document.getElementById("pro-" + 4)}
+	{name: "turnip", index: 0, open: false, width: "66.666666666", height: "66.666666666", left: 0, top: 0, ele: document.getElementById("pro-" + 0), inner: document.querySelector(".pro-" + 0 + "-inner") },
+	{name: "experiments", index: 1, open: false, width: "33.333333333", height: "33.333333333", left: 2, top: 0, ele: document.getElementById("pro-" + 1), inner: document.querySelector(".pro-" + 1 + "-inner") },
+	{name: "big-data", index: 2, open: false, width: "33.333333333", height: "33.333333333", left: 2, top: 1, ele: document.getElementById("pro-" + 2), inner: document.querySelector(".pro-" + 2 + "-inner") },
+	{name: "sprouted", index: 3, open: false, width: "33.333333333", height: "33.333333333", left: 0, top: 2, ele: document.getElementById("pro-" + 3), inner: document.querySelector(".pro-" + 3 + "-inner") },
+	{name: "companion", index: 4, open: false, width: "66.666666666", height: "33.333333333", left: 1, top: 2, ele: document.getElementById("pro-" + 4), inner: document.querySelector(".pro-" + 4 + "-inner") }
 ];
 
 var gridEle = document.querySelector(".grid");
 var currentProj = projects[0].ele;
-
-//primeGridAnim();
 
 Array.from(projects).forEach(proj => {
 	proj.ele.addEventListener('click', function(event) {
@@ -23,24 +21,17 @@ Array.from(projects).forEach(proj => {
 	});
 });
 
-function primeGridAnim() {
-	TweenLite.to(gridEle, 0, {
-	    ease: Expo.easeOut,
-	    width: "100%",
-	    height: "100%"
-	});
-
-	TweenLite.to(gridEle, 0, {
-	    width: "94%",
-	    height: "94%",
-	});
+function gridZclear() {
+	for (let i of projects) {
+		i.inner.style.zIndex = 1;
+	}
 }
 
 function openProject(currentEle) {
 
 	projects[currentEle.dataset.project].open = true;
     currentProj = currentEle.dataset.project;
-	console.log(currentProj);
+
 	let ele = document.querySelector('.pro-' + currentProj + "-inner");
 	let width = document.querySelector('.pro-' + currentProj + "-inner").offsetWidth;
 	let height = document.querySelector('.pro-' + currentProj + "-inner").offsetHeight;
@@ -48,60 +39,23 @@ function openProject(currentEle) {
 	let gridWidth = document.querySelector(".grid").offsetWidth;
 	let gridHeight = document.querySelector(".grid").offsetHeight;
 
+	let gridBoxWidth = document.querySelector(".grid-box").offsetWidth;
+	let gridBoxHeight = document.querySelector(".grid-box").offsetHeight;
 
-	/*
-	TweenLite.to(gridEle, 0.8, {
-		delay: 0.72,
-	    ease: Expo.easeOut,
-	    width: "100%",
-	    height: "100%",
-		onComplete: function(){currentEle.classList.add("active-project")}
-	});
+	gridZclear()
 
-
-	TweenLite.to(currentEle, 0.8, {
-		delay: 0.72,
-	    ease: Expo.easeOut,
-		scale: 1.0638297872,
-		onComplete: function(){currentEle.classList.add("active-project")}
-	});
-	*/
 	ele.style.zIndex = "2";
 	ele.style.transformOrigin = "top left";
-	ele.style.transform = `scaleX(${(gridWidth-12)/width}) scaleY(${(gridHeight-12)/height})`;
+	ele.style.transform = `scaleX(${(gridBoxWidth)/width}) scaleY(${(gridBoxHeight)/height}) translateY(-${((gridBoxHeight-gridHeight)/2 + 6 + (gridHeight/3)*projects[currentProj].top)/((gridBoxHeight)/height)}px) translateX(-${((gridBoxWidth-gridWidth)/2 + 6 + (gridWidth/3)*projects[currentProj].left)/((gridBoxWidth)/width)}px)`;
 
-	console.log(`scaleX(${gridWidth/width}) scaleY(${gridHeight/height}) translateY(${(gridHeight-height)/2}px)`);
-
-
+	console.log(`scaleX(${(gridBoxWidth)/width}) scaleY(${(gridBoxHeight)/height}) translateY(-${(gridBoxHeight-gridHeight-12)/2 + (gridHeight/3)*projects[currentProj].top}px) translateX(-${(gridBoxWidth-gridWidth-42)/2}px)`);
 }
 
 
 function closeProject(currentEle) {
 	let ele = document.querySelector('.pro-' + currentProj + "-inner");
+
 	ele.style.transform = `scaleX(1) scaleY(1) `;
-
-	/*
-    TweenLite.to(gridEle, 0.4, {
-		ease: Expo.easeIn,
-        width: "94%",
-        height: "94%",
-    });
-
-
-	TweenLite.to(currentEle, 0.6, {
-		delay: 0.3,
-		zIndex: 2,
-		width: projects[currentEle.dataset.project].width,
-		height: projects[currentEle.dataset.project].height,
-		top: projects[currentEle.dataset.project].top,
-		left: projects[currentEle.dataset.project].left,
-		ease: Expo.easeOut,
-		padding: "6px",
-		opacity: 1,
-		scale: 1,
-		onComplete: function(){TweenLite.to(currentEle, 0, { zIndex: 0 }); TweenLite.to(gridEle, 0, { width: "94%", height: "94%" })}
-	});
-	*/
 
 	projects[currentEle.dataset.project].open = false;
     currentEle.classList.remove("active-project");

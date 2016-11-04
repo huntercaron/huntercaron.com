@@ -160,14 +160,15 @@ a:hover {
 .grid-box {
 	overflow: hidden;
 	position: relative;
-	height: 88vh;
+	height: 100%;
 	background-color: #F5F5F5;
 	width: 100%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
-    margin: 3%;
 	position: relative;
 	height: 94%;
 	width: 94%;
@@ -227,6 +228,7 @@ a:hover {
 }
 
 .grid-item-inner {
+    user-select: none;
 	position: relative;
 	border-radius: 2px;
 	width: 100%;
@@ -234,12 +236,12 @@ a:hover {
 	background-color: white;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-	transition: transform 0.4s ease-out,
+	transition: transform 0.5s ease-out,
 				box-shadow 0.2s ease-out;
 }
 
 .grid-item-inner:hover {
-    transition: transform 0.14s ease-in-out,
+    transition: transform 0.16s cubic-bezier(0.250, 0.460, 0.450, 0.940),
 				box-shadow 0.2s ease-in-out;
 	transform: scale(1.015);
 	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
@@ -440,6 +442,7 @@ a:hover {
 
 .turnip {
     align-self: center;
-	height: 30vw;
-
+	height: 80%;
+    transition: transform 0.4s ease-out,
+                box-shadow 0.2s ease-out;
 }
