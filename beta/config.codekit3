@@ -88,13 +88,13 @@
 		"oS": 0
 		},
 	"\/css\/main.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/css\/main-ck.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/images\/favicon.png": {

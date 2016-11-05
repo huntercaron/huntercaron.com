@@ -48,6 +48,7 @@ html {
 }
 
 body {
+    height: 100%;
     display: flex;
     font-family: 'Moderat', sans-serif;
     font-size: 1.6em;
@@ -131,6 +132,7 @@ a:hover {
 }
 
 .right {
+    height: 100%;
 	flex: 1 1 auto;
 }
 
@@ -232,28 +234,34 @@ a:hover {
 .grid-item-inner {
     user-select: none;
 	position: relative;
-	border-radius: 2px;
+	border-radius: 5px;
 	width: 100%;
 	height: 100%;
 	background-color: white;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
 	transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
-				box-shadow 0.2s ease-out;
+				box-shadow 0.2s ease-out,
+                border-radius 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .grid-item-inner:hover {
     transform-origin: top-left;
     transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
-				box-shadow 0.2s ease-in-out;
-	transform: scale(1.015) translateY(-2px) translateX(-2px);
+				box-shadow 0.2s ease-in-out,
+                border-radius 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
 	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
 }
 
+.proj-0-inner:hover { transform: scale(1.015) translateY(-4px) translateX(-7px); }
+.proj-1-inner:hover { transform: scale(1.025) translateY(-2px) translateX(1px); }
+.proj-2-inner:hover { transform: scale(1.025) translateY(-2px) translateX(1px); }
+.proj-3-inner:hover { transform: scale(1.025) translateY(-2px) translateX(-4px); }
+.proj-4-inner:hover { transform: scale(1.02) translateY(-1px) translateX(2px); }
+
+
 .active-project .grid-item-inner {
-    transition: transform 0.3s ease-out,
-				box-shadow 0.3s ease-out;
-	transform: scale(1.0638297872);
+    border-radius: 0;
 	box-shadow: 0 8px 20px -4px rgba(0,0,0, 0.14);
 }
 
@@ -287,10 +295,6 @@ a:hover {
     margin-left: 24px;
 }
 
-.intro-learn-more:hover > .fa-angle-right {
-    transform: translateX(5px);
-}
-
 .email-link {
     font-size: 1.8rem;
     color: #bbb;
@@ -298,6 +302,15 @@ a:hover {
 
 .email-link:hover {
     opacity: 0.75;
+}
+
+.intro-arrow {
+    transition: transform  0.14s ease-in-out;
+    display: inline-block;
+}
+
+.email-link:hover > .intro-arrow {
+    transform: translateX(3px);
 }
 
 @media screen and (max-width: 550px) {
@@ -421,9 +434,26 @@ a:hover {
     padding: 2rem;
     bottom: -1px;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.12);
+    display: none;
 
     transform-origin: bottom left;
-    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform 0.38s cubic-bezier(0.4, 0.0, 0.2, 1);
+
+    transform: translateY(200px);
+}
+
+.grid-item-inner:hover > .project-info {
+    transform: translateY(0);
+}
+
+.grid-item-inner .project-info.hidden-info {
+    transition: transform 0.7s cubic-bezier(0.4, 0.0, 0.25, 1);
+    transform: translateY(200px);
+}
+
+.grid-item-inner .project-info.hidden-info > .project-info-text {
+    transition: opacity 0.2s cubic-bezier(0.8, 0.0, 0.2, 1);
+    opacity: 0;
 }
 
 .project-title {
@@ -438,8 +468,12 @@ a:hover {
     text-transform: uppercase;
 }
 
+/* Project Contents */
+
 .project-contents {
-    height: 1600px;
+    border-top: 0.5px solid rgba(0,0,0,0.05);
+    font-size: 1.6rem;
+    min-height: 1000px;
     transform-origin: top;
 
     transform: scaleY(0);
@@ -448,9 +482,44 @@ a:hover {
     left: 0;
     z-index: 3;
     width: 100%;
-    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform 0.5s cubic-bezier(0.8, 0.0, 0.2, 1);
     background-color: white;
 }
+
+.proj-contents-inner {
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateY(20px);
+    transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.proj-contents-inner.show-contents {
+    transition: all 0.7s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.proj-center-content {
+
+    padding-top: 40px;
+    max-width: 560px;
+}
+
+.proj-title-text {
+    padding-bottom: 14px;
+}
+
+/* Project Colours */
+
+.proj-0-inner { background-color: pink; }
+.proj-1-inner { background-color: #26C2FE; }
+.proj-2-inner { background-color: #FFFEF8; }
+.proj-3-inner { background-color: white; }
+.proj-4-inner { background-color: #F6F7F9; }
 
 /* Turnip */
 
@@ -458,8 +527,6 @@ a:hover {
     display: flex;
     justify-content: center;
 }
-
-.pro-0-inner { background-color: pink; }
 
 .turnip {
     align-self: center;
