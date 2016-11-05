@@ -417,13 +417,13 @@ a:hover {
     position: absolute;
     background-color: white;
     width: 75vw;
-    left: 0;
+    left: -1px;
     padding: 2rem;
-    bottom: 0;
+    bottom: -1px;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.12);
 
     transform-origin: bottom left;
-    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .project-title {
@@ -464,6 +464,6 @@ a:hover {
 .turnip {
     align-self: center;
 	height: 80%;
-    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
+    transition: transform  0.6s cubic-bezier(0.4, 0.0, 0.2, 1),
                 box-shadow 0.2s ease-out;
 }

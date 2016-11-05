@@ -7,7 +7,16 @@ var projects = [
 ];
 
 var gridEle = document.querySelector(".grid");
-var currentProj = projects[0].ele;
+var currentProj = 0;
+
+var currentProjWidth = document.querySelector('.pro-' + currentProj + "-inner").offsetWidth;
+var currentProjHeight = document.querySelector('.pro-' + currentProj + "-inner").offsetHeight;
+
+var gridWidth = document.querySelector(".grid").offsetWidth;
+var gridHeight = document.querySelector(".grid").offsetHeight;
+
+var gridBoxWidth = document.querySelector(".grid-box").offsetWidth;
+var gridBoxHeight = document.querySelector(".grid-box").offsetHeight;
 
 Array.from(projects).forEach(proj => {
 	proj.ele.addEventListener('click', function(event) {
@@ -36,11 +45,13 @@ function openProject(currentEle) {
 	let width = document.querySelector('.pro-' + currentProj + "-inner").offsetWidth;
 	let height = document.querySelector('.pro-' + currentProj + "-inner").offsetHeight;
 
-	let gridWidth = document.querySelector(".grid").offsetWidth;
-	let gridHeight = document.querySelector(".grid").offsetHeight;
+	currentProjHeight = document.querySelector('.pro-' + currentProj + "-inner").offsetHeight;
 
-	let gridBoxWidth = document.querySelector(".grid-box").offsetWidth;
-	let gridBoxHeight = document.querySelector(".grid-box").offsetHeight;
+	gridWidth = document.querySelector(".grid").offsetWidth;
+	gridHeight = document.querySelector(".grid").offsetHeight;
+
+	gridBoxWidth = document.querySelector(".grid-box").offsetWidth;
+	gridBoxHeight = document.querySelector(".grid-box").offsetHeight;
 
 	gridZclear()
 
@@ -59,6 +70,11 @@ function openProject(currentEle) {
 		document.querySelector(".pro-" + currentProj + "-info").style.transform = `scale(${((gridBoxHeight-6)/height-(Math.floor(gridBoxHeight/height)))})`;
 
 	setTimeout( function(){ document.querySelector(".project-contents").style.transform = "scaleY(1)"; }, 240 );
+	setTimeout( function(){
+		document.querySelector(".turnip").style.transform = `scale(${((gridBoxHeight)/height-1)*0.8}) translateY(-240px)`;
+		document.querySelector(".pro-" + currentProj + "-info").style.transform = document.querySelector(".project-info").style.transform + " translateY(-290px)";
+		document.querySelector(".project-contents").style.transform = "translateY(-300px)"
+	}, 500);
 
 
 	console.log(`scale(${(gridBoxHeight/height-(gridBoxHeight/height-(Math.floor(gridBoxHeight/height))))})`)
@@ -70,12 +86,19 @@ function openProject(currentEle) {
 function closeProject(currentEle) {
 	let ele = document.querySelector('.pro-' + currentProj + "-inner");
 
-	ele.style.transform = "";
-	document.querySelector(".pro-" + currentProj + "-info").style.transform = "";
+	document.querySelector(".turnip").style.transform = `scale(${((gridBoxHeight)/currentProjHeight-1)})`;
 
-	document.querySelector(".turnip").style.transform = `scale(${1})`;
-	document.querySelector(".project-info").style.transform = `scale(${1})`;
-	document.querySelector(".project-contents").style.transform = "scaleY(0)";
+	document.querySelector(".pro-" + currentProj + "-info").style.transform = `scale(${((gridBoxHeight-6)/currentProjHeight-(Math.floor(gridBoxHeight/currentProjHeight)))})`;
+
+	document.querySelector(".project-contents").style.transform = "translateY(0) scaleY(0.0000001)"
+
+
+
+	setTimeout( function(){
+		document.querySelector(".turnip").style.transform = "scale(1)";
+		ele.style.transform = "";
+		document.querySelector(".pro-" + currentProj + "-info").style.transform = "";
+	}, 500);
 
 	projects[currentEle.dataset.project].open = false;
     currentEle.classList.remove("active-project");
