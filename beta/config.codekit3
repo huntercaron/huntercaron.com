@@ -7,7 +7,7 @@
 		"uuidString": "D024C5C3-2AEF-41CC-97F1-15E740F58CF4"
 		}
 	],
-"creatorBuild": "25428",
+"creatorBuild": "25444",
 "files": {
 	"\/css\/fonts\/moderat-bold-webfont.eot": {
 		"ft": 8192,
@@ -157,6 +157,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/js\/min\/main-min.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/min\/main-min.js.map",
+		"oF": 0
 		},
 	"\/README.md": {
 		"cS": 0,

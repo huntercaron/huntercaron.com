@@ -13,6 +13,9 @@ var currentProject = 0;
 var currentProjWidth = document.querySelector('.proj-' + currentProj + "-inner").offsetWidth;
 var currentProjHeight = document.querySelector('.proj-' + currentProj + "-inner").offsetHeight;
 
+var currentSplashWidth = document.querySelector('.proj-' + currentProj + "-splash").offsetWidth;
+var currentSplashHeight = document.querySelector('.proj-' + currentProj + "-splash").offsetHeight;
+
 var gridWidth = document.querySelector(".grid").offsetWidth;
 var gridHeight = document.querySelector(".grid").offsetHeight;
 
@@ -65,6 +68,9 @@ function openProject(currentEle) {
 	gridBoxWidth = document.querySelector(".grid-box").offsetWidth;
 	gridBoxHeight = document.querySelector(".grid-box").offsetHeight;
 
+	currentSplashWidth = document.querySelector('.proj-' + currentProj + "-splash").offsetWidth;
+	currentSplashHeight = document.querySelector('.proj-' + currentProj + "-splash").offsetHeight;
+
 	gridZclear()
 	populateContent(currentProj);
 
@@ -77,7 +83,16 @@ function openProject(currentEle) {
 
 
 
-	document.querySelector(".turnip").style.transform = `scale(${((gridBoxHeight)/height-1)})`;
+	//document.querySelector(".turnip").style.transform = `scaleY(${((currentSplashHeight*(gridBoxHeight/height))*(currentSplashHeight/gridBoxHeight))/gridBoxHeight}) scaleX(${((currentSplashWidth*(gridBoxWidth/width))*(currentSplashWidth/gridBoxWidth))/gridBoxWidth})`;
+	//document.querySelector(".turnip").style.transform = `scaleY(${((currentSplashHeight*(gridBoxHeight/height))*(currentSplashHeight/gridBoxHeight))/gridBoxHeight}) scaleX(${((((currentSplashHeight*(gridBoxHeight/height))*(currentSplashHeight/gridBoxHeight))/gridBoxHeight)/(currentSplashWidth/currentSplashHeight))})`;
+	document.querySelector(".turnip").style.transform = `scaleY(${1/(gridBoxHeight/height)}) scaleX(${1/(gridBoxWidth/width)})`;
+	document.querySelector(".med-splash").style.transform = `scaleY(${1/(gridBoxHeight/height)}) scaleX(${1/(gridBoxWidth/width)})`;
+
+
+	//document.querySelector(".turnip").style.transform = `scaleY(${(currentSplashHeight/gridBoxHeight)*((gridBoxHeight)/height)}) scaleX(${((currentSplashHeight/gridBoxHeight)*((gridBoxHeight)/height)*(currentSplashWidth/currentSplashHeight))*((gridBoxWidth)/width)})`;
+	//document.querySelector(".med-splash").style.transform = `scaleY(${((gridBoxHeight)/height)}) scaleX(${(gridBoxWidth)/width})`;
+	//document.querySelector(".med-splash").style.transform = `scaleY(${((gridBoxHeight)/height)}) scaleX(${(gridBoxWidth)/width})`;
+
 
 	document.querySelector(".proj-" + currentProj + "-info").classList.add("hidden-info");
 
@@ -87,13 +102,15 @@ function openProject(currentEle) {
 		document.querySelector(".turnip").style.transform = `scale(${((gridBoxHeight)/height-1)*0.8}) translateY(-${gridBoxHeight/10*3}px)`;
 		document.querySelector(".project-contents").style.transform = `translateY(-${gridBoxHeight/2}px)`;
 
+		document.querySelector(".med-splash").style.transform = `scaleY(${1/(gridBoxHeight/height)}) scaleX(${1/(gridBoxWidth/width)})`;
+
 		document.querySelector('.proj-' + currentProj + "-contents").classList.add("show-contents");
 	}, 500);
 
 
-	console.log(`scale(${(gridBoxHeight/height-(gridBoxHeight/height-(Math.floor(gridBoxHeight/height))))})`)
+	console.log(`scaleY(${((currentSplashHeight*(gridBoxHeight/height))*(currentSplashHeight/gridBoxHeight))/gridBoxHeight}) scaleX(${((currentSplashWidth*(gridBoxWidth/width))*(currentSplashWidth/gridBoxWidth))/gridBoxWidth})`);
 
-	console.log(`scaleX(${(gridBoxWidth)/width}) scaleY(${(gridBoxHeight)/height}) translateY(-${(gridBoxHeight-gridHeight-12)/2 + (gridHeight/3)*projects[currentProj].top}px) translateX(-${(gridBoxWidth-gridWidth-42)/2}px)`);
+	//console.log(`scaleX(${(gridBoxWidth)/width}) scaleY(${(gridBoxHeight)/height}) translateY(-${(gridBoxHeight-gridHeight-12)/2 + (gridHeight/3)*projects[currentProj].top}px) translateX(-${(gridBoxWidth-gridWidth-42)/2}px)`);
 }
 
 
