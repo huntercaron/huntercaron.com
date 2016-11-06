@@ -390,8 +390,8 @@ a:hover {
   box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.14); }
 
 .proj-0-inner:hover {
-  -webkit-transform: scale(1.015) translateY(-4px) translateX(-7px);
-          transform: scale(1.015) translateY(-4px) translateX(-7px); }
+  -webkit-transform: scale(1.015) translateY(-3px) translateX(-5px);
+          transform: scale(1.015) translateY(-3px) translateX(-5px); }
 
 .proj-1-inner:hover {
   -webkit-transform: scale(1.025) translateY(-2px) translateX(1px);

@@ -36,6 +36,17 @@ function gridZclear() {
 	}
 }
 
+function populateContent(proj) {
+
+	for (let i = 0; i < 5; i++) {
+		if (i != proj) {
+			document.querySelector('.proj-' + i + "-contents").style.display = "none";
+		} else {
+			document.querySelector('.proj-' + i + "-contents").style.display = "flex";
+		}
+	}
+}
+
 function openProject(currentEle) {
 
 	projects[currentEle.dataset.project].open = true;
@@ -54,6 +65,7 @@ function openProject(currentEle) {
 	gridBoxHeight = document.querySelector(".grid-box").offsetHeight;
 
 	gridZclear()
+	populateContent(currentProj);
 
 	ele.style.zIndex = "2";
 	ele.style.transformOrigin = "top left";
