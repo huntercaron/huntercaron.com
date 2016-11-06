@@ -644,6 +644,7 @@ a:hover {
   opacity: 1; }
 
 .proj-center-content {
+  width: 90%;
   padding-top: 40px;
   max-width: 560px; }
 
@@ -675,7 +676,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.turnip {
+.splash {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

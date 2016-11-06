@@ -8,6 +8,7 @@ var projects = [
 
 var gridEle = document.querySelector(".grid");
 var currentProj = 0;
+var currentProject = 0;
 
 var currentProjWidth = document.querySelector('.proj-' + currentProj + "-inner").offsetWidth;
 var currentProjHeight = document.querySelector('.proj-' + currentProj + "-inner").offsetHeight;
