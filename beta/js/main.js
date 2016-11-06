@@ -84,7 +84,7 @@ function openProject(currentEle) {
 	setTimeout( function(){
 		currentEle.classList.add("active-project");
 		document.querySelector(".turnip").style.transform = `scale(${((gridBoxHeight)/height-1)*0.8}) translateY(-${gridBoxHeight/10*3}px)`;
-		document.querySelector(".project-contents").style.transform = `translateY(-${gridBoxHeight/2}px)`
+		document.querySelector(".project-contents").style.transform = `translateY(-${gridBoxHeight/2}px)`;
 
 		document.querySelector('.proj-' + currentProj + "-contents").classList.add("show-contents");
 	}, 500);
