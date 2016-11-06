@@ -656,7 +656,7 @@ a:hover {
   background-color: pink; }
 
 .proj-1-inner {
-  background-color: #26C2FE; }
+  background-color: #101010; }
 
 .proj-2-inner {
   background-color: #FFFEF8; }
@@ -684,4 +684,19 @@ a:hover {
   -webkit-transition: box-shadow 0.2s ease-out, -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.2s ease-out, -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease-out;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease-out, -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease-out, -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-filter: blur(0px) !important; }
+
+.sml-splash {
+  height: auto;
+  width: 76%; }
+
+.proj-1-splash {
+  width: 60%; }
+
+.proj-2-splash {
+  width: 60%; }
+
+.proj-4-splash {
+  padding-top: 10px;
+  width: 60%; }

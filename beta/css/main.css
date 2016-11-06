@@ -516,7 +516,7 @@ a:hover {
 /* Project Colours */
 
 .proj-0-inner { background-color: pink; }
-.proj-1-inner { background-color: #26C2FE; }
+.proj-1-inner { background-color: #101010; }
 .proj-2-inner { background-color: #FFFEF8; }
 .proj-3-inner { background-color: white; }
 .proj-4-inner { background-color: #F6F7F9; }
@@ -530,11 +530,29 @@ a:hover {
 
 .splash {
     align-self: center;
+
 	height: 80%;
 
     transition: transform  0.6s cubic-bezier(0.4, 0.0, 0.2, 1),
                 box-shadow 0.2s ease-out;
+
+    -webkit-filter: blur(0px) !important;
 }
 
-.turnip {
+.sml-splash {
+    height: auto;
+    width: 76%;
+}
+
+.proj-1-splash {
+    width: 60%;
+}
+
+.proj-2-splash {
+    width: 60%;
+}
+
+.proj-4-splash {
+    padding-top: 10px;
+    width: 60%;
 }

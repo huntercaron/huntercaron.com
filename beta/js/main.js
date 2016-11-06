@@ -61,6 +61,7 @@ function openProject(currentEle) {
 	let height = document.querySelector('.proj-' + currentProj + "-inner").offsetHeight;
 
 	currentProjHeight = document.querySelector('.proj-' + currentProj + "-inner").offsetHeight;
+	currentProjWidth = document.querySelector('.proj-' + currentProj + "-inner").offsetWidth;
 
 	gridWidth = document.querySelector(".grid").offsetWidth;
 	gridHeight = document.querySelector(".grid").offsetHeight;
@@ -82,51 +83,33 @@ function openProject(currentEle) {
 							translateX(-${((gridBoxWidth-gridWidth)/2 + 6 + (gridWidth/3)*projects[currentProj].left)/((gridBoxWidth)/width)}px)`;
 
 
-
-	//document.querySelector(".turnip").style.transform = `scaleY(${((currentSplashHeight*(gridBoxHeight/height))*(currentSplashHeight/gridBoxHeight))/gridBoxHeight}) scaleX(${((currentSplashWidth*(gridBoxWidth/width))*(currentSplashWidth/gridBoxWidth))/gridBoxWidth})`;
-	//document.querySelector(".turnip").style.transform = `scaleY(${((currentSplashHeight*(gridBoxHeight/height))*(currentSplashHeight/gridBoxHeight))/gridBoxHeight}) scaleX(${((((currentSplashHeight*(gridBoxHeight/height))*(currentSplashHeight/gridBoxHeight))/gridBoxHeight)/(currentSplashWidth/currentSplashHeight))})`;
-	document.querySelector(".turnip").style.transform = `scaleY(${1/(gridBoxHeight/height)}) scaleX(${1/(gridBoxWidth/width)})`;
-	document.querySelector(".med-splash").style.transform = `scaleY(${1/(gridBoxHeight/height)}) scaleX(${1/(gridBoxWidth/width)})`;
-
-
-	//document.querySelector(".turnip").style.transform = `scaleY(${(currentSplashHeight/gridBoxHeight)*((gridBoxHeight)/height)}) scaleX(${((currentSplashHeight/gridBoxHeight)*((gridBoxHeight)/height)*(currentSplashWidth/currentSplashHeight))*((gridBoxWidth)/width)})`;
-	//document.querySelector(".med-splash").style.transform = `scaleY(${((gridBoxHeight)/height)}) scaleX(${(gridBoxWidth)/width})`;
-	//document.querySelector(".med-splash").style.transform = `scaleY(${((gridBoxHeight)/height)}) scaleX(${(gridBoxWidth)/width})`;
-
-
+	document.querySelector(".proj-" + currentProj + "-splash").style.transform = `scaleY(${1/(gridBoxHeight/height)}) scaleX(${1/(gridBoxWidth/width)})`;
 	document.querySelector(".proj-" + currentProj + "-info").classList.add("hidden-info");
 
 	setTimeout( function(){ document.querySelector(".project-contents").style.transform = "scaleY(1)"; }, 240 );
+
 	setTimeout( function(){
 		currentEle.classList.add("active-project");
-		document.querySelector(".turnip").style.transform = `scale(${((gridBoxHeight)/height-1)*0.8}) translateY(-${gridBoxHeight/10*3}px)`;
+		document.querySelector(".proj-" + currentProj + "-splash").style.transform = `scaleY(${1/(gridBoxHeight/height)*0.8}) scaleX(${1/(gridBoxWidth/width)*0.8}) translateY(-${gridBoxHeight/10*3}px)`;
 		document.querySelector(".project-contents").style.transform = `translateY(-${gridBoxHeight/2}px)`;
-
-		document.querySelector(".med-splash").style.transform = `scaleY(${1/(gridBoxHeight/height)}) scaleX(${1/(gridBoxWidth/width)})`;
 
 		document.querySelector('.proj-' + currentProj + "-contents").classList.add("show-contents");
 	}, 500);
 
-
-	console.log(`scaleY(${((currentSplashHeight*(gridBoxHeight/height))*(currentSplashHeight/gridBoxHeight))/gridBoxHeight}) scaleX(${((currentSplashWidth*(gridBoxWidth/width))*(currentSplashWidth/gridBoxWidth))/gridBoxWidth})`);
-
-	//console.log(`scaleX(${(gridBoxWidth)/width}) scaleY(${(gridBoxHeight)/height}) translateY(-${(gridBoxHeight-gridHeight-12)/2 + (gridHeight/3)*projects[currentProj].top}px) translateX(-${(gridBoxWidth-gridWidth-42)/2}px)`);
 }
 
 
 function closeProject(currentEle) {
 	let ele = document.querySelector('.proj-' + currentProj + "-inner");
 
-	document.querySelector(".turnip").style.transform = `scale(${((gridBoxHeight)/currentProjHeight-1)})`;
-
+	document.querySelector(".proj-" + currentProj + "-splash").style.transform = `scaleY(${1/(gridBoxHeight/currentProjHeight)}) scaleX(${1/(gridBoxWidth/currentProjWidth)})`;
 	document.querySelector(".project-contents").style.transform = "translateY(0) scaleY(0.0000001)"
-
 	document.querySelector('.proj-' + currentProj + "-contents").classList.remove("show-contents");
 
 	currentEle.classList.remove("active-project");
 
 	setTimeout( function(){
-		document.querySelector(".turnip").style.transform = "scale(1)";
+		document.querySelector(".proj-" + currentProj + "-splash").style.transform = "scale(1)";
 		ele.style.transform = "";
 		document.querySelector(".proj-" + currentProj + "-info").classList.remove("hidden-info");
 	}, 500);
