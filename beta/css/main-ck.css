@@ -361,7 +361,24 @@ a:hover {
 @media screen and (max-width: 550px) {
   .grid-item {
     font-size: 3.6rem;
-    width: 100%; } }
+    width: 100%;
+    height: 20%;
+    left: 0; }
+  #proj-0 {
+    top: 0; }
+  #proj-1 {
+    top: 20%; }
+  #proj-2 {
+    top: 40%; }
+  #proj-3 {
+    top: 60%; }
+  #proj-4 {
+    top: 80%; }
+  .grid-box {
+    height: 1000px;
+    max-height: none; }
+  .grid {
+    height: 96%; } }
 
 .grid-item-inner {
   -webkit-user-select: none;
@@ -687,6 +704,9 @@ a:hover {
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease-out, -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-filter: blur(0px) !important; }
 
+.med-splash {
+  height: 60%; }
+
 .sml-splash {
   height: auto;
   width: 76%; }
@@ -695,8 +715,4 @@ a:hover {
   width: 60%; }
 
 .proj-2-splash {
-  width: 60%; }
-
-.proj-4-splash {
-  padding-top: 10px;
   width: 60%; }
