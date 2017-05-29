@@ -10,8 +10,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 @font-face {
 	font-family: 'Sport';
-	src: url('Sport.woff2') format('woff2'),
-		url('Sport.woff') format('woff');
+	src: url('sport.woff2') format('woff2'),
+		url('sport.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
