@@ -4,88 +4,16 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "D024C5C3-2AEF-41CC-97F1-15E740F58CF4"
+		"uuidString": "87656A5F-6833-4CC9-AFBC-7D96866B07BF"
 		}
 	],
 "creatorBuild": "25813",
 "files": {
-	"\/css\/fonts\/moderat-bold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-bold-webfont.eot",
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
 		"oF": 0
-		},
-	"\/css\/fonts\/moderat-bold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-bold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/css\/fonts\/moderat-bold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-bold-webfont.ttf",
-		"oF": 0
-		},
-	"\/css\/fonts\/moderat-bold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-bold-webfont.woff",
-		"oF": 0
-		},
-	"\/css\/fonts\/moderat-bold-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-bold-webfont.woff2",
-		"oF": 0
-		},
-	"\/css\/fonts\/moderat-regular-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-regular-webfont.eot",
-		"oF": 0
-		},
-	"\/css\/fonts\/moderat-regular-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-regular-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/css\/fonts\/moderat-regular-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-regular-webfont.ttf",
-		"oF": 0
-		},
-	"\/css\/fonts\/moderat-regular-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-regular-webfont.woff",
-		"oF": 0
-		},
-	"\/css\/fonts\/moderat-regular-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/fonts\/moderat-regular-webfont.woff2",
-		"oF": 0
-		},
-	"\/css\/main-ck.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/main-ck-ck.css",
-		"oF": 0,
-		"oS": 0
 		},
 	"\/css\/main.css": {
 		"aP": 1,
@@ -93,109 +21,47 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/main-ck.css",
+		"oAP": "\/build\/css\/main-ck.css",
 		"oF": 1,
 		"oS": 0
+		},
+	"\/css\/sport.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/sport.woff",
+		"oF": 0
+		},
+	"\/css\/sport.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/sport.woff2",
+		"oF": 0
 		},
 	"\/images\/favicon.png": {
 		"ft": 32768,
 		"iS": 16683,
 		"oA": 0,
-		"oAP": "\/images\/favicon.png",
+		"oAP": "\/build\/images\/favicon.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
-		},
-	"\/images\/p0_splash_phone.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/p0_splash_phone.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/images\/p1_splash.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/p1_splash.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/images\/p2_splash.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/p2_splash.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/images\/p3_splash.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/p3_splash.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/images\/p4_splash.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/p4_splash.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/index.html",
+		"oAP": "\/build\/index.html",
 		"oF": 1
 		},
 	"\/js\/main.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/min\/main-min.js",
-		"oF": 3,
+		"oAP": "\/build\/js\/min\/main-min.js",
+		"oF": 0,
 		"sC": 0,
 		"tS": 1
-		},
-	"\/js\/main2.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/main2-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/min\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/main-min.js.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/js\/min\/main-min.js.map",
-		"oF": 0
 		},
 	"\/README.md": {
 		"cS": 0,
@@ -206,7 +72,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 0,
-		"oAP": "\/README.html",
+		"oAP": "\/build\/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -214,12 +80,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/watch.sh": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/watch.sh",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -227,10 +87,11 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 499913814,
-	"displayValue": "beta",
-	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-daenerys"
+	"creationDate": 499221619,
+	"displayValue": "placeholder",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "meme-jake",
+	"lastBuiltDate": 517693265
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -485,7 +346,7 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"buildFolderActive": 0,
+	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
@@ -626,7 +487,7 @@
 			"flagValue": -1
 			}
 		},
-	"esLintConfigFileHandlingType": 0,
+	"esLintConfigFileHandlingType": 1,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
 	"esLintRules": {
@@ -716,7 +577,7 @@
 			},
 		"curly": {
 			"active": 0,
-			"optionString": "'all'"
+			"optionString": "'all', 'consistent'"
 			},
 		"default-case": {
 			"active": 0,
@@ -736,7 +597,7 @@
 			},
 		"eqeqeq": {
 			"active": 0,
-			"optionString": "'always', {'null': 'always'}"
+			"optionString": "'always'"
 			},
 		"func-call-spacing": {
 			"active": 0,
@@ -744,7 +605,7 @@
 			},
 		"func-name-matching": {
 			"active": 0,
-			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			"optionString": "{'includeCommonJSModuleExports': false}"
 			},
 		"func-names": {
 			"active": 0,
@@ -772,7 +633,7 @@
 			},
 		"id-blacklist": {
 			"active": 0,
-			"optionString": "'data', 'err', 'e', 'cb', 'callback'"
+			"optionString": "['error', 'data', 'err', 'e', 'cb', 'callback']"
 			},
 		"id-length": {
 			"active": 0,
@@ -796,7 +657,7 @@
 			},
 		"key-spacing": {
 			"active": 0,
-			"optionString": "{'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}}"
+			"optionString": "'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}"
 			},
 		"keyword-spacing": {
 			"active": 0,
@@ -824,7 +685,7 @@
 			},
 		"max-len": {
 			"active": 0,
-			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true}"
+			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true}"
 			},
 		"max-lines": {
 			"active": 0,
@@ -1220,7 +1081,7 @@
 			},
 		"no-restricted-syntax": {
 			"active": 0,
-			"optionString": "'FunctionExpression', 'WithStatement'"
+			"optionString": "{'WithStatement', 'try-catch'}"
 			},
 		"no-return-assign": {
 			"active": 0,
@@ -2005,8 +1866,8 @@
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
-		"transpilerStyle": 0
+		"syntaxCheckerStyle": 3,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,
@@ -2337,7 +2198,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "\/build"
 	},
 "settingsFileVersion": "3"
 }
