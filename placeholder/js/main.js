@@ -11,11 +11,11 @@ mainBox.addEventListener('click', (function (e) {
     infoBoxShow = !infoBoxShow;
 
     if (infoBoxShow) {
-        name.style.display = "block";
-        infoBox.style.display = "none";
-    } else {
         name.style.display = "none";
         infoBox.style.display = "block";
+    } else {
+        name.style.display = "block";
+        infoBox.style.display = "none";
     }
 
 }));
