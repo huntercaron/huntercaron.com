@@ -1,20 +1,19 @@
-const mainBox = document.getElementById('main');
-const mainInner = document.getElementById('main-inner');
+var mainBox = document.getElementById('main');
+var mainInner = document.getElementById('main-inner');
 
-const name = document.getElementById('name');
-const infoBox = document.getElementById('info');
-
-let infoBoxShow = false;
+var nameBox = document.getElementById('name');
+var infoBox = document.getElementById('info');
+var infoBoxShow = false;
 
 mainBox.addEventListener('click', (function (e) {
 
     infoBoxShow = !infoBoxShow;
 
     if (infoBoxShow) {
-        name.style.display = "none";
+        nameBox.style.display = "none";
         infoBox.style.display = "block";
     } else {
-        name.style.display = "block";
+        nameBox.style.display = "block";
         infoBox.style.display = "none";
     }
 
@@ -27,10 +26,10 @@ infoBox.addEventListener('click', (function (e) {
 
 if (window.innerWidth > 500) {
     window.addEventListener('mousemove', function(e) {
-        let x = e.clientX;
-        let y = e.clientY;
-        let height = window.innerHeight;
-        let width = window.innerWidth;
+        var x = e.clientX;
+        var y = e.clientY;
+        var height = window.innerHeight;
+        var width = window.innerWidth;
 
         mainInner.style.transform = "translate(" + ((x-(width/2))*0.1) + "px, " + ((y-(height/2))*0.1) + "px)";
 

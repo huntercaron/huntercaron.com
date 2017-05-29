@@ -23,7 +23,7 @@
 		"oA": 0,
 		"oAP": "\/build\/css\/main-ck.css",
 		"oF": 1,
-		"oS": 0
+		"oS": 3
 		},
 	"\/css\/sport.woff": {
 		"ft": 8192,
@@ -53,6 +53,15 @@
 		"oA": 2,
 		"oAP": "\/build\/index.html",
 		"oF": 1
+		},
+	"\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/js\/min\/main-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
 		},
 	"\/js\/main.js": {
 		"ft": 64,
