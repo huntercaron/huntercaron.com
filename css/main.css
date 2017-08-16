@@ -141,3 +141,9 @@ a:hover {
     max-width: 380px;
     display: none;
 }
+
+.insta-logo {
+	display: none;
+	width: 36px;
+	height: 36px
+}
