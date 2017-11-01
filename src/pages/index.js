@@ -4,25 +4,28 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   color: white;
-  font-family: "Times", 'Times New Roman', serif;
+  font-family: 'Time', 'Times', serif;
+  font-weight: 300 !important;
   letter-spacing: 1px;
-  max-width: 480px;
-  font-size: 1.4rem;
-  transform: rotateX(-4deg) rotateY(-22deg) rotateZ(-2deg);
+  max-width: 510px;
+  font-size: 2.612rem;
+  margin: 2%;
 
   position: relative;
-  background-color: blue;
+  line-height: 1.3;
 
   p {
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
 
   a {
     color: white;
-    opacity: 0.9;
+    opacity: 1;
+    font-style: italic;
+    text-decoration: none;
 
     &:hover {
-      font-style: italic;
+      text-decoration: underline;
       opacity: 1;
     }
   }
@@ -30,46 +33,39 @@ const Container = styled.div`
 `
 
 const SocialBox = styled.div`
-  border: 1.5px solid white;
-  padding: 1rem 2rem 1.3rem;
+  border: 1.1px solid white;
+  padding: 0.5rem 2rem 1.3rem;
   display: inline-block;
   margin-top: 1rem;
 `
 
 const Title = styled.h1`
   font-weight: 400;
-  font-size: 1.4rem;
-  margin-left: 4rem;
+  font-size: 2.6rem;
+
+  span {
+
+  }
 `
 
 const SocialLink = styled.a`
-  padding: 0 1.5rem;
-`
+  padding: 0 2rem;
 
-const Gradient = styled.div`
-  width: 140%;
-  height: 140%;
-  position: absolute;
-  background-color: pink;
-  pointer-events: none;
-  top: -30%;
-  left: -30%;
-  z-index: 2;
-  background: radial-gradient(transparent 0%, rgba(0,0,0,0.05) 30%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,1) 100%);
+  font-size: 1.6rem;
+
 `
 
 const IndexPage = () => (
   <Container>
-    <Gradient/>
 
-    <Title>Hunter Caron — Designer</Title>
-    <p>Hey there, I’m currently working hard designing some new stuff. <a href="https://twitter.com/huntercaron/status/922627031166103553" target="_blank">Here</a> is a sneak peek.</p>
+    <Title>Hunter Caron — <span>Designer</span></Title>
+    <p>Hey there, I’m currently working hard designing some <a href="https://twitter.com/huntercaron/status/922627031166103553" target="_blank">new stuff</a>.</p>
 
     <p>Previously I've worked <a href="http://facebook.design/" target="_blank">@facebook</a>, <a href="https://www.format.com/" target="_blank">@format</a> & <a href="https://www.konradgroup.com/" target="_blank">@konradgroup</a>.</p>
 
-    <p>Soon I'm going back to designing stuff <a href="http://facebook.design/" target="_blank">@facebook</a>.</p>
+    <p>Soon I'm going back to designing stuff <a href="http://facebook.design/" target="_blank">@facebook</a> on <a href="http://messenger.com" target="_blank">@messenger</a>.</p>
 
-    <p>Wanna work on something together? <a href="mailto:huntercaron.design@icloud.com" target="_blank">Let's Talk &rarr;</a></p>
+    <p>Wanna work on something together? <br/> <a href="mailto:huntercaron.design@icloud.com" target="_blank">Let's Talk &rarr;</a></p>
 
     <SocialBox>
       <SocialLink href="https://twitter.com/huntercaron" target="_blank">[Twitter]</SocialLink>

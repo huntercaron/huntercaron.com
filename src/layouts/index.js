@@ -2,9 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import styled from 'styled-components'
+import  styled, { injectGlobal } from 'styled-components'
 
-//import './index.css'
+import analytics from '../assets/js/analytics'
+
+import './index.css'
+
+
+import TimesMedium from "../assets/fonts/TimesMedium.woff"
+import TimesMedium2 from "../assets/fonts/TimesMedium.woff2"
+import TimesMediumItalic from "../assets/fonts/TimesMediumItalic.woff"
+import TimesMediumItalic2 from "../assets/fonts/TimesMediumItalic.woff2"
 
 const Header = () => (
   <div>
@@ -17,6 +25,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
 `
 
 const Noise = styled.div`
@@ -57,3 +66,22 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
+
+injectGlobal`
+
+  @font-face {
+    font-family: 'Time';
+    src: url(${TimesMedium}) format('woff2'),
+      url(${TimesMedium2}) format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Time';
+    src: url(${TimesMediumItalic}) format('woff2'),
+      url(${TimesMediumItalic2}) format('woff');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+`
