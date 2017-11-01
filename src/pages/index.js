@@ -11,7 +11,7 @@ const Container = styled.div`
   transform: rotateX(-4deg) rotateY(-22deg) rotateZ(-2deg);
 
   position: relative;
-  display: none;
+  background-color: blue;
 
   p {
     margin: 2rem 0;
