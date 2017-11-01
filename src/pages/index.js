@@ -4,13 +4,14 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   color: white;
-  font-family: Courier, monospace;
+  font-family: "Times", 'Times New Roman', serif;
   letter-spacing: 1px;
   max-width: 480px;
   font-size: 1.4rem;
   transform: rotateX(-4deg) rotateY(-22deg) rotateZ(-2deg);
 
   position: relative;
+  display: none;
 
   p {
     margin: 2rem 0;
