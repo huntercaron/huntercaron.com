@@ -4,8 +4,6 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import  styled, { injectGlobal } from 'styled-components'
 
-import analytics from '../assets/js/analytics'
-
 import './index.css'
 
 
