@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  color: white;
   font-family: 'Time', 'Times', serif;
   font-weight: 300 !important;
   letter-spacing: 1px;
@@ -14,12 +13,14 @@ const Container = styled.div`
   position: relative;
   line-height: 1.3;
 
+  margin-top: 4rem;
+
   p {
     margin: 3rem 0;
   }
 
   a {
-    color: white;
+    color: black;
     opacity: 1;
     font-style: italic;
     text-decoration: none;
@@ -33,7 +34,7 @@ const Container = styled.div`
 `
 
 const SocialBox = styled.div`
-  border: 1.1px solid white;
+  border: 1.1px solid black;
   padding: 0.5rem 2rem 1.3rem;
   display: inline-block;
   margin-top: 1rem;
