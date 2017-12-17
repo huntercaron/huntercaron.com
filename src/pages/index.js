@@ -86,6 +86,10 @@ const List = styled.ul`
   padding-left: 0;
   margin-top: 0;
 
+  li {
+    margin-bottom: 0.2rem;
+  }
+
 `
 
 const ContactLink = styled.a`
