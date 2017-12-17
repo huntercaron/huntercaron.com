@@ -3,75 +3,148 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  font-family: 'Time', 'Times', serif;
+  font-family: 'Mod', sans-serif;
   font-weight: 300 !important;
-  letter-spacing: 1px;
-  max-width: 510px;
-  font-size: 2.612rem;
   margin: 2%;
-
+  margin-top: 2rem;
   position: relative;
-  line-height: 1.3;
 
-  margin-top: 4rem;
-
-  p {
-    margin: 3rem 0;
-  }
+  letter-spacing: -0.1px;
+  max-width: 360px;
+  font-size: 1.6rem;
+  line-height: 1.5;
 
   a {
-    color: black;
-    opacity: 1;
-    font-style: italic;
     text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+
+    font-weight: 500;
+    color: black;
 
     &:hover {
       text-decoration: underline;
-      opacity: 1;
     }
   }
 
+  p {
+    margin-bottom: 0;
+  }
+
+
+${''/*
+  p {
+    margin: 3rem 0;
+  } */}
+
 `
 
-const SocialBox = styled.div`
-  border: 1.1px solid black;
-  padding: 0.5rem 2rem 1.3rem;
-  display: inline-block;
-  margin-top: 1rem;
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+
+`
+
+const Block = styled.div`
+  margin-top: 3rem;
+`
+
+const Spacer = styled.div`
+  margin-top: ${props => props.h}rem;
+  width: 100%;
+`
+
+const BlockTitle = styled.h3`
+  color: #a0a0a0;
+  font-weight: normal;
+  font-size: 1.6rem;
+  margin: 0;
 `
 
 const Title = styled.h1`
-  font-weight: 400;
-  font-size: 2.6rem;
-
-  span {
-
-  }
-`
-
-const SocialLink = styled.a`
-  padding: 0 2rem;
-
+  margin: 0;
+  font-weight: bold;
   font-size: 1.6rem;
 
 `
 
+const Subtitle = styled.p`
+  font-weight: normal;
+  line-height: 0.85;
+  margin: 0;
+`
+
+const List = styled.ul`
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+
+`
+
+const ContactLink = styled.a`
+  color: black;
+
+`
+
+const BulletSpan = styled.span`
+  margin-right: 0.1rem;
+`
+
+
+const Bullet = () => (
+  <BulletSpan> ¬ </BulletSpan>
+);
+
+const Em = () => (
+  <span> &mdash; </span>
+);
+
+
 const IndexPage = () => (
   <Container>
 
-    <Title>Hunter Caron — <span>Designer</span></Title>
-    <p>Hey there, I’m currently working hard designing some <a href="https://twitter.com/huntercaron/status/922627031166103553" target="_blank">new stuff</a>.</p>
+    <Header>
+      <div>
+        <Title>Hunter Caron</Title>
+        <Subtitle>Design & Development</Subtitle>
+      </div>
+      <ContactLink href="mailto:huntercaron.design@icloud.com">Let’s Talk &rarr;</ContactLink>
+    </Header>
 
-    <p>Previously I've worked <a href="http://facebook.design/" target="_blank">@facebook</a>, <a href="https://www.format.com/" target="_blank">@format</a> & <a href="https://www.konradgroup.com/" target="_blank">@konradgroup</a>.</p>
+    <Block>
+      <p>I am a Toronto based designer & developer who is passionate about creating efficient and enjoyable digital experiences for everyone to enjoy.</p>
+      <p>Currently available for freelance work.</p>
+    </Block>
 
-    <p>Soon I'm going back to designing stuff <a href="http://facebook.design/" target="_blank">@facebook</a> on <a href="http://messenger.com" target="_blank">@messenger</a>.</p>
+    <Spacer h="3"/>
 
-    <p>Wanna work on something together? <br/> <a href="mailto:huntercaron.design@icloud.com" target="_blank">Let's Talk &rarr;</a></p>
+    <Block>
+      <BlockTitle>Experience</BlockTitle>
+      <List>
+        <li>
+          <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> Current
+        </li>
+        <li>
+           <Bullet/> <a href="http://www.konradgroup.com/" target="_blank">Konrad Group</a> <Em/> 2016
+        </li>
+      </List>
+    </Block>
 
-    <SocialBox>
-      <SocialLink href="https://twitter.com/huntercaron" target="_blank">[Twitter]</SocialLink>
-      <SocialLink href="https://www.instagram.com/hunterhcaron/" target="_blank">[Instagram]</SocialLink>
-    </SocialBox>
+    <Block>
+      <BlockTitle>Social</BlockTitle>
+      <List>
+        <li>
+          <Bullet/> <a href="https://twitter.com/huntercaron" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Github</a>
+        </li>
+
+      </List>
+    </Block>
 
   </Container>
 )
