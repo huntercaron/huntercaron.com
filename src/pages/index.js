@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Container = styled.div`
   font-family: 'Mod', sans-serif;
   font-weight: 300 !important;
-  margin: calc(2rem + 2%);
+  margin: calc(1rem + 2%);
   margin-top: 2rem;
   position: relative;
 
@@ -65,6 +65,7 @@ const BlockTitle = styled.h3`
   font-weight: normal;
   font-size: 1.6rem;
   margin: 0;
+  margin-bottom: 0.2rem;
 `
 
 const Title = styled.h1`
@@ -160,7 +161,7 @@ const IndexPage = () => (
     </Block> */}
 
     <Block>
-      <BlockTitle>Social</BlockTitle>
+      <BlockTitle>Contact</BlockTitle>
       <List>
 
         <li>
