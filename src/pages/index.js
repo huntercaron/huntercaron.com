@@ -32,6 +32,12 @@ const Container = styled.div`
   }
 
 
+
+	@media (min-width: 600px) {
+		margin-top: 4rem;
+	}
+
+
 ${''/*
   p {
     margin: 3rem 0;
@@ -122,7 +128,13 @@ const IndexPage = () => (
       <BlockTitle>Experience</BlockTitle>
       <List>
         <li>
-          <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> Current
+          <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger</a> <Em/> Aug. 2018
+        </li>
+        <li>
+          <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger [Intern]</a> <Em/> 2017
+        </li>
+        <li>
+          <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> 2016
         </li>
         <li>
            <Bullet/> <a href="http://www.konradgroup.com/" target="_blank">Konrad Group</a> <Em/> 2016
@@ -130,9 +142,27 @@ const IndexPage = () => (
       </List>
     </Block>
 
+    {/* <Block>
+      <BlockTitle>Recent Work</BlockTitle>
+      <List>
+
+        <li>
+          <Bullet/> <a href="http://facebook.design/desktopkit" target="_blank">Facebook Design Desktop Kit</a>
+        </li>
+        <li>
+          <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
+        </li>
+
+      </List>
+    </Block> */}
+
     <Block>
       <BlockTitle>Social</BlockTitle>
       <List>
+
         <li>
           <Bullet/> <a href="https://twitter.com/huntercaron" target="_blank">Twitter</a>
         </li>
@@ -140,7 +170,7 @@ const IndexPage = () => (
           <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
         </li>
         <li>
-          <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Github</a>
+          <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
         </li>
 
       </List>
