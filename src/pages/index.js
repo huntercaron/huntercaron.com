@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Container = styled.div`
   font-family: 'Mod', sans-serif;
   font-weight: 300 !important;
-  margin: 2%;
+  margin: calc(2rem + 2%);
   margin-top: 2rem;
   position: relative;
 
