@@ -8,9 +8,9 @@ public_folder: /img
 collections:
   - name: "work"
     label: "Work"
-    folder: "src/pages/blog"
+    folder: "src/pages/work"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Path", name: "path", widget: "string"}
