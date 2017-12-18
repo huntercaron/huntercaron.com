@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import Script from 'react-load-script';
 
 const Container = styled.div`
   font-family: 'Mod', sans-serif;
@@ -110,78 +111,99 @@ const Em = () => (
   <span> &mdash; </span>
 );
 
+class IndexPage extends React.Component {
 
-const IndexPage = () => (
-  <Container>
+  handleScriptLoad() {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
+    window.netlifyIdentity.init();
+  }
 
-    <Header>
-      <div>
-        <Title>Hunter Caron</Title>
-        <Subtitle>Design & Development</Subtitle>
-      </div>
-      <ContactLink href="mailto:huntercaron.design@icloud.com">Let’s Talk &rarr;</ContactLink>
-    </Header>
+  render() {
+    return(
+      <Container>
+        <Script
+          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          onLoad={this.handleScriptLoad.bind(this)}
+        />
 
-    <Block>
-      <p>I am a Toronto based designer & developer who is passionate about creating efficient and enjoyable digital experiences for everyone to enjoy.</p>
-      <p>Currently available for freelance work.</p>
-    </Block>
+        <Header>
+          <div>
+            <Title>Hunter Caron</Title>
+            <Subtitle>Design & Development</Subtitle>
+          </div>
+          <ContactLink href="mailto:huntercaron.design@icloud.com">Let’s Talk &rarr;</ContactLink>
+        </Header>
 
-    <Spacer h="3"/>
+        <Block>
+          <p>I am a Toronto based designer & developer who is passionate about creating efficient and enjoyable digital experiences for everyone to enjoy.</p>
+          <p>Currently available for freelance work.</p>
+        </Block>
 
-    <Block>
-      <BlockTitle>Experience</BlockTitle>
-      <List>
-        <li>
-          <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger</a> <Em/> Aug. 2018
-        </li>
-        <li>
-          <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger [Intern]</a> <Em/> 2017
-        </li>
-        <li>
-          <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> 2016
-        </li>
-        <li>
-           <Bullet/> <a href="http://www.konradgroup.com/" target="_blank">Konrad Group</a> <Em/> 2016
-        </li>
-      </List>
-    </Block>
+        <Spacer h="3"/>
 
-    {/* <Block>
-      <BlockTitle>Recent Work</BlockTitle>
-      <List>
+        <Block>
+          <BlockTitle>Experience</BlockTitle>
+          <List>
+            <li>
+              <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger</a> <Em/> Aug. 2018
+            </li>
+            <li>
+              <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger [Intern]</a> <Em/> 2017
+            </li>
+            <li>
+              <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> 2016
+            </li>
+            <li>
+               <Bullet/> <a href="http://www.konradgroup.com/" target="_blank">Konrad Group</a> <Em/> 2016
+            </li>
+          </List>
+        </Block>
 
-        <li>
-          <Bullet/> <a href="http://facebook.design/desktopkit" target="_blank">Facebook Design Desktop Kit</a>
-        </li>
-        <li>
-          <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
-        </li>
-        <li>
-          <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
-        </li>
+        {/* <Block>
+          <BlockTitle>Recent Work</BlockTitle>
+          <List>
 
-      </List>
-    </Block> */}
+            <li>
+              <Bullet/> <a href="http://facebook.design/desktopkit" target="_blank">Facebook Design Desktop Kit</a>
+            </li>
+            <li>
+              <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
+            </li>
 
-    <Block>
-      <BlockTitle>Contact</BlockTitle>
-      <List>
+          </List>
+        </Block> */}
 
-        <li>
-          <Bullet/> <a href="https://twitter.com/huntercaron" target="_blank">Twitter</a>
-        </li>
-        <li>
-          <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
-        </li>
-        <li>
-          <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
-        </li>
+        <Block>
+          <BlockTitle>Contact</BlockTitle>
+          <List>
 
-      </List>
-    </Block>
+            <li>
+              <Bullet/> <a href="https://twitter.com/huntercaron" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
+            </li>
 
-  </Container>
-)
+          </List>
+        </Block>
+
+      </Container>
+    )
+  }
+}
 
 export default IndexPage
