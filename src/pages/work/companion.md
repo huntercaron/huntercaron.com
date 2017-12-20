@@ -6,5 +6,3 @@ title: Companion
 subtitle: Supporting Design Degree Students
 ---
 Test test test
-
-![null](/img/compainion_thumbnail.png)
