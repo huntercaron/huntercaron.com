@@ -7,10 +7,6 @@ subtitle: Supporting Design Degree Students
 ---
 Test test test
 
-<!-- \\\\\[Case Study](./casestudy.pdf) -->
+<!-- \\\\\\[Case Study](./casestudy.pdf) -->
 
-
-
-![](/img/compainion_thumbnail.jpg)
-
-![null](./images/compainion_thumbnail.png)
+![](/./images/compainion_thumbnail.png)
