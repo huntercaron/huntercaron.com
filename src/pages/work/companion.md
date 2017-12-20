@@ -8,3 +8,4 @@ Methods and properties shown in black are part of the p5.js core, items in blue 
 
 [Case Study](./casestudy.pdf)
 
+![](/img/compainion_thumbnail.png)
