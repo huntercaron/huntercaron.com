@@ -7,6 +7,9 @@ const Container = styled.div`
   position: relative;
   margin: auto calc(1.5rem + 2%);
 
+  max-width: 500px;
+  width: 100%;
+
   @media (min-width: 600px) {
 
 	}
@@ -59,9 +62,13 @@ const BackButton = styled.div`
 
 const Content = styled.div`
   margin-top: 4rem;
-  max-width: 500px;
 
-  
+  .gatsby-resp-image-wrapper {
+    box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.05);
+
+  }
+
+
 `
 
 export default ({ data }) => {
