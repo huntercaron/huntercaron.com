@@ -7,11 +7,11 @@ const Container = styled.div`
   font-family: 'Mod', sans-serif;
   font-weight: 300 !important;
   margin: calc(1.5rem + 2%);
-  margin-top: 2rem;
+  margin-top: 0;
   position: relative;
 
   letter-spacing: -0.1px;
-  max-width: 360px;
+  max-width: 500px;
   font-size: 1.6rem;
   line-height: 1.5;
 
@@ -35,7 +35,7 @@ const Container = styled.div`
 
 
 	@media (min-width: 600px) {
-		margin-top: 4rem;
+    display: flex;
 	}
 
 
@@ -49,6 +49,14 @@ ${''/*
 const Header = styled.header`
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 600px) {
+		margin-top: 3rem;
+    flex-basis: 200px;
+
+    flex-direction:column;
+    justify-content: flex-start;
+	}
 
 `
 
@@ -73,13 +81,18 @@ const Title = styled.h1`
   margin: 0;
   font-weight: bold;
   font-size: 1.6rem;
+  line-height: 1.5;
 
 `
 
 const Subtitle = styled.p`
   font-weight: normal;
-  line-height: 0.85;
   margin: 0;
+  line-height: 0.8;
+
+  @media (min-width: 600px) {
+    line-height: 1.2;
+  }
 `
 
 const List = styled.ul`
@@ -95,11 +108,27 @@ const List = styled.ul`
 
 const ContactLink = styled.a`
   color: black;
+  font-weight: normal !important;
 
 `
 
 const BulletSpan = styled.span`
   margin-right: 0.1rem;
+`
+
+const SmallText = styled.span`
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform:uppercase;
+  color: #a0a0a0;
+  vertical-align: super;
+  opacity: 0;
+`
+
+const ProjectLink = styled(Link)`
+  &:hover > span {
+    opacity: 1;
+  }
 `
 
 
@@ -137,69 +166,64 @@ class IndexPage extends React.Component {
         <Header>
           <div>
             <Title>Hunter Caron</Title>
-            <Subtitle>Design & Development</Subtitle>
+            {/* <Subtitle>Designer</Subtitle> */}
           </div>
-          <ContactLink href="mailto:huntercaron.design@icloud.com">Let’s Talk &rarr;</ContactLink>
         </Header>
 
-        <Block>
-          <p>I am a Toronto based designer & developer who is passionate about creating efficient and enjoyable digital experiences for everyone to enjoy.</p>
-          <p>Currently available for freelance work.</p>
-        </Block>
+        <section>
+          <Block>
+            <p>I am a Toronto based designer & developer who is passionate about creating efficient and enjoyable digital experiences for everyone to enjoy.</p>
+            <p>Currently available for freelance work.</p>
+          </Block>
 
-        <Spacer h="3"/>
+          <Spacer h="3"/>
 
-        <Block>
-          <BlockTitle>Experience</BlockTitle>
-          <List>
-            <li>
-              <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger</a> <Em/> Aug. 2018
-            </li>
-            <li>
-              <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger [Intern]</a> <Em/> 2017
-            </li>
-            <li>
-              <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> 2016
-            </li>
-            <li>
-               <Bullet/> <a href="http://www.konradgroup.com/" target="_blank">Konrad Group</a> <Em/> 2016
-            </li>
-          </List>
-        </Block>
+          <Block>
+            <BlockTitle>Experience</BlockTitle>
+            <List>
+              <li>
+                <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger</a> <Em/> Aug. 2018
+              </li>
+              <li>
+                <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger [Intern]</a> <Em/> 2017
+              </li>
+              <li>
+                <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> 2016
+              </li>
+              <li>
+                 <Bullet/> <a href="http://www.konradgroup.com/" target="_blank">Konrad Group</a> <Em/> 2016
+              </li>
+            </List>
+          </Block>
 
-        {/* <Block>
-          <BlockTitle>Recent Work</BlockTitle>
-          <List>
+          <Block>
+            <BlockTitle>Work</BlockTitle>
+            <List>
 
-            <li>
-              <Bullet/> <a href="http://facebook.design/desktopkit" target="_blank">Facebook Design Desktop Kit</a>
-            </li>
-            <li>
-              <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
-            </li>
-            <li>
-              <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
-            </li>
+              <li>
+                <ProjectLink to="companion">Companion &rarr;</ProjectLink>
+              </li>
 
-          </List>
-        </Block> */}
+            </List>
+          </Block>
 
-        <Block>
-          <BlockTitle>Contact</BlockTitle>
-          <List>
+          <Block>
+            <BlockTitle>Contact</BlockTitle>
+            <List>
 
-            <li>
-              <Bullet/> <a href="https://twitter.com/huntercaron" target="_blank">Twitter</a>
-            </li>
-            <li>
-              <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
-            </li>
-            <li>
-              <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
-            </li>
+              <li>
+                <Bullet/> <a href="https://twitter.com/huntercaron" target="_blank">Twitter</a>
+              </li>
+              <li>
+                <Bullet/> <a href="https://www.instagram.com/hunterhcaron/" target="_blank">Instagram</a>
+              </li>
+              <li>
+                <Bullet/> <a href="https://github.com/huntercaron" target="_blank">Github</a>
+              </li>
 
-          </List>
-        </Block>
+            </List>
+          </Block>
+        </section>
 
       </Container>
     )

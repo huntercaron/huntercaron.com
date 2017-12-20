@@ -6,11 +6,19 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
        resolve: `gatsby-plugin-google-analytics`,
        options: {
          trackingId: 'UA-60215266-1'
        },
      },
-    `gatsby-plugin-netlify`
+     `gatsby-transformer-remark`,
+     `gatsby-plugin-netlify`
   ],
 }
