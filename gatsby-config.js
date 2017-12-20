@@ -25,7 +25,7 @@ module.exports = {
            {
              resolve: `gatsby-remark-images`,
              options: {
-               maxWidth: 500,
+               maxWidth: 500
              },
            },
            {
@@ -39,6 +39,7 @@ module.exports = {
          ],
        },
      },
-     `gatsby-plugin-netlify`
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-netlify`
   ],
 }

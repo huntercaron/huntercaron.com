@@ -5,6 +5,7 @@ import Link from "gatsby-link"
 const Container = styled.div`
   font-family: 'Mod', sans-serif;
   position: relative;
+  margin: auto calc(1.5rem + 2%);
 
   @media (min-width: 600px) {
 
@@ -32,9 +33,9 @@ const SubTitle = styled.p`
 `
 
 const BackButton = styled.div`
-  position: absolute;
+
   line-height: 1.5;
-  top: 3rem;
+
   font-weight: 500;
 
   a {
@@ -46,11 +47,18 @@ const BackButton = styled.div`
     text-decoration: underline;
   }
 
+  @media (min-width: 800px) {
+    top: 3rem;
+    position: absolute;
+    left: -75px;
+	}
 
-  left: -75px;
+
+
 `
 
 const Content = styled.div`
+  margin-top: 4rem;
   max-width: 500px;
 `
 

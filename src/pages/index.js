@@ -82,6 +82,7 @@ const Title = styled.h1`
   font-weight: bold;
   font-size: 1.6rem;
   line-height: 1.5;
+  margin-bottom: -3px;
 
 `
 
@@ -116,13 +117,19 @@ const BulletSpan = styled.span`
   margin-right: 0.1rem;
 `
 
-const SmallText = styled.span`
-  font-weight: bold;
-  font-size: 1rem;
-  text-transform:uppercase;
-  color: #a0a0a0;
+const SmallText = styled.a`
+  font-weight: 500;
+  font-size: 1.1rem;
+  ${''/* text-transform:uppercase; */}
+  color: #a0a0a0 !important;
   vertical-align: super;
-  opacity: 0;
+  margin-left: 0.5px;
+  letter-spacing: 0;
+  opacity: 1;
+
+  &:hover {
+    text-decoration:underline;
+  }
 `
 
 const ProjectLink = styled(Link)`
@@ -141,7 +148,6 @@ const Em = () => (
 );
 
 class IndexPage extends React.Component {
-
   handleScriptLoad() {
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', user => {
@@ -167,6 +173,7 @@ class IndexPage extends React.Component {
           <div>
             <Title>Hunter Caron</Title>
             {/* <Subtitle>Designer</Subtitle> */}
+            {/* <SmallText>huntercaron@me.com</SmallText> */}
           </div>
         </Header>
 
@@ -199,18 +206,20 @@ class IndexPage extends React.Component {
           <Block>
             <BlockTitle>Work</BlockTitle>
             <List>
-
-              <li>
-                <ProjectLink to="companion">Companion &rarr;</ProjectLink>
-              </li>
-
+                {this.props.data.allMarkdownRemark.edges.map(({ node }) => (
+                  <li key={node.id}>
+                    <ProjectLink to={node.frontmatter.path}>{node.frontmatter.title} &rarr;</ProjectLink>
+                  </li>
+                ))}
             </List>
           </Block>
 
           <Block>
             <BlockTitle>Contact</BlockTitle>
             <List>
-
+              <li>
+                <Bullet/> <a href="mailto:huntercaron.design@icloud.com" target="_blank">Email</a>
+              </li>
               <li>
                 <Bullet/> <a href="https://twitter.com/huntercaron" target="_blank">Twitter</a>
               </li>
@@ -229,5 +238,24 @@ class IndexPage extends React.Component {
     )
   }
 }
+
+export const query = graphql`
+  query IndexQuery {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
+            date(formatString: "DD MMMM, YYYY")
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage
