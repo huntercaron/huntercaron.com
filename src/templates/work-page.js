@@ -28,7 +28,7 @@ const Title = styled.h1`
 const SubTitle = styled.p`
   font-weight: normal;
   margin: 0;
-  line-height: 0.8;
+  line-height: 1;
 
   @media (min-width: 600px) {
     line-height: 1.2;

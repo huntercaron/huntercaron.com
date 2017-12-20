@@ -203,16 +203,18 @@ class IndexPage extends React.Component {
             </List>
           </Block>
 
-          <Block>
-            <BlockTitle>Work</BlockTitle>
-            <List>
-                {this.props.data.allMarkdownRemark.edges.map(({ node }) => (
-                  <li key={node.id}>
-                    <ProjectLink to={node.frontmatter.path}>{node.frontmatter.title} &rarr;</ProjectLink>
-                  </li>
-                ))}
-            </List>
-          </Block>
+          {(!process.env.NODE_ENV || process.env.NODE_ENV === 'development') &&
+            <Block>
+              <BlockTitle>Work</BlockTitle>
+              <List>
+                  {this.props.data.allMarkdownRemark.edges.map(({ node }) => (
+                    <li key={node.id}>
+                      <ProjectLink to={node.frontmatter.path}>{node.frontmatter.title} &rarr;</ProjectLink>
+                    </li>
+                  ))}
+              </List>
+            </Block>
+          }
 
           <Block>
             <BlockTitle>Contact</BlockTitle>
