@@ -9,4 +9,4 @@ Test test test
 
 <!-- \\\\\\\[Case Study](./casestudy.pdf) -->
 
-![](/img/compainion_thumbnail.jpg)
+![](/images/compainion_thumbnail.png)
