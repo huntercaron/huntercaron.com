@@ -60,6 +60,8 @@ const BackButton = styled.div`
 const Content = styled.div`
   margin-top: 4rem;
   max-width: 500px;
+
+  
 `
 
 export default ({ data }) => {
