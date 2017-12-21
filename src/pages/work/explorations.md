@@ -9,4 +9,6 @@ Recently I've been exploring design & development in spaces that are new to me.
 
 I've been documenting my process on a custom Gatsby site: [ThreeDee.party](http://threedee.party/).
 
-![](/img/ar_001.png)
+
+
+![AR](/img/ar_001.png)
