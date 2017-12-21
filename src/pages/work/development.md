@@ -7,10 +7,10 @@ subtitle: Recent Design & Development work
 ---
 These two sites we're designed in collaboration with other designers.  The development work was done by me.
 
-![](/img/nelsonhuang.png)
+![null](/img/nelsonhuang.png)
 
 [Nelson Huang](http://nelshuang.com/)
 
-![]()
+![](/img/hexagon.png)
 
 [Hexagon Restaurant](http://www.hexagonrestaurant.com/)
