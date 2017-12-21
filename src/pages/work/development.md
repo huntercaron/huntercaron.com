@@ -11,4 +11,6 @@ These two sites we're designed in collaboration with other designers.  The devel
 
 [Nelson Huang](http://nelshuang.com/)
 
+![]()
+
 [Hexagon Restaurant](http://www.hexagonrestaurant.com/)
