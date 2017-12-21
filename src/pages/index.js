@@ -197,7 +197,7 @@ class IndexPage extends React.Component {
                 <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger [Intern]</a> <Em/> 2017
               </li>
               <li>
-                <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> 2016
+                <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> 2016 – 2017
               </li>
               <li>
                  <Bullet/> <a href="http://www.konradgroup.com/" target="_blank">Konrad Group</a> <Em/> 2016
