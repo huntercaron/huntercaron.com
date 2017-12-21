@@ -52,6 +52,8 @@ const Header = styled.header`
 
   @media (min-width: 600px) {
 		margin-top: 3rem;
+    flex: 1;
+    min-width: 135px;
     flex-basis: 200px;
 
     flex-direction:column;
