@@ -10,7 +10,7 @@ Recently I've been exploring design & development in spaces that are new to me.
 I've been documenting my process on an custom Gatsby site: [ThreeDee.party](http://threedee.party/) (In-progress, currently desktop-only).
 
 <div class='video-box'>
-  <video autoPlay loop>
+  <video autoPlay loop poster="/img/ar_001.png">
     <source src="/img/ar-vid_001.mp4" type="video/mp4"/>
     AR Video
   </video>
