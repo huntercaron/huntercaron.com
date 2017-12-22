@@ -5,12 +5,18 @@ date: 2017-12-20T22:21:37.771Z
 title: Development
 subtitle: Recent Design & Development work
 ---
-These two sites we're designed in collaboration with other designers.  The development work was done by me.
+These two sites were designed in collaboration with other designers and developed by me.
 
-![null](/img/nelsonhuang.png)
+![nelsonhuang](/img/nelsonhuang.png)
 
-[Nelson Huang](http://nelshuang.com/)
+**Nelson Huang** — [Visit Site](http://nelshuang.com/)
 
-![](/img/hexagon.png)
+Website for Toronto based photographer. Static site built with Gatsby/React using Contentful API as a CMS backend, hooked up to a Netlify build hook.
 
-[Hexagon Restaurant](http://www.hexagonrestaurant.com/)
+</br>
+
+![hexagon](/img/hexagon.png)
+
+**Hexagon Restaurant** — [Visit Site](http://www.hexagonrestaurant.com/)
+
+Website for Hexagon Restaurant in Oakville, Ontario. Built with completely vanilla javascript, using HTML Canvas api to show a random selection of 5 different animations on page load.

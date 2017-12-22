@@ -62,10 +62,27 @@ const BackButton = styled.div`
 
 const Content = styled.div`
   margin-top: 4rem;
+  margin-bottom: 8rem;
+
+  .video-box video, .gatsby-resp-image-wrapper {
+    box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.08);
+
+    margin-top: 3rem;
+  }
+
+  .video-box video {
+    width: 100%;
+  }
 
   .gatsby-resp-image-wrapper {
-    box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.05);
+    
+  }
 
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
 
