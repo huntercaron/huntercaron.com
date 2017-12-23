@@ -27,4 +27,12 @@ This was around the time when I discovered the beginnings of Web AR, and instant
 
 AR is changing fast and is starting to feel like closer than ever to a mainstream technology. We're at a fantastic time in the community because of this. I tweeted out one of my first AR creations (above), which got picked up my the creators of THREE.js and Google's web XR team.
 
-![](/img/chromedevsummit.png)
+![Chrome Dev Summit](/img/chromedevsummit.png)
+
+The experiment was shown briefly on stage at the Chrome dev summit this year. Showing how developer experimentation is going to be such a key part of AR growth.
+
+Recently I've been experimenting with re-imagining the use of some APIs in AR. Starting with playing around visualizing my instagram feed in AR.
+
+
+
+\## Physical Computing
