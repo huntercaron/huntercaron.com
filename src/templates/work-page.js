@@ -75,7 +75,7 @@ const Content = styled.div`
   }
 
   .gatsby-resp-image-wrapper {
-    
+
   }
 
   a {
@@ -83,6 +83,10 @@ const Content = styled.div`
     &:hover {
       text-decoration: none;
     }
+  }
+
+  h5 {
+    margin-top: -0rem;
   }
 
 
