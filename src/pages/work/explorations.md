@@ -10,6 +10,7 @@ Recently I've been exploring design & development in spaces that are new to me. 
 I've been documenting my process on an custom Gatsby site: [ThreeDee.party](http://threedee.party/) (In-progress, currently desktop-only).
 
 ## Learning 3D and AR
+
 I started off creating some small explorations while doing a Udacity course on 3D development. This led me to try and create cool things without knowing how to properly light or model anything. Small things like [this](http://threedee.party/3D-experiments/003/) helped me understand the potential of 3D.
 
 As a designer, I almost instantly wanted to try working with typography & interactivity which led me to create simple experiments like [this](http://threedee.party/3D-experiments/010/).
@@ -25,3 +26,5 @@ This was around the time when I discovered the beginnings of Web AR, and instant
 ##### Experimenting with Web AR — Better Quality Video in Tweet [Here](https://twitter.com/huntercaron/status/922627031166103553)
 
 AR is changing fast and is starting to feel like closer than ever to a mainstream technology. We're at a fantastic time in the community because of this. I tweeted out one of my first AR creations (above), which got picked up my the creators of THREE.js and Google's web XR team.
+
+![](/img/chromedevsummit.png)
