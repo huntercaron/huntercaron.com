@@ -16,7 +16,7 @@ As a designer, I almost instantly wanted to try working with typography & intera
 This was around the time when I discovered the beginnings of Web AR, and instantly fell in love.
 
 <div class='video-box ar_001'>
-  <video height="888" autoPlay muted loop playsinline poster="img/ar_001.png">
+  <video autoPlay muted loop playsinline poster="img/ar_001.png">
     <source src="/img/ar-vid_001.mp4" type="video/mp4"/>
     AR Video
   </video>
