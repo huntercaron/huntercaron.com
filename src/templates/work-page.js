@@ -89,6 +89,12 @@ const Content = styled.div`
     margin-top: -0rem;
   }
 
+  h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 4rem;
+    font-size: 2.4rem;
+  }
+
 
 `
 
