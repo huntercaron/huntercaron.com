@@ -7,6 +7,6 @@ subtitle: Supporting Design Degree Students
 ---
 Companion is a conceptual project that approaches the problem of design students feeling anxious about their academic careers.
 
-View case study pdf [here](/compainion_casestudy.pdf).
+View case study pdf [here](/img/compainion_casestudy.pdf).
 
 ![null](/img/compainion_thumbnail.png)
