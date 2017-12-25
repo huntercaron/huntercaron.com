@@ -17,7 +17,7 @@ As a designer, I almost instantly wanted to try working with typography & intera
 Around this time I discovered the beginnings of Web AR, and instantly fell in love.
 
 <div class='video-box ar_001'>
-  <video autoPlay muted loop playsinline poster="img/ar_001.png">
+  <video autoPlay muted loop preload poster="img/ar_001.png">
     <source src="/img/ar-vid_001.mp4" type="video/mp4"/>
     AR Video
   </video>
@@ -32,6 +32,15 @@ AR is changing fast and is starting to feel closer than ever to a mainstream tec
 
 Recently I've been experimenting with re-imagining the use of some APIs in AR. Starting with playing around visualizing my instagram feed in AR.
 
+<div class='video-box'>
+  <video autoPlay muted loop preload >
+    <source src="/img/ar_002.mp4" type="video/mp4"/>
+    AR Video
+  </video>
+</div>
+
+##### Placing my Instagram posts around me
+
 AR is an exciting space that I'm glad to be experimenting with at such an exciting time.
 
 ## Physical Computing
@@ -39,7 +48,34 @@ Physical computing is a new endeavour for me, but has really opened up the way I
 
 I've done a few physical computing projects so far, but they have been stayed in the proof of concept stage for the most part.
 
+<div class='video-box'>
+  <video autoPlay muted loop preload >
+    <source src="/img/physical_001.mp4" type="video/mp4"/>
+    AR Video
+  </video>
+</div>
+
+##### Rainbow Cropper
+
+<div class='video-box'>
+  <video autoPlay muted loop preload >
+    <source src="/img/physical_002.mp4" type="video/mp4"/>
+    AR Video
+  </video>
+</div>
+
+##### Heart rate light
+
 My most recent experiment is part of a larger experiment where I am re-interpreting physical objects into digital space to show a new perspective on the objects in our everyday life. Using various sensors I was able to abstract the physical attributes of an object and create a generative drawing in P5.js.
+
+<div class='video-box'>
+  <video autoPlay muted loop preload >
+    <source src="/img/physical_003.mp4" type="video/mp4"/>
+    AR Video
+  </video>
+</div>
+
+##### (still super early in the visualizing stage)
 
 I plan on casing the project in a more friendly way, as well as creating a companion mobile web app that will show the P5 sketch in real time in AR beside the object. This would allow the user to juxtapose the object in space.
 

@@ -67,7 +67,7 @@ const Content = styled.div`
   .video-box video, .gatsby-resp-image-wrapper {
     box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.08);
 
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .video-box video {
