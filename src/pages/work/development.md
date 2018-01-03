@@ -5,7 +5,9 @@ date: 2017-12-20T22:21:37.771Z
 title: Development
 subtitle: Recent Design & Development work
 ---
-These two sites were designed in collaboration with other designers and developed by me.
+Here is a small collection of recent development work, showing a range of development/design skills. 
+
+</br>
 
 ![nelsonhuang](/img/nelsonhuang.png)
 

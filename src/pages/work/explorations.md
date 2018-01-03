@@ -80,6 +80,6 @@ My most recent experiment is part of a larger experiment where I am re-interpret
 I plan on casing the project in a more friendly way, as well as creating a companion mobile web app that will show the P5 sketch in real time in AR beside the object. This would allow the user to juxtapose the object in space.
 
 ## Conclusion
-My thesis research in taking place in the realm of creativity and how it is affecting by tooling. I think things like 3D, AR, VR, and physical computing will have an incredible impact on how we think and create. I hope to help shape that space for the best.
+My thesis research is taking place in the realm of creativity and how it is affecting by tooling. I think things like 3D, AR, VR, and physical computing will have an incredible impact on how we think and create. I hope to help shape that space for the best.
 
 I'm going to keep exploring in these spaces, and improving upon the projects I've started. Stay tuned!

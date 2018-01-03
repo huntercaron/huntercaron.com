@@ -102,18 +102,19 @@ export default ({ data }) => {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
 
-  var ua = navigator.userAgent.toLowerCase();
-  var is_safari = (ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0);
-  var videos = document.querySelectorAll('video');
+  if (typeof navigator !== `undefined`) {
+    var ua = navigator.userAgent.toLowerCase();
+    var is_safari = (ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0);
+    var videos = document.querySelectorAll('video');
 
-  if(is_safari && videos.length > 0) {
-    for (var video of videos) {
-      setTimeout(function() {
-        video.play();
-      }, 50);
+    if(is_safari && videos.length > 0) {
+      for (var video of videos) {
+        setTimeout(function() {
+          video.play();
+        }, 50);
+      }
     }
   }
-
 
   return (
     <Container>
