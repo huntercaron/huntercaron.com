@@ -29,4 +29,4 @@ Website for Hexagon Restaurant in Oakville, Ontario. Randomly shows one of five 
 
 **Faith.ca** — [Visit Site](http://faith.ca/)
 
-Portfolio site for Paul Sych and his studio, Faith. Designed with Paul Sych.
+Portfolio site development for Paul Sych and his studio, Faith. Designed with Paul Sych.
