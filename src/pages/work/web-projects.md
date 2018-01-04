@@ -13,7 +13,7 @@ Here is a small collection of recent development work, showing a range of develo
 
 **Nelson Huang** — [Visit Site](http://nelshuang.com/)
 
-Website for Toronto based photographer. Static site built with Gatsby/React using Contentful API as a CMS backend, hooked up to a Netlify build hook.
+Recent website design & delevelopment for Toronto based photographer, Nelson Huang. Built with a CMS for adding galleries and customizing copy. 
 
 </br>
 
@@ -21,4 +21,4 @@ Website for Toronto based photographer. Static site built with Gatsby/React usin
 
 **Hexagon Restaurant** — [Visit Site](http://www.hexagonrestaurant.com/)
 
-Website for Hexagon Restaurant in Oakville, Ontario. Built with completely vanilla javascript, using HTML Canvas api to show a random selection of 5 different animations on page load.
+Website for Hexagon Restaurant in Oakville, Ontario. Randomly shows one of five animations on page load. Designed with Paul Sych.
