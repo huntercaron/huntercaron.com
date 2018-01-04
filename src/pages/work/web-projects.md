@@ -22,3 +22,7 @@ Recent website design & delevelopment for Toronto based photographer, Nelson Hua
 **Hexagon Restaurant** — [Visit Site](http://www.hexagonrestaurant.com/)
 
 Website for Hexagon Restaurant in Oakville, Ontario. Randomly shows one of five animations on page load. Designed with Paul Sych.
+
+
+
+![paul site](/img/paulsite.png)
