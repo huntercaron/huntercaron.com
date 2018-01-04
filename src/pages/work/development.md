@@ -5,7 +5,7 @@ date: 2017-12-20T22:21:37.771Z
 title: Development
 subtitle: Recent Design & Development work
 ---
-Here is a small collection of recent development work, showing a range of development/design skills. 
+Here is a small collection of recent development work, showing a range of development/design skills. The designs were done in collaboration with other designers.
 
 </br>
 

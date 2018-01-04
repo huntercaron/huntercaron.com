@@ -79,7 +79,8 @@ const Content = styled.div`
   }
 
   a {
-    color: black;
+    color: #66c0fa;
+
     &:hover {
       text-decoration: none;
     }
@@ -87,6 +88,7 @@ const Content = styled.div`
 
   h5 {
     margin-top: -0rem;
+    opacity: 0.5;
   }
 
   h2 {
