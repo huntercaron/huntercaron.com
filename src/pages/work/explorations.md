@@ -1,9 +1,9 @@
 ---
 templateKey: work-page
-path: /explorations
-date: 2017-12-13T05:00:00.000Z
+path: /workshop
+date: 2018-02-05T02:51:44.335Z
 title: Explorations
-subtitle: 'Physical Computing, Gen-Art, 3D & AR'
+subtitle: 'Tooling, AR, 3D, interactive objects, and generative art'
 ---
 Recently I've been exploring design & development in spaces that are new to me. I've been focusing on physical computing, 3D, AR, generative art and how I can tie them together.
 
