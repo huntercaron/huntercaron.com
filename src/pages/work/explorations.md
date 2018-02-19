@@ -1,6 +1,6 @@
 ---
 templateKey: work-page
-path: /workshop
+path: /explorations
 date: 2018-02-05T02:51:44.335Z
 title: Explorations
 subtitle: 'Tooling, AR, 3D, interactive objects, and generative art'
