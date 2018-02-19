@@ -163,8 +163,8 @@ class IndexPage extends React.Component {
 
         <section>
           <Block>
-            <p>I am a Toronto based designer & developer who is passionate about creating efficient and enjoyable digital experiences for everyone to enjoy.</p>
-            <p>Currently available for freelance work.</p>
+            <p>Designer & sometimes a developer.</p>
+            <p>I'm passionate about creating work that encourages you to play, grow &amp; explore.</p>
           </Block>
 
           <Spacer h="3"/>
