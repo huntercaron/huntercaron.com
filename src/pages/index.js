@@ -1,6 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const fadeIn = keyframes `
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
 
 const Container = styled.div`
   font-family: 'Mod', sans-serif;
@@ -8,6 +18,9 @@ const Container = styled.div`
   margin: calc(1.5rem + 2%);
   margin-top: 0;
   position: relative;
+  opacity: 0;
+
+  animation: ${fadeIn} 250ms 50ms ease-out forwards;
 
   letter-spacing: -0.1px;
   max-width: 500px;
