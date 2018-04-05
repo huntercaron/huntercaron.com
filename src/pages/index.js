@@ -177,7 +177,9 @@ class IndexPage extends React.Component {
         <section>
           <Block>
             <p>Designer & sometimes a developer.</p>
-            <p>My work encourages you to play, grow &amp; explore. Allowing you to dwell in the moment, and enjoy the next one.</p>
+            <p>I design things for people who are chasing what makes them uniquely brilliant.</p>
+            
+            { /*  My work encourages you to play, grow &amp; explore. Allowing you to dwell in the moment, and enjoy the next one.</p> */ }
           </Block>
 
           <Spacer h="3"/>
