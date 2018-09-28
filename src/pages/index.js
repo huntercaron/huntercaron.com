@@ -190,10 +190,10 @@ class IndexPage extends React.Component {
             <BlockTitle>Experience</BlockTitle>
             <List>
               <li>
-                <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger</a> <Em/> Aug. 2018
+                <Bullet/> <a href="http://facebook.design/" target="_blank">Messenger</a> <Em/> Current
               </li>
               <li>
-                <Bullet/> <a href="http://facebook.design/" target="_blank">Facebook Messenger [Intern]</a> <Em/> 2017
+                <Bullet/> <a href="http://facebook.design/" target="_blank">Messenger [Intern]</a> <Em/> 2017
               </li>
               <li>
                 <Bullet/> <a href="https://format.com/" target="_blank">Format</a> <Em/> 2016 – 2017
