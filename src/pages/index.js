@@ -92,6 +92,7 @@ const BlockTitle = styled.h3`
 `
 
 const Title = styled.h1`
+  margin-top: -1px;
   margin: 0;
   font-weight: bold;
   font-size: 1.6rem;
