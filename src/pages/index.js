@@ -23,7 +23,7 @@ const Container = styled.div`
   animation: ${fadeIn} 250ms 50ms ease-out forwards;
 
   letter-spacing: -0.1px;
-  max-width: 500px;
+  max-width: 480px;
   font-size: 1.6rem;
   line-height: 1.5;
 
