@@ -1,8 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-import  styled, { injectGlobal } from 'styled-components'
+import React from "react"
+import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
+import { createGlobalStyle } from "styled-components"
 
 import ModeratBold from "../assets/fonts/Moderat-Bold.woff"
 import ModeratBold2 from "../assets/fonts/Moderat-Bold.woff2"
@@ -10,52 +9,37 @@ import ModeratRegular from "../assets/fonts/Moderat-Regular.woff"
 import ModeratRegular2 from "../assets/fonts/Moderat-Regular.woff2"
 import ModeratMedium from "../assets/fonts/Moderat-Medium.woff"
 import ModeratMedium2 from "../assets/fonts/Moderat-Medium.woff2"
-
-
-const Header = () => (
-  <div>
-  </div>
-)
-
-const Container = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
-  box-sizing:border-box;
-
-
-`
-
-const Wrapper = styled.div`
-
-`
+import ModeratMono from "../assets/fonts/Moderat-Mono-Regular.woff"
+import ModeratMono2 from "../assets/fonts/Moderat-Mono-Regular.woff2"
 
 const TemplateWrapper = ({ children }) => (
-  <Wrapper>
-    <Helmet
-      title="Hunter Caron"
-      meta={[
-        { name: 'description', content: 'Hunter Caron is a Toronto based designer &amp; developer who is passionate about creating efficent and dynamic digital experiences for everyone to enjoy.' },
-        { name: 'keywords', content: 'designer design developer hunter caron huntercaron hunterhcaron' },
-        { name: 'author', content: 'Hunter Caron'}
-      ]}
-    />
+    <>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Hunter Caron</title>
+            <meta
+                name="description"
+                content="Hunter Caron is a Toronto based designer &amp; developer who is passionate about creating efficent and dynamic digital experiences for everyone to enjoy"
+            />
+            <meta
+                name="keywords"
+                content="designer design developer hunter caron huntercaron hunterhcaron"
+            />
+            <meta name="author" content="Hunter Caron" />
+        </Helmet>
 
-    <Container>
-      {children()}
-    </Container>
-  </Wrapper>
+        <GlobalStyle />
+        {children}
+    </>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+    children: PropTypes.func,
 }
 
 export default TemplateWrapper
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
 
   *, *:before, *:after {
       box-sizing: border-box;
@@ -101,6 +85,13 @@ injectGlobal`
     src: url(${ModeratMedium}) format('woff2'),
       url(${ModeratMedium2}) format('woff');
     font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Mod-Mono';
+    src: url(${ModeratMono}) format('woff2'),
+      url(${ModeratMono2}) format('woff');
+    font-weight: normal;
     font-style: normal;
   }
 
