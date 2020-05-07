@@ -23,7 +23,6 @@
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-helmet": "^6.0.0",
-        "react-load-script": "^0.0.6",
         "styled-components": "5.1.0"
     },
     "keywords": [
@@ -38,6 +37,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
+        "husky": "^4.2.5",
         "prettier": "^2.0.5"
     },
     "repository": {
