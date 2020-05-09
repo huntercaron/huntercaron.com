@@ -44,5 +44,13 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-netlify`,
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options: {
+                defaultLayouts: {
+                    default: require.resolve("./src/components/mono-layout.js"),
+                },
+            },
+        },
     ],
 }
