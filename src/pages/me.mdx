@@ -1,10 +1,13 @@
 import { Video } from "../components/video"
+import { VideoRow } from "../components/videoRow"
 import viewVideo from "../assets/video/bloom_view.mp4"
 import tedTalkVideo from "../assets/video/tedtalk_directory.mp4"
 import theNextVideo from "../assets/video/thenext_website.mp4"
 import markedSiteVideo from "../assets/video/marked_site.mp4"
 import threedeeVideo from "../assets/video/threedee_cool.mp4"
 import ARVideo from "../assets/video/AR_tooling.mp4"
+import ARInstaVideo from "../assets/video/ar_insta.mp4"
+import ARTypeVideo from "../assets/video/AR_type.mp4"
 
 Hi, I'm Hunter
 
@@ -22,8 +25,8 @@ This extends into a few themes in my work
 Below you can find a selection of my work in no particular order.
 I would normally go over these in person so please feel free to get in touch.
 
-EMAIL: huntercaron@me.com
-TWITTER: @huntercaron
+[EMAIL](mailto:huntercaron.design@icloud.com)
+[TWITTER](https://twitter.com/huntercaron)
 
 <Video>
     <source src={viewVideo} type="video/mp4" />
@@ -33,14 +36,14 @@ TWITTER: @huntercaron
     <source src={tedTalkVideo} type="video/mp4" />
 </Video>
 
-<Video>
-    <source src={theNextVideo} type="video/mp4" />
-</Video>
+<VideoRow videos={[ARVideo, ARInstaVideo, ARTypeVideo]} />
 
 <Video>
     <source src={markedSiteVideo} type="video/mp4" />
 </Video>
 
+
+
 <Video>
-    <source src={threedeeVideo} type="video/mp4" />
+    <source src={theNextVideo} type="video/mp4" />
 </Video>
