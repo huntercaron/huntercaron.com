@@ -9,8 +9,10 @@ export const Video = styled.video`
     object-position: left 50%;
     border-radius: 5px;
     max-height: 80vh;
-    margin: 20px 0;
+    max-width: 1500px;
+    margin: 40px 0;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    display: block;
 `
 
 Video.defaultProps = {
