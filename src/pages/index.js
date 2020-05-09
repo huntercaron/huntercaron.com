@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
+import { graphql } from "gatsby"
 import styled, { keyframes } from "styled-components"
 
 const fadeIn = keyframes`
@@ -97,15 +98,15 @@ const Title = styled.h1`
     margin-bottom: -3px;
 `
 
-const Subtitle = styled.p`
-    font-weight: normal;
-    margin: 0;
-    line-height: 0.8;
+// const Subtitle = styled.p`
+//     font-weight: normal;
+//     margin: 0;
+//     line-height: 0.8;
 
-    @media (min-width: 600px) {
-        line-height: 1.2;
-    }
-`
+//     @media (min-width: 600px) {
+//         line-height: 1.2;
+//     }
+// `
 
 const List = styled.ul`
     list-style: none;
@@ -117,29 +118,29 @@ const List = styled.ul`
     }
 `
 
-const ContactLink = styled.a`
-    color: black;
-    font-weight: normal !important;
-`
+// const ContactLink = styled.a`
+//     color: black;
+//     font-weight: normal !important;
+// `
 
 const BulletSpan = styled.span`
     margin-right: 0.1rem;
 `
 
-const SmallText = styled.a`
-    font-weight: 500;
-    font-size: 1.1rem;
-    ${"" /* text-transform:uppercase; */}
-    color: #a0a0a0 !important;
-    vertical-align: super;
-    margin-left: 0.5px;
-    letter-spacing: 0;
-    opacity: 1;
+// const SmallText = styled.a`
+//     font-weight: 500;
+//     font-size: 1.1rem;
+//     ${"" /* text-transform:uppercase; */}
+//     color: #a0a0a0 !important;
+//     vertical-align: super;
+//     margin-left: 0.5px;
+//     letter-spacing: 0;
+//     opacity: 1;
 
-    &:hover {
-        text-decoration: underline;
-    }
-`
+//     &:hover {
+//         text-decoration: underline;
+//     }
+// `
 
 const ProjectLink = styled(Link)`
     &:hover > span {

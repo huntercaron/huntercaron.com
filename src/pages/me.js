@@ -1,6 +1,6 @@
 import React from "react"
-import Link from "gatsby-link"
 import styled from "styled-components"
+import viewVideo from "../assets/video/bloom_view.mp4"
 
 // make it content editable
 
@@ -11,6 +11,24 @@ const Container = styled.div`
     font-size: 15px;
     line-height: 2;
 `
+
+export const Video = styled.video`
+    max-width: 100%;
+    vertical-align: middle;
+    user-select: none;
+    object-fit: object-fit;
+    object-position: 50% 50%;
+    border-radius: 10px;
+    max-height: 80vh;
+`
+
+Video.defaultProps = {
+    autoPlay: true,
+    loop: true,
+    muted: true,
+    playsInline: true,
+    width: "100%",
+}
 
 const firstBlock = `
 Hi, I'm Hunter
@@ -34,5 +52,12 @@ TWITTER: @huntercaron
 `
 
 export default function Me() {
-    return <Container>{firstBlock}</Container>
+    return (
+        <Container>
+            {firstBlock}
+            <Video controls>
+                <source src={viewVideo} type="video/mp4" />
+            </Video>
+        </Container>
+    )
 }
