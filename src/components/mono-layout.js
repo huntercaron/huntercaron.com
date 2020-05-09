@@ -5,6 +5,7 @@ const Container = styled.div`
     font-family: "Mod-Mono", sans-serif;
     padding: 20px 40px;
     white-space: pre-wrap;
+    max-width: 1400px;
     font-size: 15px;
     line-height: 2;
 `
