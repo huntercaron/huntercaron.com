@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
     font-family: "Mod-Mono", sans-serif;
-    padding: 8px 16px;
+    padding: 4px 10px;
     white-space: pre-wrap;
     max-width: 1400px;
     font-size: 15px;
