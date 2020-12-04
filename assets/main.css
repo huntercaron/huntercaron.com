@@ -1,0 +1,162 @@
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Mod", sans-serif;
+    font-display: fallback;
+    height: 100%;
+    font-size: 1.6em;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #222;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+main {
+    width: 100%;
+    margin: auto;
+
+    font-family: "Mod", sans-serif;
+    font-weight: 300 !important;
+    position: relative;
+    opacity: 0;
+    padding: 20px;
+
+    animation: fadeIn 250ms 50ms ease-out forwards;
+
+    letter-spacing: -0.1px;
+    max-width: 380px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+section { 
+    margin-top: 2rem;
+}
+
+section p:first-of-type { 
+    margin-bottom: 1.3rem;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h3 {
+    color: #a0a0a0;
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin: 0;
+    margin-bottom: 0.35rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    padding-bottom: 0.8rem;
+    padding-top: 0.5rem;
+
+    font-weight: 500;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bullet {
+    margin-right: 0.1rem;    
+}
+
+@media (min-width: 600px) {
+    header {
+        flex: 0;
+        min-width: 135px;
+        flex-basis: 200px;
+
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    main {
+        display: flex;
+        align-items: flex-start;  
+        max-width: 520px;
+    }
+
+    h1 {
+        margin-top: calc(2rem - 1px);
+    }
+}
+
+
+@font-face {
+  font-family: 'Mod';
+  src: url("./fonts/Moderat-Bold.woff") format('woff2'),
+    url("./fonts/Moderat-Bold.woff2") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mod';
+  src: url("./fonts/Moderat-Regular.woff") format('woff2'),
+    url("./fonts/Moderat-Regular.woff2") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mod';
+  src: url("./fonts/Moderat-Medium.woff") format('woff2'),
+    url("./fonts/Moderat-Medium.woff2") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Mod-Mono';
+  src: url("./fonts/Moderat-Bold.woff") format('woff2'),
+    url("./fonts/Moderat-Bold.woff2") format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
