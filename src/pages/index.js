@@ -23,6 +23,10 @@ const Container = styled.div`
     opacity: 0;
     padding: 20px;
 
+
+
+
+    border: 0px solid white;
     animation: ${fadeIn} 250ms 50ms ease-out forwards;
 
     letter-spacing: -0.1px;
