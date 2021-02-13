@@ -1,6 +1,9 @@
-// lets try out some modules
+// modules
 import { h, Component, render } from "https://unpkg.com/preact?module"
 import htm from "https://unpkg.com/htm?module"
+
+// of course we don't need preact here
+// but let me have fun ty
 
 const html = htm.bind(h)
 
@@ -89,4 +92,4 @@ const app = html`
         </div>
     </main>
 `
-render(app, document.body)
+render(app, document.getElementById("root"))
