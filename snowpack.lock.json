@@ -1,8 +1,0 @@
-{
-    "imports": {
-        "htm": "https://cdn.skypack.dev/htm@v3.0.4-eKPIliCVcHknqhs5clvp",
-        "htm/": "https://cdn.skypack.dev/htm@v3.0.4-eKPIliCVcHknqhs5clvp/",
-        "preact": "https://cdn.skypack.dev/preact@v10.5.7-apbTSlqiCbFCw96Kpm6e",
-        "preact/": "https://cdn.skypack.dev/preact@v10.5.7-apbTSlqiCbFCw96Kpm6e/"
-    }
-}

@@ -1,8 +1,8 @@
 // lets try out some modules
-import { h, Component, render } from 'preact';
-import htm from 'htm';
+import { h, Component, render } from "https://unpkg.com/preact?module"
+import htm from "https://unpkg.com/htm?module"
 
-const html = htm.bind(h);
+const html = htm.bind(h)
 
 function ListItem(props) {
     const { text, subText, link } = props
@@ -27,11 +27,11 @@ const app = html`
         <div>
             <section>
                 <p>Designer & sometimes a developer.</p>
-                
+
                 <p>
-                    I build things for people striving to succeed in what
-                    makes them uniquely brilliant.
-                </p> 
+                    I build things for people striving to succeed in what makes
+                    them uniquely brilliant.
+                </p>
             </section>
 
             <section>
@@ -88,5 +88,5 @@ const app = html`
             </section>
         </div>
     </main>
-`;
-render(app, document.body);
+`
+render(app, document.body)

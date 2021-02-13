@@ -1,13 +1,11 @@
 {
     "name": "huntercaron.com",
     "description": "personal site",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "author": "Hunter Caron",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "npm install snowpack@next && snowpack build"
+        "dev": "npx serve"
     },
-    "keywords": [],
     "license": "ISC"
 }
